@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('customerstype', function (Blueprint $table) {
             $table->id();
-            $table->string('customer_type'); // Changed 'customertype' to 'customer_type' for consistency
+            $table->string('customer_type');
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->softDeletes();
             $table->timestamps();

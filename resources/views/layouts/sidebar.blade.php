@@ -20,8 +20,10 @@
         <li class="menu-header small">
             <span class="menu-header-text" data-i18n="ADMIN DASHBOARD"> ADMIN DASHBOARD</span>
         </li>
+
         <!-- Masters -->
-        <li class="menu-item {{ request()->routeIs('admin.*') ? 'active open' : '' }}">
+        <li
+            class="menu-item {{ request()->routeIs('admin.suppliers*') || request()->routeIs('admin.warehouses*') || request()->routeIs('admin.customerstype*') || request()->routeIs('admin.currencycountry*') || request()->routeIs('admin.roles*') || request()->routeIs('admin.currency*') || request()->routeIs('admin.user*') || request()->routeIs('admin.batchnumber*') || request()->routeIs('admin.entities*') || request()->routeIs('admin.invoice*') ? 'active open' : '' }}">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-smart-home"></i>
                 <div data-i18n="Masters">Masters</div>
@@ -50,25 +52,25 @@
             <!-- Entity End -->
 
             <!-- Suppliers -->
-            <ul class="menu-sub">
+            {{--  <ul class="menu-sub">
                 <li class="menu-item {{ request()->routeIs('admin.suppliers.*') ? 'active open' : '' }}">
                     <a href="javascript:void(0);" class="menu-link menu-toggle">
-                        <div data-i18n="Suppliers">Suppliers</div>
+                        <div data-i18n="Distributor">Distributor</div>
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item {{ request()->routeIs('admin.suppliers.index') ? 'active' : '' }}">
-                            <a href="#" class="menu-link">
-                                <div data-i18n="Suppliers List">Suppliers List</div>
+                            <a href="{{ route('admin.suppliers.index') }}" class="menu-link">
+                                <div data-i18n="Distributor List">Distributor List</div>
                             </a>
                         </li>
                         <li class="menu-item {{ request()->routeIs('admin.suppliers.add') ? 'active' : '' }}">
-                            <a href="#" class="menu-link">
-                                <div data-i18n="Add Supplier">Add Supplier</div>
+                            <a href="{{ route('admin.suppliers.add') }}" class="menu-link">
+                                <div data-i18n="Add Distributor">Add Distributor</div>
                             </a>
                         </li>
                     </ul>
                 </li>
-            </ul>
+            </ul> --}}
             <!-- Suppliers End -->
 
             <!-- Warehouses -->
@@ -115,21 +117,43 @@
             </ul>
             <!-- Customer Type End -->
 
-            <!-- Currency and Country -->
+            <!-- Batch Number -->
             <ul class="menu-sub">
-                <li class="menu-item {{ request()->routeIs('admin.currencycountry.*') ? 'active open' : '' }}">
+                <li class="menu-item {{ request()->routeIs('admin.batchnumber.*') ? 'active open' : '' }}">
                     <a href="javascript:void(0);" class="menu-link menu-toggle">
-                        <div data-i18n="Currency and Country">Currency and Country</div>
+                        <div data-i18n="Batch Number">Batch Number</div>
                     </a>
                     <ul class="menu-sub">
-                        <li class="menu-item {{ request()->routeIs('admin.currencycountry.index') ? 'active' : '' }}">
-                            <a href="#" class="menu-link">
-                                <div data-i18n="Currency and Country List">Currency and Country List</div>
+                        <li class="menu-item {{ request()->routeIs('admin.batchnumber.add') ? 'active' : '' }}">
+                            <a href="{{ route('admin.batchnumber.add') }}" class="menu-link">
+                                <div data-i18n="Add Batch Number">Add Batch Number</div>
                             </a>
                         </li>
-                        <li class="menu-item {{ request()->routeIs('admin.currencycountry.add') ? 'active' : '' }}">
-                            <a href="#" class="menu-link">
-                                <div data-i18n="Add Currency and Country">Add Currency and Country</div>
+                        <li class="menu-item {{ request()->routeIs('admin.batchnumber.index') ? 'active' : '' }}">
+                            <a href="{{ route('admin.batchnumber.index') }}" class="menu-link">
+                                <div data-i18n="Batch Number List">Batch Number List</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Batch Number End -->
+
+            <!-- Currency and Country -->
+            <ul class="menu-sub">
+                <li class="menu-item {{ request()->routeIs('admin.currency.*') ? 'active open' : '' }}">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <div data-i18n="Currency">Currency</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item {{ request()->routeIs('admin.currency.index') ? 'active' : '' }}">
+                            <a href="{{ route('admin.currency.index') }}" class="menu-link">
+                                <div data-i18n="Currency List">Currency List</div>
+                            </a>
+                        </li>
+                        <li class="menu-item {{ request()->routeIs('admin.currency.add') ? 'active' : '' }}">
+                            <a href="{{ route('admin.currency.add') }}" class="menu-link">
+                                <div data-i18n="Add Currency">Add Currency</div>
                             </a>
                         </li>
                     </ul>
@@ -137,22 +161,7 @@
             </ul>
             <!-- Currency and Country End -->
 
-            <!-- Manage Roles / Permissions -->
-            <ul class="menu-sub">
-                <li class="menu-item {{ request()->routeIs('admin.roles.*') ? 'active open' : '' }}">
-                    <a href="javascript:void(0);" class="menu-link menu-toggle">
-                        <div data-i18n="Manage Roles / Permissions">Manage Roles / Permissions</div>
-                    </a>
-                    <ul class="menu-sub">
-                        <li class="menu-item {{ request()->routeIs('admin.roles.index') ? 'active' : '' }}">
-                            <a href="#" class="menu-link">
-                                <div data-i18n="Manage User Role">Manage User Role</div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- Manage Roles / Permissions End -->
+
 
             <!-- Admin Users -->
             <ul class="menu-sub">
@@ -176,112 +185,117 @@
             </ul>
             <!-- Admin Users End -->
         </li>
-
-        <!-- Admin Users End -->
         <!-- Masters End -->
+
         <!-- Sales Orders -->
-        <li class="menu-item">
+        <li class="menu-item {{ request()->routeIs('admin.orders.*') ? 'active open' : '' }}">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-shopping-cart"></i>
                 <div data-i18n="Sales Orders">Sales Orders</div>
             </a>
-            <ul class="menu-sub">
-                <li class="menu-item">
-                    <a href="javascript:void(0);" class="menu-link">
-                        <div data-i18n="Orders">Orders</div>
+            <ul class="menu-sub {{ request()->routeIs('admin.orders.*') ? 'active' : '' }}">
+                <li class="menu-item {{ request()->routeIs('admin.orders.add') ? 'active' : '' }}">
+                    <a href="{{ route('admin.orders.add') }}" class="menu-link">
+                        <div data-i18n="Add Orders">Add Orders</div>
                     </a>
-                <li class="menu-item">
-                    <a href="app-ecommerce-product-list.html" class="menu-link">
+                </li>
+                <li class="menu-item {{ request()->routeIs('admin.orders.index') ? 'active' : '' }}">
+                    <a href="{{ route('admin.orders.index') }}" class="menu-link">
                         <div data-i18n="Orders List">Orders List</div>
                     </a>
                 </li>
+            </ul>
         </li>
-    </ul>
-    </li>
-    <!-- Sales Orders End -->
+        <!-- Sales Orders End -->
 
-    <!-- Customers -->
-    <li class="menu-item {{ request()->routeIs('admin.*') ? 'active open' : '' }} ">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons ti ti-files"></i>
-            <div data-i18n="Customers">Customers</div>
-        </a>
-        <ul class="menu-sub {{ request()->routeIs('admin.customer.*') ? 'active' : '' }}">
-            <li class="menu-item {{ request()->routeIs('admin.customer.index') ? 'active' : '' }}">
-                <a href="{{ route('admin.customer.index') }}" class="menu-link">
-                    <div data-i18n="Customers List">Customers List</div>
-                </a>
-            </li>
-            <li class="menu-item {{ request()->routeIs('admin.customer.add') ? 'active' : '' }}">
-                <a href="{{ route('admin.customer.add') }}" class="menu-link">
-                    <div data-i18n="Add New Customer">Add New Customer</div>
-                </a>
-            </li>
-        </ul>
-    </li>
 
-    <!-- Customers End-->
-    <!-- Invoice Management -->
-    <li class="menu-item">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons ti ti-file-dollar"></i>
-            <div data-i18n="Invoice Management">Invoice Managerment</div>
-        </a>
-        <ul class="menu-sub">
-            <li class="menu-item">
-                <a href="../front-pages/landing-page.html" class="menu-link" target="_blank">
-                    <div data-i18n="Online Invoices List">Online Invoices List</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="../front-pages/pricing-page.html" class="menu-link" target="_blank">
-                    <div data-i18n="Offline Invoices List">Offline Invoices List</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="../front-pages/pricing-page.html" class="menu-link" target="_blank">
-                    <div data-i18n="Custom Invoice">Custom Invoice</div>
-                </a>
-            </li>
-        </ul>
-    </li>
-    <!-- Invoice Management End-->
-    <!-- Product Management -->
-    <li class="menu-item {{ request()->routeIs('admin.*') ? 'active open' : '' }}">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons ti ti-shopping-cart"></i>
-            <div data-i18n="Product Management">Product Management</div>
-        </a>
-        <ul class="menu-sub">
-            <li class="menu-item {{ request()->routeIs('admin.products.*') ? 'active open' : '' }}">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <div data-i18n="Products">Products</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item {{ request()->routeIs('admin.products.index') ? 'active' : '' }}">
-                        <a href="{{ route('admin.products.index') }}" class="menu-link">
-                            <div data-i18n="Products List">Products List</div>
-                        </a>
-                    </li>
-                    <li class="menu-item {{ request()->routeIs('admin.productscategory.index') ? 'active' : '' }}">
-                        <a href="{{ route('admin.productscategory.index') }}" class="menu-link">
-                            <div data-i18n="Category List">Category List</div>
-                        </a>
-                    </li>
-                    <li class="menu-item {{ request()->routeIs('admin.productscategory.add') ? 'active' : '' }}">
-                        <a href="{{ route('admin.productscategory.add') }}" class="menu-link">
-                            <div data-i18n="Add Category">Add Category</div>
-                        </a>
-                    </li>
-                    <li class="menu-item {{ request()->routeIs('admin.products.add') ? 'active' : '' }}">
-                        <a href="{{ route('admin.products.add') }}" class="menu-link">
-                            <div data-i18n="Add Product">Add Product</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <ul class="menu-sub">
+        <!-- Customers -->
+        <li class="menu-item {{ request()->routeIs('admin.customer.*') ? 'active open' : '' }} ">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-files"></i>
+                <div data-i18n="Customers">Customers</div>
+            </a>
+            <ul class="menu-sub {{ request()->routeIs('admin.customer.*') ? 'active' : '' }}">
+                <li class="menu-item {{ request()->routeIs('admin.customer.index') ? 'active' : '' }}">
+                    <a href="{{ route('admin.customer.index') }}" class="menu-link">
+                        <div data-i18n="Customers List">Customers List</div>
+                    </a>
+                </li>
+                <li class="menu-item {{ request()->routeIs('admin.customer.add') ? 'active' : '' }}">
+                    <a href="{{ route('admin.customer.add') }}" class="menu-link">
+                        <div data-i18n="Add New Customer">Add New Customer</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Customers End-->
+
+        <!-- Invoice Management -->
+        <li class="menu-item {{ request()->routeIs('admin.invoices.*') ? 'active open' : '' }}">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-file-dollar"></i>
+                <div data-i18n="Invoice Management">Invoice Management</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="../front-pages/landing-page.html" class="menu-link" target="_blank">
+                        <div data-i18n="Online Invoices List">Online Invoices List</div>
+                    </a>
+                </li>
+                <li class="menu-item {{ request()->routeIs('admin.invoices.index') ? 'active' : '' }}">
+                    <a href="{{ route('admin.invoices.index') }}" class="menu-link" target="_blank">
+                        <div data-i18n="Offline Invoices List">Offline Invoices List</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link" target="_blank">
+                        <div data-i18n="Shipping Invoice">Shipping Invoice</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- Invoice Management End-->
+
+        <!-- Product Management -->
+        <li
+            class="menu-item {{ request()->routeIs('admin.products*') || request()->routeIs('admin.productscategory*') ? 'active open' : '' }}">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-cube"></i>
+                <div data-i18n="Product Management">Product Management</div>
+            </a>
+            <ul class="menu-sub">
+                <li
+                    class="menu-item {{ request()->routeIs('admin.products.*') || request()->routeIs('admin.productscategory*') ? 'active open' : '' }}">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <div data-i18n="Products">Products</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item {{ request()->routeIs('admin.products.add') ? 'active' : '' }}">
+                            <a href="{{ route('admin.products.add') }}" class="menu-link">
+                                <div data-i18n="Add Product">Add Product</div>
+                            </a>
+                        </li>
+                        <li class="menu-item {{ request()->routeIs('admin.products.index') ? 'active' : '' }}">
+                            <a href="{{ route('admin.products.index') }}" class="menu-link">
+                                <div data-i18n="Products List">Products List</div>
+                            </a>
+                        </li>
+                        <li class="menu-item {{ request()->routeIs('admin.productscategory.add') ? 'active' : '' }}">
+                            <a href="{{ route('admin.productscategory.add') }}" class="menu-link">
+                                <div data-i18n="Add Category">Add Category</div>
+                            </a>
+                        </li>
+                        <li
+                            class="menu-item {{ request()->routeIs('admin.productscategory.index') ? 'active' : '' }}">
+                            <a href="{{ route('admin.productscategory.index') }}" class="menu-link">
+                                <div data-i18n="Category List">Category List</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            {{-- <ul class="menu-sub">
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <div data-i18n="Settings">Settings</div>
@@ -319,135 +333,146 @@
                     </li>
                 </ul>
             </li>
-        </ul>
-    </li>
-    <!-- Product Management End -->
-    <!-- Inventory Management -->
-    <li class="menu-item">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons ti ti-file-dollar"></i>
-            <div data-i18n="Inventory Management">Inventory Management</div>
-        </a>
-        <ul class="menu-sub">
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Online Invoices List">Inventory List</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Offline Invoices List">Offline Invoices List</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Custom Invoice">Custom Invoice</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Shipping Invoice">Shipping Invoice</div>
-                </a>
-            </li>
+        </ul> --}}
+        </li>
+        <!-- Product Management End -->
 
-        </ul>
-    </li>
-    <!-- Inventory Management End -->
-    <!-- Accounts and Billing -->
-    <li class="menu-item">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons ti ti-file-dollar"></i>
-            <div data-i18n="Accounts">Accounts</div>
-        </a>
-        <ul class="menu-sub">
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Debtors List">Debtors List</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Manage Debtors">Manage Debtors</div>
-                </a>
-            </li>
+        <!-- Inventory Management -->
+        <li class="menu-item {{ request()->routeIs('admin.inventory*') ? 'active open' : '' }}">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-file-dollar"></i>
+                <div data-i18n="Inventory Management">Inventory Management</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item {{ request()->routeIs('admin.inventory.add') ? 'active' : '' }}">
+                    <a href="{{ route('admin.inventory.add') }}" class="menu-link">
+                        <div data-i18n="Add Inventory">Add Inventory</div>
+                    </a>
+                </li>
+                <li class="menu-item {{ request()->routeIs('admin.inventory.index') ? 'active' : '' }}">
+                    <a href="{{ route('admin.inventory.index') }}" class="menu-link">
+                        <div data-i18n="Inventory List">Inventory List</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- Inventory Management End -->
+
+        <!-- Accounts and Billing -->
+        <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-file-dollar"></i>
+                <div data-i18n="Accounts">Accounts</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <div data-i18n="Debtors List">Debtors List</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <div data-i18n="Manage Debtors">Manage Debtors</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- Accounts and Billing End -->
+
+        <!-- Shipping -->
+        <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-truck"></i>
+                <div data-i18n="Shipping">Shipping</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <div data-i18n="Shipping Fee">Shipping Fee</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <div data-i18n="Courier Airway Bill">Courier Airway Bill</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <div data-i18n="Frieght">Frieght Charges</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- Shipping End -->
+
+        <!-- Users Dashboard -->
+        <li
+            class="menu-item {{ request()->routeIs('admin.roles.*') || request()->routeIs('admin.users.*') ? 'active open' : '' }}">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-users"></i>
+                <div data-i18n="Users">Users Dashboard</div>
+            </a>
+            <!-- Manage Roles / Permissions -->
+            <ul class="menu-sub">
+                <li class="menu-item {{ request()->routeIs('admin.roles.*') ? 'active open' : '' }}">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <div data-i18n="Manage Roles / Permissions">Manage Roles / Permissions</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item {{ request()->routeIs('admin.roles.index') ? 'active' : '' }}">
+                            <a href="{{ route('admin.roles.index') }}" class="menu-link">
+                                <div data-i18n="Manage User Role">Manage User Role</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Manage Roles / Permissions End -->
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <div data-i18n="User Settings">User Settings</div>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <div data-i18n="View">View</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <div data-i18n="Account">Account</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <div data-i18n="Security">Security</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <div data-i18n="Billing & Plans">Billing & Plans</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <div data-i18n="Notifications">Notifications</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <div data-i18n="Connections">Connections</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
 
 
-        </ul>
-    </li>
-    <!-- Accounts and Billing End -->
-    <!-- Shipping -->
-    <li class="menu-item">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons ti ti-truck"></i>
-            <div data-i18n="Shipping">Shipping</div>
-        </a>
-        <ul class="menu-sub">
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Shipping Fee">Shipping Fee</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Courier Airway Bill">Courier Airway Bill</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Frieght">Frieght Charges</div>
-                </a>
-            </li>
-        </ul>
-    </li>
-    <!-- Shipping End -->
-    <li class="menu-item">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons ti ti-users"></i>
-            <div data-i18n="Users">Users Dashboard</div>
-        </a>
-        <ul class="menu-sub">
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="User Settings">User Settings</div>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <div data-i18n="View">View</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">
-                            <div data-i18n="Account">Account</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">
-                            <div data-i18n="Security">Security</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">
-                            <div data-i18n="Billing & Plans">Billing &nbsb; Plans</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">
-                            <div data-i18n="Notifications">Notifications</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">
-                            <div data-i18n="Connections">Connections</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <!-- Content Management -->
-    <li class="menu-item">
+        <!-- Content Management -->
+        {{-- <li class="menu-item">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
             <i class="menu-icon tf-icons ti ti-file"></i>
             <div data-i18n="Content Management">Content Management</div>
@@ -503,6 +528,7 @@
                     </li>
                 </ul>
             </li>
+
             <!-- Blog Management -->
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -527,60 +553,57 @@
                 </ul>
             </li>
         </ul>
-    </li>
-    <!-- Reports -->
-    <li class="menu-item">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons ti ti-chart-pie"></i>
-            <div data-i18n="Sales Reports">Sales Reports</div>
-        </a>
-        <ul class="menu-sub">
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Custom Report">Custom Report</div>
-                </a>
-            </li>
-        </ul>
-    </li>
-    <!-- Settings -->
-    <li class="menu-item">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons ti ti-settings"></i>
-            <div data-i18n="Settings">Settings</div>
-        </a>
-        <ul class="menu-sub">
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="SMTP">SMTP Settings</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Email Settings">Email Settings</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Notification Settings">Notification Settings</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="SMTP">Language Settings</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Server Settings">Server Settings</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <div data-i18n="Security Settings">Security Settings</div>
-                </a>
-            </li>
-        </ul>
-    </li>
+    </li> --}}
+
+        <!-- Reports -->
+        <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-chart-pie"></i>
+                <div data-i18n="Sales Reports">Sales Reports</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <div data-i18n="Custom Report">Custom Report</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Settings -->
+        <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-settings"></i>
+                <div data-i18n="Settings">Settings</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <div data-i18n="Email Settings">Email Settings</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <div data-i18n="Notification Settings">Notification Settings</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <div data-i18n="SMTP">Language Settings</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <div data-i18n="Server Settings">Server Settings</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <div data-i18n="Security Settings">Security Settings</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
     </ul>
 </aside>
 <!-- Menu End -->

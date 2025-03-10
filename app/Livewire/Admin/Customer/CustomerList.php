@@ -12,10 +12,11 @@ class CustomerList extends Component
 
     public $customerId;
     public $first_name, $last_name, $email;
-    public $search = '', $perPage = 5, $isEditing = false;
+    public $search = '', $perPage = 25, $isEditing = false;
     public $sortField = 'first_name';
     public $sortDirection = 'asc';
     public $confirmingDeletion = false;
+    public $status = 'all';
 
     protected $rules = [
         'first_name' => 'required|string|max:255',
@@ -35,18 +36,28 @@ class CustomerList extends Component
                 $query->where(function ($subQuery) {
                     $subQuery->where('first_name', 'LIKE', '%' . $this->search . '%')
                              ->orWhere('last_name', 'LIKE', '%' . $this->search . '%')
-                             ->orWhere('email', 'LIKE', '%' . $this->search . '%');
+                             ->orWhere('email', 'LIKE', '%' . $this->search . '%')
+                             ->orWhere('company_name', 'LIKE', '%' . $this->search . '%')
+                             ->orWhere('billing_country', 'LIKE', '%' . $this->search . '%');
                 });
+            })
+            ->when($this->status !== 'all', function ($query) {
+                if ($this->status === 'active') {
+                    $query->whereNull('deleted_at');
+                } elseif ($this->status === 'inactive') {
+                    $query->whereNotNull('deleted_at');
+                }
             })
             ->withTrashed()
             ->orderBy($this->sortField, $this->sortDirection);
-
+    
         $customers = $query->paginate($this->perPage);
-
+        $perpagerecords = perpagerecords();
         return view('livewire.admin.customer.customer-list', [
             'customers' => $customers,
+            'perpagerecords' => $perpagerecords,
         ]);
-    }
+    }    
 
     public function updatedPerPage($value)
     {
@@ -70,9 +81,14 @@ class CustomerList extends Component
         $this->isEditing = true;
     }
 
-    public function edit(Customer $customer)
+    public function edit($id)
     {
-        return redirect()->route('admin.customer.add', ['id' => $customer->id]);
+        $customer = Customer::withTrashed()->find($id);
+        if ($customer->trashed()) {
+            notyf()->error('Customer is suspended. Please restore the customer first.');
+        } else {
+            $this->dispatch('openEditTab', route('admin.customer.add', ['id' => $customer->id]));
+        }
     }
 
     public function save()
@@ -137,6 +153,11 @@ class CustomerList extends Component
             $this->sortDirection = 'asc';
         }
 
+        $this->resetPage();
+    }
+    
+    public function updatedStatus()
+    {
         $this->resetPage();
     }
 }

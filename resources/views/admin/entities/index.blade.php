@@ -4,7 +4,5 @@
 @section('header', 'Admin Dashboard')
 
 @section('content')
-
-    @livewire('admin.entity-manager') <!-- This should work now -->
-
+    @livewire('admin.entity.entity-list')
 @endsection

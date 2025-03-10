@@ -12,7 +12,7 @@ class WarehouseList extends Component
 
     public $warehouseId;
     public $warehouse_name, $country, $type, $remarks;
-    public $search = '', $perPage = 5, $isEditing = false;
+    public $search = '', $perPage = 25, $isEditing = false;
     public $sortField = 'warehouse_name';
     public $sortDirection = 'asc';
     public $confirmingDeletion = false;
@@ -27,26 +27,6 @@ class WarehouseList extends Component
     public function mount()
     {
         $this->resetFields();
-    }
-
-    public function render()
-    {
-        $query = Warehouse::query()
-            ->when($this->search, function ($query) {
-                $query->where(function ($subQuery) {
-                    $subQuery->where('warehouse_name', 'LIKE', '%' . $this->search . '%')
-                             ->orWhere('country', 'LIKE', '%' . $this->search . '%')
-                             ->orWhere('type', 'LIKE', '%' . $this->search . '%');
-                });
-            })
-            ->withTrashed()
-            ->orderBy($this->sortField, $this->sortDirection);
-
-        $warehouses = $query->paginate($this->perPage);
-
-        return view('livewire.admin.warehouses.warehouse-list', [
-            'warehouses' => $warehouses,
-        ]);
     }
 
     public function updatedPerPage($value)
@@ -71,9 +51,16 @@ class WarehouseList extends Component
         $this->isEditing = true;
     }
 
-    public function edit(Warehouse $warehouse)
+    public function edit($id)
     {
-        return redirect()->route('admin.warehouses.add', ['id' => $warehouse->id]);
+        $warehouse = Warehouse::withTrashed()->find($id);
+
+        if ($warehouse->trashed()) {
+            notyf()->error('Cannot edit a suspended entity. Please restore it first.');
+            return;
+        }
+        
+        $this->dispatch('openEditTab', route('admin.warehouses.add', ['id' => $id]));
     }
 
     public function save()
@@ -139,5 +126,26 @@ class WarehouseList extends Component
         }
 
         $this->resetPage();
+    }
+
+    public function render()
+    {
+        $query = Warehouse::query()
+            ->when($this->search, function ($query) {
+                $query->where(function ($subQuery) {
+                    $subQuery->where('warehouse_name', 'LIKE', '%' . $this->search . '%')
+                        ->orWhere('country', 'LIKE', '%' . $this->search . '%')
+                        ->orWhere('type', 'LIKE', '%' . $this->search . '%');
+                });
+            })
+            ->withTrashed()
+            ->orderBy($this->sortField, $this->sortDirection);
+
+        $warehouses = $query->paginate($this->perPage);
+        $perpagerecords = perpagerecords();
+        return view('livewire.admin.warehouses.warehouse-list', [
+            'warehouses' => $warehouses,
+            'perpagerecords' => $perpagerecords,
+        ]);
     }
 }

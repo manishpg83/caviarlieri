@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Admin\User;
 
-
+use App\Models\User;
 use App\Models\Vendor;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -23,7 +23,7 @@ class UserList extends Component
         'name' => 'required|string|max:255',
         'email' => 'required|email|max:255|unique:users,email',
         'role' => 'required|string',
-        'status' => 'required|in:active,inactive', // Validate status
+        'status' => 'required|in:active,inactive',
     ];
 
     public function mount()
@@ -33,10 +33,11 @@ class UserList extends Component
 
     public function render()
     {
-        $query = Vendor::query()
+        $query = User::query()
             ->when($this->search, function ($query) {
                 $query->where('name', 'LIKE', '%' . $this->search . '%')
-                    ->orWhere('email', 'LIKE', '%' . $this->search . '%');
+                    ->orWhere('email', 'LIKE', '%' . $this->search . '%')
+                    ->orWhere('role', 'LIKE', '%' . $this->search . '%');
             })
             ->when($this->statusFilter !== 'all', function ($query) {
                 $query->where('status', $this->statusFilter);
@@ -45,9 +46,10 @@ class UserList extends Component
             ->orderBy($this->sortField, $this->sortDirection);
 
         $users = $query->paginate($this->perPage);
-
+        $perpagerecords = perpagerecords();
         return view('livewire.admin.user.user-list', [
             'users' => $users,
+            'perpagerecords' => $perpagerecords,
         ]);
     }
 
@@ -73,7 +75,7 @@ class UserList extends Component
             'role',
             'status'
         ]);
-        $this->status = 'active'; // Set default status
+        $this->status = 'active';
     }
 
     public function updated($propertyName)
@@ -87,18 +89,23 @@ class UserList extends Component
         $this->isEditing = true;
     }
 
-    public function edit(Vendor $vendor)
+    public function edit($id)
     {
-        return redirect()->route('admin.user.add', ['id' => $vendor->id]);
+        $user = User::withTrashed()->find($id);
+        if ($user->trashed()) {
+            notyf()->error('User is suspended. Please restore the user first.');
+        } else {
+            return redirect()->route('admin.user.add', ['id' => $user->id]);
+        }
     }
 
     public function save()
     {
         $this->validate();
 
-        $user = $this->userId ? Vendor::find($this->userId) : new Vendor();
+        $user = $this->userId ? User::find($this->userId) : new User();
 
-        $user->fill($this->only(['name', 'email', 'role', 'status'])); // Update to use status
+        $user->fill($this->only(['name', 'email', 'role', 'status']));
         $user->save();
 
         $this->isEditing = false;
@@ -107,7 +114,7 @@ class UserList extends Component
 
     public function delete()
     {
-        $user = Vendor::withTrashed()->find($this->userId);
+        $user = User::withTrashed()->find($this->userId);
 
         if ($user->trashed()) {
             $user->forceDelete();
@@ -125,7 +132,7 @@ class UserList extends Component
     public function confirmDelete($id)
     {
         $this->userId = $id;
-        $user = Vendor::withTrashed()->find($id);
+        $user = User::withTrashed()->find($id);
 
         if ($user->trashed()) {
             $this->confirmingDeletion = true;
@@ -136,14 +143,14 @@ class UserList extends Component
 
     public function restore($id)
     {
-        $user = Vendor::withTrashed()->find($id);
+        $user = User::withTrashed()->find($id);
         $user->restore();
         $user->status = 'active';
         $user->save();
         notyf()->success('User restored successfully.');
     }
 
-    public function toggleActive(Vendor $user)
+    public function toggleActive(User $user)
     {
         if (!$user->trashed()) {
             $user->status = $user->status === 'active' ? 'inactive' : 'active';

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Vendor;
 
 use App\Http\Controllers\Controller;
-use App\Models\Vendor;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -22,8 +22,9 @@ class AuthController extends Controller
             'password' => ['required'],
         ]);
 
-        if (Auth::guard('vendor')->attempt($credentials)) {
+        if (Auth::guard('web')->attempt($credentials)) {
             $request->session()->regenerate();
+
             return redirect()->intended(route('vendor.dashboard'));
         }
 
@@ -46,7 +47,7 @@ class AuthController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
 
-        $vendor = Vendor::create([
+        $vendor = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'shop_name' => $request->shop_name,
@@ -56,16 +57,17 @@ class AuthController extends Controller
         // Assign default role
         $vendor->assignRole('vendor-readonly');
 
-        Auth::guard('vendor')->login($vendor);
+        Auth::guard('web')->login($vendor);
 
         return redirect()->route('vendor.dashboard');
     }
 
     public function logout(Request $request)
     {
-        Auth::guard('vendor')->logout();
+        Auth::guard('web')->logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
+
         return redirect()->route('vendor.login');
     }
 }

@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Livewire\Admin\Customerstype;
 
 use App\Models\CustomerType;
@@ -10,7 +11,7 @@ class CustomerTypeList extends Component
     use WithPagination;
 
     public $customer_type, $customerTypeId;
-    public $perPage = 5;
+    public $perPage = 25;
     public $status = 'active';
     public $search = '';
     public $confirmingDeletion = false;
@@ -60,7 +61,13 @@ class CustomerTypeList extends Component
 
     public function editCustomerType($id)
     {
-        return redirect()->route('admin.customerstype.add', ['id' => $id]);
+        $customerType = CustomerType::withTrashed()->find($id);
+
+        if ($customerType->trashed()) {
+            notyf()->error('Cannot edit a suspended customer type. Please restore it first.');
+            return;
+        }
+        $this->dispatch('openEditTab', route('admin.customerstype.add', ['id' => $id]));
     }
 
     public function updateCustomerType()
@@ -103,9 +110,11 @@ class CustomerTypeList extends Component
             ->withTrashed()
             ->orderBy('id')
             ->paginate($this->perPage);
+        $perpagerecords = perpagerecords();
 
         return view('livewire.admin.customerstype.customer-type-list', [
-            'customerTypes' => $customerTypes
+            'customerTypes' => $customerTypes,
+            'perpagerecords' => $perpagerecords,
         ]);
     }
 }

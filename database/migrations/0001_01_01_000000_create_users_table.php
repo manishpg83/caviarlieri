@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
+    /** 
      * Run the migrations.
      */
     public function up(): void
@@ -14,9 +14,24 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('first_name', 25)->nullable();
+            $table->string('last_name', 50)->nullable();
+            $table->date('date_of_birth')->nullable();
+            $table->string('company', 100)->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('type')->default('customer');
             $table->string('password');
+            $table->string('status')->default('active');
+            $table->string('profile_photo_path')->nullable();
+            $table->string('profile_photo_url')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('address')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
+            $table->string('zip')->nullable();
+            $table->string('country')->nullable();
+            $table->foreignId('created_by')->nullable()->constrained('users');
             $table->rememberToken();
             $table->softDeletes();
             $table->timestamps();

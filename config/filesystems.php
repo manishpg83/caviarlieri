@@ -40,11 +40,20 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
             'throw' => false,
         ],
-
+        'custom_profile_images' => [
+            'driver' => 'local',
+            'root' => public_path('admin/assets/img/profile_img'),  // Updated path
+            'url' => env('APP_URL').'/admin/assets/img/profile_img',
+            'visibility' => 'public',
+        ],
+        'custom_product_images' => [
+            'driver' => 'local',
+            'root' => public_path('product_img'), // This points to /var/www/html/Projects/celergene/public/product_img
+        ],
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

@@ -2,24 +2,28 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Inventory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Notifications\Notifiable;
 
 class Warehouse extends Model
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes, Notifiable;
 
     protected $fillable = [
         'warehouse_name',
         'country',
+        'address',
+        'email',
+        'phone',
         'type',
         'remarks',
         'created_by',
         'modified_by',
     ];
 
-    // Optionally, define relationships if needed
     public function creator()
     {
         return $this->belongsTo(User::class, 'created_by');
@@ -29,4 +33,15 @@ class Warehouse extends Model
     {
         return $this->belongsTo(User::class, 'modified_by');
     }
+
+    public function inventories()
+    {
+        return $this->hasMany(Inventory::class, 'warehouse_id');
+    }
+    
+    public function emails()
+    {
+        return $this->hasMany(WarehouseEmail::class);
+    }
+
 }

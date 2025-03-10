@@ -12,14 +12,16 @@ class CreateWarehousesTable extends Migration
             $table->string('warehouse_name');
             $table->string('country');
             $table->string('type');
+            $table->string('address');
+            $table->string('phone');
             $table->text('remarks')->nullable();
             $table->softDeletes();
             $table->unsignedBigInteger('created_by');
             $table->timestamps();
             $table->unsignedBigInteger('modified_by')->nullable();
 
-            $table->foreign('created_by')->references('id')->on('admins')->onDelete('cascade');
-            $table->foreign('modified_by')->references('id')->on('admins')->onDelete('set null');
+            $table->foreign('created_by')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('modified_by')->references('id')->on('users')->onDelete('set null');
         });
     }
 

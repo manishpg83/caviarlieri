@@ -9,26 +9,25 @@
     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
         <!-- Search -->
         <div class="navbar-nav align-items-center">
-            <div class="nav-item navbar-search-wrapper mb-0">
+           {{--  <div class="nav-item navbar-search-wrapper mb-0">
                 <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
                     <i class="ti ti-search ti-md me-2 me-lg-4 ti-lg"></i>
                     <span class="d-none d-md-inline-block text-muted fw-normal">Search (Ctrl+/)</span>
                 </a>
-            </div>
+            </div> --}}
         </div>
         <!-- /Search -->
 
         <ul class="navbar-nav flex-row align-items-center ms-auto">
-
             <!-- User -->
             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow p-0" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                        @if ($admin->profile_image)
-                            <img src="{{ asset('storage/' . $admin->profile_image) }}" alt="user-avatar"
+                        @if ($admin->profile_photo_path)
+                            <img src="{{ asset($admin->profile_photo_path) }}" alt="user-avatar"
                                 class="d-block rounded" height="100" width="100" />
                         @else
-                            <img src="{{ asset('/admin/assets/img/avatars/1.png') }}" alt class="rounded-circle" />
+                            <img src="{{ asset('/admin/assets/img/avatars/profile_icon.jpeg') }}" alt class="rounded-circle" />
                         @endif
                     </div>
                 </a>
@@ -38,11 +37,11 @@
                             <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0 me-2">
                                     <div class="avatar avatar-online">
-                                        @if ($admin->profile_image)
-                                            <img src="{{ asset('storage/' . $admin->profile_image) }}" alt="user-avatar"
+                                        @if ($admin->profile_photo_path)
+                                            <img src="{{ asset($admin->profile_photo_path) }}" alt="user-avatar"
                                                 class="d-block rounded" height="100" width="100" />
                                         @else
-                                            <img src="{{ asset('/admin/assets/img/avatars/1.png') }}" alt
+                                            <img src="{{ asset('/admin/assets/img/avatars/profile_icon.jpeg') }}" alt
                                                 class="rounded-circle" />
                                         @endif
                                     </div>

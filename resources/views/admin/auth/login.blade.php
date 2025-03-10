@@ -50,12 +50,9 @@
 
     <!-- Helpers -->
     <script src="{{ asset('admin/assets/vendor/js/helpers.js') }}"></script>
-    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
 
-    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
     <script src="{{ asset('admin/assets/vendor/js/template-customizer.js') }}"></script>
 
-    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="{{ asset('admin/assets/js/config.js') }}"></script>
 
     @livewireStyles
@@ -69,7 +66,6 @@
             <div class="authentication-inner py-6">
                 <div class="card">
                     <div class="card-body">
-                        <!-- Logo -->
                         <div class="app-brand justify-content-center mb-6">
                             <a href="index.html" class="app-brand-link">
                                 <span class="app-brand-text demo text-heading fw-bold"></span>
@@ -77,11 +73,9 @@
                                     alt="Celergen Swiss" width="auto" height="40">
                             </a>
                         </div>
-                        <!-- /Logo -->
                         <h4 class="mb-1">Welcome to Celergen Swiss! 👋</h4>
                         <p class="mb-6">Please sign-in to your account and start the adventure</p>
 
-                        <!-- Display success or error messages -->
                         @if (session('success'))
                             <div class="alert alert-success" role="alert">
                                 {{ session('success') }}
@@ -114,7 +108,7 @@
                                     <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center my-3">
+                            <!-- <div class="d-flex justify-content-between align-items-center my-3">
                                 <div class="form-check mb-0">
                                     <input class="form-check-input" type="checkbox" id="remember-me" />
                                     <label class="form-check-label" for="remember-me"> Remember Me </label>
@@ -122,7 +116,7 @@
                                 <a href="{{ route('admin.password.request') }}">
                                     <small>Forgot Password?</small>
                                 </a>
-                            </div>
+                            </div> -->
                             <div class="mb-6">
                                 <button class="btn btn-primary d-grid w-100" type="submit">Login</button>
                             </div>

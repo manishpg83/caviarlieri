@@ -30,6 +30,7 @@
                                     <label class="form-label" for="country">Country</label>
                                     <select wire:model="country" id="country" class="form-select" data-allow-clear="true">
                                         <option value="">Select</option>
+                                        <option value="HK">Hong Kong</option>
                                         <option value="SIN">Singapore</option>
                                         <option value="CHI">China</option>
                                         <option value="SWI">Switzerland</option>
@@ -147,10 +148,20 @@
                                 </div>
 
                                 <div class="col-12 mt-4">
-                                    <button wire:click.prevent="save" class="btn btn-primary">
-                                        {{ $entityId ? 'Update Entity' : 'Add Entity' }}
+                                    <button 
+                                        wire:click.prevent="save" 
+                                        class="btn btn-primary" 
+                                        wire:loading.attr="disabled"
+                                    >
+                                        <span wire:loading.remove>
+                                            {{ $entityId ? 'Update Entity' : 'Add Entity' }}
+                                        </span>
+                                        <span wire:loading>
+                                            <i class="fas fa-spinner fa-spin"></i> Saving...
+                                        </span>
                                     </button>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>

@@ -10,7 +10,7 @@ class ProductList extends Component
 {
     use WithPagination;
 
-    public $perPage = 5;
+    public $perPage = 25;
     public $search = '';
     public $confirmingDeletion = false;
     public $productId;
@@ -26,9 +26,10 @@ class ProductList extends Component
                     ->orWhere('brand', 'like', '%' . $this->search . '%');
             })
             ->paginate($this->perPage);
-
+        $perpagerecords = perpagerecords();
         return view('livewire.admin.products.product-list', [
             'products' => $products,
+            'perpagerecords' => $perpagerecords,
         ]);
     }
 
@@ -66,6 +67,13 @@ class ProductList extends Component
 
     public function edit($id)
     {
-        return redirect()->route('admin.products.add', ['id' => $id]);
+        $product = Product::withTrashed()->find($id);
+
+        if ($product->trashed()) {
+            notyf()->error('Cannot edit a suspended entity. Please restore it first.');
+            return;
+        }
+        
+        $this->dispatch('openEditTab', route('admin.products.add', ['id' => $id]));
     }
 }

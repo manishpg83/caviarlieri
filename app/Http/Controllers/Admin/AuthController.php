@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Password;
 
@@ -17,25 +18,27 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
+            'email' => 'required|email',
+            'password' => 'required',
         ]);
 
-        if (Auth::guard('admin')->attempt($credentials)) {
+        if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
+            notyf()->success('Login successful');
 
-            return redirect()->intended(route('admin.dashboard'))->with('success', 'Login successful!');
+            return redirect()->intended(config('auth.redirect.admin', '/admin/dashboard'));
         }
 
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
-        ])->withInput();
+        ]);
     }
 
     public function showRegistrationForm()
     {
         return view('admin.auth.register');
     }
+
     public function register(Request $request)
     {
         $request->validate([
@@ -44,13 +47,13 @@ class AuthController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
 
-        $admin = \App\Models\Admin::create([
+        $admin = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => bcrypt($request->password),
         ]);
 
-        Auth::guard('admin')->login($admin);
+        Auth::login($admin);
 
         return redirect()->route('admin.dashboard');
     }
@@ -64,7 +67,7 @@ class AuthController extends Controller
     {
         $request->validate(['email' => 'required|email']);
 
-        $status = Password::broker('admins')->sendResetLink(
+        $status = Password::broker('users')->sendResetLink(
             $request->only('email'),
             function ($user, $token) {
                 $user->sendPasswordResetNotification($token);
@@ -80,7 +83,6 @@ class AuthController extends Controller
         ]);
     }
 
-
     public function showResetPasswordForm($token)
     {
         return view('admin.auth.reset-password', ['token' => $token, 'email' => request('email')]);
@@ -94,11 +96,11 @@ class AuthController extends Controller
             'password' => 'required|min:8|confirmed',
         ]);
 
-        $status = Password::broker('admins')->reset(
+        $status = Password::broker('users')->reset(
             $request->only('email', 'password', 'password_confirmation', 'token'),
             function ($user, $password) {
                 $user->forceFill([
-                    'password' => bcrypt($password)
+                    'password' => bcrypt($password),
                 ])->save();
             }
         );
@@ -110,9 +112,10 @@ class AuthController extends Controller
 
     public function logout(Request $request)
     {
-        Auth::guard('admin')->logout();
+        Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
+
         return redirect()->route('admin.login');
     }
 }
