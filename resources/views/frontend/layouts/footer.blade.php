@@ -1,60 +1,58 @@
-<section class="footer" style="font-size: 12px;">
-   <div class="container-fluid bg-grey px-3 px-lg-0 py-5">
-      <div class="container">
+<section class="footer section">
+   <div class="container-fluid" style=" background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/mountain-footer.jpg'); background-repeat: no-repeat; background-position:top; background-size: cover; padding: 85px 0; color: #FFFFFF">
+      <div class="col-lg-9 col-md-10 m-auto float-none px-4">
          <div class="row">
-            <div class="col-lg-4 AdelleSansRegular text-lg-start text-center order-2 order-lg-1">
-               <h5 class="text-blue mb-3"> CONTACT US </h5>
-               <p class="text-darkgrey ">
-                  EMAIL: <span class="ps-lg-3 ps-0"> marketing@celergenswiss.com </span>
-               </p>
+            <div class="col-lg-7 col-md-7">
+               <h6 class="h6"><strong>MENU</strong></h6>
                <div class="row">
-                  <div class="col-lg-1 pe-lg-5 pe-0">
-                     <p class="text-darkgrey mb-0">OFFICE: </p>
+                  <div class="col-lg-4 col-md-6 footer-menu">
+                     <ul>
+                        <li><a href="swiss-cellular-therapy.php">SWISS CELL THERAPY</a></li>
+                        <li><a href="outstanding-benefits.php">BENEFITS</a></li>
+                        <li><a href="clinical-science.php">SCIENTIFIC STUDIES</a></li>
+                        <li><a href="experts-opinions.php">REVIEWS</a></li>
+                     </ul>
                   </div>
-                  <div class="col-lg-7 ps-lg-4 ps-0">
-                     <p class="text-darkgrey mb-0">
-                        Celergen SA, 2C Rue Nicolas Bové, L-1253 Luxembourg
-                     </p>
-                     <p class="text-darkgrey mb-0">Grand Duchy of Luxembourg</p>
+                  <div class="col-lg-6 col-md-6 footer-menu mb-3">
+                     <ul>
+                        <li><a href="key-ingredients.php">KEY INGREDIENTS</a></li>
+                        <li><a href="luxury-of-caviar.php">LUXURY OF CAVIAR</a></li>
+                        <li><a href="blog.php">BLOG</a></li>
+                        <li><a href="contact.php">CONTACT US</a></li>
+                     </ul>
                   </div>
                </div>
+
+
             </div>
-            <div class="col-lg-8 text-lg-start text-center AdelleSansRegular order-1 order-lg-2">
-               <h5 class="text-blue mb-3"> SIGN UP FOR OUR NEWSLETTER </h5>
-               <form class="form-group">
-                 <div class="row">
-                    <div class="col-lg-6 mb-3">
-                       <input type="email" class="border-0 rounded-0 px-2 py-3 w-100" placeholder="Your Email" required="">
-                    </div>
-                    <div class="col-lg-3">
-                       <input type="submit" value="SUBSCRIBE" class="btn red-btn rounded-0 bg-darkred py-3 w-100 border-0 text-white">
-                    </div>
-                    <div class="col-lg-3 d-flex align-items-center p-3 justify-content-lg-start justify-content-center mb-md-4">
-                       <div class="">
-                          <a class="me-4  d-inline" href="https://www.facebook.com/CelergenSwiss" target="_blank"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/common/ic_fb-gray.png" alt=""></a>
-                          <a class="me-4  d-inline" href="https://www.instagram.com/celergeneurope" target="_blank"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/common/ic_instagram_gray.png" alt=""></a>
-                          <a class="d-inline" href="https://twitter.com/CelergenSocial" target="_blank"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/common/ic_twitter-gray.png" alt=""></a>
-                       </div>
-                    </div>
-                 </div>
-              </form>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="container-fluid py-4 footer-bottom">
-      <div class="container-lg px-0 px-lg-2">
-         <div class="row">
-            <div class="col-xl-7 col-lg-6 mt-3 mt-lg-0 text-center text-lg-start order-2 order-lg-1">
-               <p class="m-0 d-none d-lg-block">© Celergen International Limited. All Rights Reserved.</p>
-               <p class="m-0 d-block d-lg-none">© Celergen SA. All Rights Reserved.</p>
-            </div>
-            <div class="col-xl-5 col-lg-6 text-lg-end text-center order-1 order-lg-2">
-               <div class="row">
-                  <div class="col-lg-4"><a href="privacy-policy.php" class="py-1 text-dark footer-link">PRIVACY POLICY</a></div>
-                  <div class="col-lg-3"><a href="authenticity.php" class="py-1 text-dark footer-link">AUTHENTICITY</a></div>
-                  <div class="col-lg-5"><a href="terms-and-condition.php" class="py-1 text-dark footer-link">TERMS AND CONDITIONS</a></div>
+
+            <div class="col-lg-5 col-md-5">
+               <h6 class="h6 mb-3"><strong>SIGN UP TO OUR NEWSLETTER</strong></h6>
+               <form action="signup.php" method="post">
+                  <div class="row">
+                     <div class="col-lg-8 col-md-12 mb-3">
+                        <input type="text" value="" class="form-control footer-input" required="">
+                     </div>
+                     <div class="col-lg-4 col-md-12">
+                        <input type="submit" class="white-btn w-100" style="font-weight: 400; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; line-height: 1;" value="signup">
+
+                        <!--<a href="#"  class="white-btn w-100"><span class="btn-content-wrapper"><span class="btn-content-text"><strong>signup</strong></span></span></a>-->
+                     </div>
+                  </div>
+               </form>
+               <div class="footer-icons col-lg-12 mt-5 text-center text-md-end">
+                  <ul class="d-inline-block">
+                     <li><a href="https://www.facebook.com/caviarlieri?_rdc=2&amp;_rdr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                     <li><a href="https://www.instagram.com/caviarlieri/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     <li><a href="https://twitter.com/caviarlieri" target="_blank"><i class="fa fa-twitter"></i></a></li>
+
+                     <li><a href="https://www.youtube.com/channel/UCAOi_ZyZHt20T3k-YXThp9Q" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                  </ul>
+                  <p class="text-center text-md-end">© 2024 Caviarlieri. All Rights Reserved</p>
+                  <p class="text-center text-md-end pt-3"> <a href="terms-and-conditions.php" class=" text-decoration-none text-white"> Terms And Conditions </a> </p>
                </div>
+
+
             </div>
          </div>
       </div>

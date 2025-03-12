@@ -5,891 +5,521 @@
 
 @section('content')
     <!--Swiper Banner Start -->
-<section>
-    <div class="container-fluid px-0">
-      <div class="home-slider owl-carousel owl-theme owl-loaded">
-        <div class="owl-stage-outer">
-          <div class="owl-stage"
-            style="transform: translate3d(-8967px, 0px, 0px); transition: all; width: 14091px;">
-            <div class="owl-item" style="width: 1281px;">
-              <div class="item home-slide-item"
-                style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/home-slide1.jpg');">
-                <div class="slide1-text-box">
-                  <h2 class="h2 text-blue mb-2 mb-lg-4">The Only Non-Injectable <br>Swiss Marine Cell Therapy
-                    <br>Supplement In The World </h2>
-                  <a href="{{ route ('about') }}" class="a-btn blue-btn1">learn more</a>
+    <div class="page-content bg-light">
+        <!--banner-->
+        <div class="container-fluid px-0">
+			<div id="home-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
+				
+				
+
+				
+
+
+			<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2570px, 0px, 0px); transition: all; width: 8995px;"><div class="owl-item cloned" style="width: 1285px;"><div class="item">
+					<img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner1.jpg" alt="" width="100%">
+					<div class="home-banner-container">
+						<div class="banner1-txt">
+							<h1 class="h1">ENDURING YOUTH <br>IS A DREAM NO LONGER</h1>
+							<div class="p-3" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 30px;" alt=""></div>
+							<p class="text-uppercase mb-lg-5 mt-lg-3 mb-3 mt-1  GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
+							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 1285px;"><div class="item">
+					<img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner2.jpg" alt="" width="100%">
+					<div class="home-banner-container">
+						<div class="banner2-txt">
+							<h1 class="h1">MAKE YOUR <br>CELLS YOUNG AGAIN </h1>
+							<div class="p-3" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 30px;" alt=""></div>
+							<p class="text-uppercase  mb-lg-5 mt-lg-3 mb-3 mt-1 GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
+							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item active" style="width: 1285px;"><div class="item">
+					<div class="video-wrapper">
+						<video autoplay="" muted="" loop="" playsinline="" preload="metadata" class="video-slide">
+							<source src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/Video-Bg.mp4" type="video/mp4" style="width: 100%">
+						</video>
+					</div>
+				</div></div><div class="owl-item" style="width: 1285px;"><div class="item">
+					<img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner1.jpg" alt="" width="100%">
+					<div class="home-banner-container">
+						<div class="banner1-txt">
+							<h1 class="h1">ENDURING YOUTH <br>IS A DREAM NO LONGER</h1>
+							<div class="p-3" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 30px;" alt=""></div>
+							<p class="text-uppercase mb-lg-5 mt-lg-3 mb-3 mt-1  GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
+							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item" style="width: 1285px;"><div class="item">
+					<img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner2.jpg" alt="" width="100%">
+					<div class="home-banner-container">
+						<div class="banner2-txt">
+							<h1 class="h1">MAKE YOUR <br>CELLS YOUNG AGAIN </h1>
+							<div class="p-3" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 30px;" alt=""></div>
+							<p class="text-uppercase  mb-lg-5 mt-lg-3 mb-3 mt-1 GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
+							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 1285px;"><div class="item">
+					<div class="video-wrapper">
+						<video autoplay="" muted="" loop="" playsinline="" preload="metadata" class="video-slide">
+							<source src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/Video-Bg.mp4" type="video/mp4" style="width: 100%">
+						</video>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 1285px;"><div class="item">
+					<img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner1.jpg" alt="" width="100%">
+					<div class="home-banner-container">
+						<div class="banner1-txt">
+							<h1 class="h1">ENDURING YOUTH <br>IS A DREAM NO LONGER</h1>
+							<div class="p-3" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 30px;" alt=""></div>
+							<p class="text-uppercase mb-lg-5 mt-lg-3 mb-3 mt-1  GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
+							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
+						</div>
+					</div>
+				</div></div></div></div><div class="owl-nav disabled"><div aria-hidden="true" class="fa owl-prev fa-angle-left"></div><div class="fa owl-next fa-angle-right"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+			<!--home slider for mobile -->
+			<div id="home-slider-mobile" class="owl-carousel owl-theme owl-loaded owl-drag" style="">
+				
+
+				
+
+				
+			<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all;"><div class="owl-item"><div class="item mob-banner1" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/banner1M.jpg'); background-repeat: no-repeat;">
+					<div class="home-banner-container">
+						<div class="banner1-txt">
+							<h2>ENDURING YOUTH <br>IS A DREAM NO LONGER</h2>
+							<div class="p-2" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 25px;" alt=""></div>
+							<p class="text-uppercase mb-3 mt-1 GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
+							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item"><div class="item mob-banner2" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/banner2M.jpg'); background-repeat: no-repeat;">
+					<div class="home-banner-container">
+						<div class="banner2-txt">
+							<h2>MAKE YOUR <br>CELLS YOUNG AGAIN </h2>
+							<div class="p-2" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 25px;" alt=""></div>
+							<p class="text-uppercase mb-3 mt-1 GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
+							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item"><div class="item mob-banner3">
+					<div class="video-wrapper">
+						<video autoplay="" muted="" loop="" playsinline="" preload="metadata" class="video-slide">
+							<source src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/Video-Bg.mp4" type="video/mp4" style="width: 100%">
+						</video>
+					</div>
+				</div></div></div></div><div class="owl-nav disabled"><div aria-hidden="true" class="fa owl-prev fa-angle-left"></div><div class="fa owl-next fa-angle-right"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+
+			<!--home  slider for mobile slider-->
+		</div>
+        <!--banner-->
+        <!-- Product Start-->
+        <section class="content-inner bg-light">
+            <div class="container">
+                <div class="section-head style-1 wow fadeInUp text-start" data-wow-delay="0.1s" style="margin-bottom: 20px">
+                    <div class="" style="text-align: center;">
+                        <h2 class="title">YOUTH, VITALITY AND
+                            TIMELESS BEAUTY WITH <span style="color: #817552">CAVIAR</span></h2>
+                    </div>
                 </div>
-              </div>
+
+                <div class="row product-style1">
+                    <p style="text-align: center">
+                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" alt="image"><br><br>
+                    </p>
+
+                    <div class="col-lg-12 col-md-12 GothamLight text-grey2"
+                        style="text-align: center; padding-left:20%; padding-right:20%; font-size: 22px; ">
+                        <p>In the rarefied air of the Swiss Alps, the secret to enduring youth has been unearthed. Through a
+                            process named Swiss Cellular Therapy, each of our cells can be directly energized, stimulated
+                            and replenished. All by harnessing the natural benefits of that most storied and prestigious of
+                            indulgences, Black Sturgeon Caviar.</p>
+
+                        <p style="padding-top:20px;"> <a href="#"
+                                class="btn btn-secondary btn-lg text-uppercase">DISCOVER</a>
+                        </p>
+
+                        <p style="text-align: center; font-size: 22px; padding-top: 25px; padding-bottom: 50px">Caviarlieri
+                            is made only in Switzerland.</p>
+                    </div>
+                    <br>
+
+                    <p style="text-align: center; padding: 0px">
+                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner3.jpg" alt="image"><br><br>
+                    </p>
+
+                    <div class="" style="text-align: center; padding-top: 30px; padding-bottom: 60px;">
+                        <h2 class="title" style="font-size: 52px">RESET YOUR AGE. MAKE YOUR CELLS<br>
+                            <span style="color: #817552">YOUNG AGAIN</span>
+                        </h2>
+                    </div>
+
+
+                </div>
             </div>
-            <div class="owl-item" style="width: 1281px;">
-              <div class="item home-slide-item"
-                style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/home-slide2.jpg');">
-                <div class="slide2-text-box">
-                  <h2 class="h2 text-white mb-2 mb-lg-4">Significantly Reduce<br>Joint Pain and Increase Mobility
-                  </h2>
-                  <a href="{{ route ('joinpainreduction') }}" class="a-btn blue-btn1">learn more</a>
+            <!-- </section> -->
+
+
+            <!-- <section class="section"> -->
+            <div class="container-fluid" style="background-color: #000810">
+                <div class="col-lg-9 col-md-9 m-auto float-none">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5">
+                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/image-27.png"
+                                width="120%" alt="" style="max-width: 110%">
+                        </div>
+                        <div class="col-lg-7 col-md-7 d-flex align-content-center align-items-center" align="center">
+                            <div class="col-lg-10 col-md-12 py-5 float-none m-auto">
+                                <h1 class="text-white h1" style="font-size: 50px; letter-spacing: .025em;">ACTIVATE YOUR<br>
+                                    ANTI-AGING GENES</h1>
+                                <p style="color: #C8C3C3; font-size: 18px;padding-top:10px">Caviarlieri is clinically tested
+                                    and scientifically proven
+                                    to combat the effects of biological aging</p>
+
+                                <div class="p-3 mb-4">
+                                    <a href="#" class="btn btn-secondary btn-lg text-uppercase">Order Now</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="owl-item" style="width: 1281px;">
-              <div class="item home-slide-item"
-                style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/home-slide3.jpg');">
-                <div class="slide3-text-box">
-                  <h2 class="h2 text-blue mb-2 mb-lg-4">A Celebrity's Secret for<br>Ageless Beauty </h2>
-                  <a href="{{ route ('beautyenhancement') }}" class="a-btn blue-btn1">learn more</a>
+            <!-- </section> -->
+
+            <!-- <section class="section"> -->
+            <div class="col-lg-8 col-md-10 m-auto py-5 px-4 float-none" align="center">
+                <div>
+                    <h1 class="text-uppercase h1 mb-4" style="font-size: 50px; letter-spacing: .025em; padding-top: 40px; ">
+                        This Is No Miracle. This Is <span style="color:#817552">Science </span></h1>
+                    <p class="text-uppercase" style="font-size: 20px">A Leader in Scientific Research for Biological Aging
+                    </p>
                 </div>
-              </div>
+                <div class="section1">
+                    <h4 class="text-uppercase section h4" style="padding-bottom: 10px;">1. Gene Activity Studies on <span
+                            style="color:#817552">CAVIARLIERI </span></h4>
+                    <p class="GothamLight text-grey2">This is the new frontier of science where the gene activity levels
+                        (mRNA gene expression) levels of clinical subjects are measured before and after taking Caviarlieri.
+                        The studies show significant therapeutic outcomes on key anti-aging biomarkers.</p>
+                    <div class="p-3 mb-4"><a href="clinical-science.php" class="gold-btn"><span
+                                class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a></div>
+                </div>
+
+                <div class="p-3 mb-3"><img src="images/home/Vector.png" width="30" alt=""></div>
+
+                <div class="section1">
+                    <h4 class="text-uppercase section h4" style="padding-bottom: 10px;">2. PEER-REVIEWED SCIENTIFIC STUDIES
+                        ON <span style="color:#817552">CAVIARLIERI </span></h4>
+                    <p class="GothamLight text-grey2">These studies, which are published in PubMed and Europe PMC, validated
+                        the outstanding benefit claims of Caviarlieri as a potent caviar supplement, which can help delay
+                        the onset and progression of aging and chronic degenerative diseases.</p>
+                    <div class="p-3 mb-4"><a href="clinical-science.php" class="gold-btn"><span
+                                class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a></div>
+                </div>
+
+                <div class="p-3 mb-3"><img src="images/home/Vector.png" width="30" alt=""></div>
+
+                <div class="section1">
+                    <h4 class="text-uppercase section h4" style="padding-bottom: 10px;">3. EMPIRICAL STUDIES ON KEY
+                        INGREDIENTS OF <span style="color:#817552">CAVIARLIERI </span></h4>
+                    <p class="GothamLight text-grey2">Randomized double blind placebo empirical studies on the key
+                        ingredients of Caviarlieri demonstrated and validated the benefits experienced by clinical subjects
+                        from the inherent and known properties of the bioactive ingredients encapsulated in Caviarlieri.</p>
+                    <div class="p-3 mb-4"><a href="clinical-science.php" class="gold-btn"><span
+                                class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a></div>
+                </div>
+
             </div>
-            <div class="owl-item" style="width: 1281px;">
-              <div class="item home-slide-item"
-                style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/home-slide4.jpg');">
-                <div class="slide4-text-box">
-                  <h2 class="h2 text-blue mb-2 mb-lg-4">Regain Vibrant Youth<br>Energy and Vitality</h2>
-                  <a href="{{ route ('energyandvitality') }}" class="a-btn blue-btn1">learn more</a>
+            <!-- </section>
+      
+      <section> -->
+            <div class="container-fluid"
+                style="background-image:url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/bg2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 50px 0">
+                <div class="col-lg-10 col-md-11 float-none m-auto" align="center">
+
+                    <h1 style="color: #FFFFFF; line-height: 1.2;" class="h1 mb-4 px-2">PHARMACEUTICAL GRADE CAVIAR
+                        SUPPLEMENT <br> <span style="color: #ffdf9d;">OUTSTANDING BENEFITS</span></h1>
+                    <div class="col-lg-10 col-md-12 float-none m-auto" align="center">
+                        <div class="row m-0">
+                            <div class="col-md-3 px-0 py-md-3">
+                                <div class="boost position-relative h-100">
+                                    <p class="my-auto "><a class="anchor" href="increase-cellular-energy.php"
+                                            style="color: #fff;">Energy Boost </a></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-0  py-md-3">
+                                <div class="boost position-relative h-100">
+                                    <p class="my-auto "><a class="anchor" href="brain-enhancement.php"
+                                            style="color: #fff;">Brain Enhancement </a></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-0  py-md-3">
+                                <div class="boost">
+                                    <p class="my-auto "><a class="anchor" href="metabolic-syndrome.php"
+                                            style="color: #fff;"> Alleviate Metabolic Syndrome </a></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-0  py-md-3">
+                                <div class="boost position-relative h-100">
+                                    <p class="my-auto "><a class="anchor" href="beauty-enhancement.php"
+                                            style="color: #fff;">Ageless Beauty</a></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-0  py-md-3">
+                                <div class="boost">
+                                    <p class="my-auto "><a class="anchor" href="joint-pain.php"
+                                            style="color: #fff;">Joint Pain Reduction</a></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-0  py-md-3">
+                                <div class="boost">
+                                    <p class="my-auto p"><a class="anchor" href="mental-health.php"
+                                            style="color: #fff;">Better Sleep</a></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-0  py-md-3">
+                                <div class="boost">
+                                    <p class="my-auto "><a class="anchor" href="improve-sperm-quality.php"
+                                            style="color: #fff;">Sexual Performance</a></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-0  py-md-3">
+                                <div class="boost position-relative h-100">
+                                    <p class="my-auto "><a class="anchor" href="inflammation.php"
+                                            style="color: #fff;">Anti-Inflammatory</a></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-0  py-md-3">
+                                <div class="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-0  py-md-3">
+                                <div class="boost">
+                                    <p class="my-auto"><a class="anchor" href="immunity.php" style="color: #fff;">Immune
+                                            Resilience</a></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-0  py-md-3">
+                                <div class="boost position-relative h-100">
+                                    <p class="my-auto"><a class="anchor" href="osteoporosis.php"
+                                            style="color: #fff;">Bone Health</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12" align="center">
+                        <div class="py-2 mt-3 mt-md-0 py-md-5">
+                            <a href="outstanding-benefits.php" class="white-btn"><span class="btn-content-wrapper"><span
+                                        class="btn-content-text">Read More</span></span></a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="owl-item animated owl-animated-in fadeIn active" style="width: 1281px;">
-              <div class="item home-slide-item"
-                style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/home-slide5.jpg');">
-                <div class="slide5-text-box text-lg-end text-center">
-                  <h2 class="h2 text-blue text-center text-lg-end mb-2 mb-lg-4 fadeIn">The Transformative Power of
-                    <br>Swiss Marine Cell Therapy</h2>
-                  <a href="{{ route ('celergenreviews') }}" class="a-btn blue-btn1 fadeIn2">learn more</a>
-                </div>
-              </div>
+            <!-- </section>
+
+      <section> -->
+            <div class="col-lg-8 col-md-8 m-auto float-none px-3" style="padding: 100px 0">
+                <h1 class="h1 text-center text-md-start" style="font-weight: 400;">TRUSTED BY <span
+                        style="color:#817552 !important;">OLYMPIANS</span></h1>
+                <h1 class="h1 text-center text-md-end" style="font-weight: 400;">AND <span
+                        style="color:#817552 !important;">PROFESSIONAL ATHLETES.</span></h1>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-  <!--Swiper Banner End-->
+            <!-- </section>
 
-  <!-- Product Start-->
-  <section>
-    <div class="container-fluid px-0 based-benefits-bg pt-4">
-       <div class="col-lg-10 float-none mx-auto px-4 px-lg-0">
-          <header>
-             <h1 class="section-heading text-center text-blue  px-5 py-4"> EVIDENCE BASED BENEFITS </h1>
-          </header>
-          <div class="row pt-4 mx-0 mx-lg-auto">
-             <div class="col-lg-4 col-md-6 benefits aos-init row-0" data-aos="fade-up" data-aos-duration="1500">
-                <div class="benefits-icon"> <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/ic_stimulates_cellular.png" alt="">
-                </div>
-                <h2 class="heading AdelleSansRegular mb-3  text-blue"> STIMULATES CELLULAR REJUVENATION AND REPAIR </h2>
-                <p class="benefits-content mb-3 text-darkgrey "> Helps delay aging and the onset of metabolic ailments and degenerative diseases </p>
-             </div>
-             <div class="col-lg-4 col-md-6 benefits aos-init" data-aos="fade-up" data-aos-duration="1500">
-                <div class="benefits-icon"> <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/ic_reduces-joint.png" alt="">
-                </div>
-                <h2 class="heading AdelleSansRegular mb-3   text-blue">REDUCES JOINT &amp; MUSCLE PAIN </h2>
-                <p class="benefits-content mb-3  text-darkgrey"> Proven effective for healing back, hip, and knee pain associated with osteoarthritis </p>
-             </div>
-             <div class="col-lg-4 col-md-6 benefits aos-init" data-aos="fade-up" data-aos-duration="1500">
-                <div class="benefits-icon"> <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/ic_enhances-skin.png" alt="">
-                </div>
-                <h2 class="heading AdelleSansRegular mb-3   text-blue"> ENHANCES SKIN COMPLEXION AND BEAUTY </h2>
-                <p class="benefits-content mb-3 text-darkgrey"> Reduces the appearance of wrinkles and gives a natural glow to the skin </p>
-             </div>
-             <div class="col-lg-4 col-md-6 benefits aos-init" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
-                <div class="benefits-icon"> <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/ic_boosts-energy.png" alt="">
-                </div>
-                <h2 class="heading AdelleSansRegular mb-3 text-blue"> BOOSTS ENERGY AND VITALITY </h2>
-                <p class="benefits-content mb-3 text-darkgrey"> Noticeably reduces chronic physical and mental fatigue </p>
-             </div>
-             <div class="col-lg-4 col-md-6 benefits aos-init" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
-                <div class="benefits-icon"> <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/ic_elevated-mood.png" alt="">
-                </div>
-                <h2 class="heading AdelleSansRegular mb-3 text-blue"> ELEVATES MOOD, ALLEVIATES MILD DEPRESSION </h2>
-                <p class=" benefits-content mb-3 text-darkgrey"> Reduces anxiety and depression as well as improves sleep quality </p>
-             </div>
-             <div class="col-lg-4 col-md-6 benefits aos-init" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
-                <div class="benefits-icon"> <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/ic_increases_brain.png" alt="">
-                </div>
-                <h2 class="heading AdelleSansRegular mb-3 text-blue">INCREASES BRAIN FUNCTION </h2>
-                <p class="benefits-content mb-3 text-darkgrey"> Enhances memory, sharpens mental concentration and alertness </p>
-             </div>
-             <div class="col-lg-4 col-md-6 benefits aos-init" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-                <div class="benefits-icon"> <img src=" https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/ic_improves_physical.png " alt="">
-                </div>
-                <h2 class="heading AdelleSansRegular mb-3    text-blue"> IMPROVES PHYSICAL PERFORMANCE </h2>
-                <p class="benefits-content mb-3 text-darkgrey">Enhances stamina during workouts and speeds up recovery process</p>
-             </div>
-             <div class="col-lg-4 col-md-6 benefits aos-init" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-                <div class="benefits-icon"> <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/ic_lowers_blood.png" alt="">
-                </div>
-                <h2 class="heading AdelleSansRegular mb-3   text-blue"> LOWERS BLOOD SUGAR LEVELS </h2>
-                <p class="benefits-content mb-3 text-darkgrey"> Reduces glycemic index by 37% </p>
-             </div>
-             <div class="col-lg-4 col-md-6 benefits aos-init" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-                <div class="benefits-icon"> <img src=" https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/ic_enhances_sexual.png " alt="">
-                </div>
-                <h2 class="heading AdelleSansRegular mb-3 text-blue"> ENHANCES SEXUAL PERFORMANCE </h2>
-                <p class="benefits-content mb-3 text-darkgrey "> Improves libido and sexual satisfaction </p>
-             </div>
-          </div>
-       </div>
-    </div>
- </section>
 
-  <!-- Product End-->
-  <section>
-    <div class="container-fluid px-0 py-5 guarded-secret-bg">
-       <header>
-          <h1 class="section-heading mb-3 px-2 text-white">A WELL GUARDED SECRET</h1>
-          <div class="px-3 mb-lg-5 mb-4 aos-init" data-aos="fadeIn" data-duration="1000">
-             <h4 class="section-subheading m-0 text-white"> CELERGEN IS EMBRACED BY WORLD RENOWNED CELEBRITIES </h4>
-             <h4 class="section-subheading m-0 text-white">AND DISTINGUISHED PERSONALITIES </h4>
-          </div>
-       </header>
-       <div class="container text-center pb-4">
-          <div class="guarded-box1 bg-white box-shadow position-relative aos-init" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"> <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/guarded-secret.png" class="guarded-img" alt="" width="100%">
-          </div>
-          <div class="guarded-box2 bg-white box-shadow position-relative aos-init" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-             <p class="px-4 text-darkgrey"> DISTINGUISHED PERSONALITIES FROM MORE THAN</p>
-             <h4 class="section-subheading text-darkgrey mb-4"> <strong>56 COUNTRIES TAKE CELERGEN EVERY DAY </strong> </h4>
-             <a href="#what-is-celergen" class="next-div position-absolute text-center w-100" style="bottom: -50px; left:0;"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/btn-next-div.png" alt="" width="100"> </a>
-          </div>
-       </div>
-    </div>
- </section>
+      <section> -->
+            <div class="container-fluid px-4 px-md-0">
+                <div class="row m-0">
+                    <div class="col-lg-6 col-md-6 px-0">
+                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/haeth2.jpg"
+                            width="100%" alt="">
+                    </div>
 
-  <!--Recommend Section Start-->
-  <section id="what-is-celergen">
-    <div class="container-fluid px-0 what-is-celergen-bg py-3">
-       <div class="container celergen-content text-center mt-3">
-          <header>
-             <h3 class="px-5 px-lg-0 section-heading text-darkgrey text-center"> WHAT IS CELERGEN ? </h3>
-          </header>
-          <div class="container px-lg-5 py-3 text-darkgrey OpenSansSerif">
-             <p class=" px-lg-5 mb-4"> Celergen is a potent Non Injectable Swiss Cell Therapy Treatment that stimulates
-                our own natural healing powers to trigger the repair and rejuvenation of cells
-                by providing biologically active micronutrients and essential nutrition at the cellular level, boosting
-                the production of proteins and enzymes. Celergen combats aging by maintaining energy and vitality and
-                delaying the onset of chronic degenerative diseases.
-             </p>
-             <p class="px-lg-5 pb-lg-5"> Manufactured by Swiss Caps in Switzerland using Swiss Proprietary Cold Extraction Technology, Celergen
-                is an enteric coated oral softgel, which ensures maximum absorption for optimal anti-aging benefits and
-                results.
-             </p>
-          </div>
-          <div class="row py-5 py-lg-5 px-4">
-             <div class="col-lg-3 col-md-6 p-1 aos-init" data-aos="fade-down" data-aos-delay="100" data-aos-easing="linear" data-aos-duration="1000">
-                <a href="{{ route ('about') }}#aboutbtn1" class="blue-button text-blue border-0 pt-3" width="100%">
-                BIOACTIVE <br>
-                INGREDIENTS </a>
-             </div>
-             <div class="col-lg-3 col-md-6 p-1 aos-init" data-aos="fade-down" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="1000">
-                <a href="{{ route ('about') }}#aboutbtn2" class="blue-button text-blue border-0 pt-3" width="100%">
-                HOW <br>
-                CELERGEN WORKS </a>
-             </div>
-             <div class="col-lg-3 p-1 col-md-6 aos-init" data-aos="fade-down" data-aos-delay="600" data-aos-easing="linear" data-aos-duration="1000">
-                <a href="{{ route ('about') }}#aboutbtn3" class="blue-button text-blue border-0" width="100%">
-                WHY CELERGEN? </a>
-             </div>
-             <div class="col-lg-3 p-1 col-md-6 aos-init" data-aos="fade-down" data-aos-delay="900" data-aos-easing="linear" data-aos-duration="1000">
-                <a href="{{ route ('serumroyale') }}" class="blue-button text-blue border-0" width="100%">
-                SERUM ROYALE </a>
-             </div>
-          </div>
-          <div class="px-3">
-             <h4 class="section-subheading pt-lg-5 text-darkgrey mb-5"> <strong>GLOBAL ACCREDITATION</strong> </h4>
-             <div> <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/global-accreditaion.png" alt="" width="778" height="98">
-             </div>
-             <p class="opensans pt-5 pb-5 text-darkgrey"> Celergen is not a drug but a pharmaceutical grade food supplement approved by Swiss Federal office of Public Health. </p>
-          </div>
-       </div>
-    </div>
- </section>
-  <!--Recommend Section End-->
+                    <div class="col-lg-6 col-md-6 d-flex align-content-center align-items-center  px-0"
+                        style="background-color: #001026; color: #FFFFFF" align="center">
+                        <div class="col-lg-9 col-md-11 px-3 py-5 float-none m-auto" align="center">
+                            <h3 class="mb-lg-4 mb-2 h3" style="color: #fff;">Olympian Emmanouil Karalis, Greece</h3>
+                            <h5 class="mb-lg-5 mb-2 h5" style="color: #fff;">Ranked 4th In Tokyo Olympic Pole Vault, World
+                                Best Performer Holder</h5>
+                            <p class="text-white GothamLight m-0">"Caviarlieri helps boost my strength and stamina."</p>
+                            <div class="col-lg-6 col-md-6 my-lg-5 my-2" style="border-bottom: 1px solid #fff"></div>
+                            <p class="text-white GothamLight m-0">I was amazed that Caviarlieri – Swiss Caviar Cell Therapy
+                                supplement has helped increase my cellular energy significantly, improve my sleep quality
+                                and enhance my physical stamina and endurance. Caviarlieri has definitely helped enhance my
+                                performance at the Tokyo Olympics 2021.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-lg-6 col-md-6 px-0 order-md-2">
+                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/haeth1.jpg"
+                            width="100%" height="100%" alt="">
+                    </div>
 
-  <!-- abouts-Secthion Start -->
-  <section>
-    <div class="container-fluid px-0 bg-blue py-4 ">
-       <div class="container mt-2 doctors-use-celergen">
-          <h4 class="m-0 text-center text-white py-3 pb-lg-4"> <span class="me-2 me-lg-5"> <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/common/celergen-quote.png" alt="" class="quatation"> </span> <span class="section-heading"> WHY DOCTORS USE CELERGEN ? </span> <span class="ms-2 ms-lg-5"> <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/common/celergen-quote.png" alt="" class="quatation" style="transform: rotate(180deg);"> </span></h4>
-          <div class="docter-review owl-carousel owl-theme owl-loaded owl-drag aos-init" data-aos="fadeIn" data-aos-duration="1000" data-aos-delay="500">
-             <div class="owl-stage-outer">
-                <div class="owl-stage" style="transition: 0.25s; width: 13392px; transform: translate3d(-2232px, 0px, 0px);">
-                   <div class="owl-item cloned" style="width: 1116px;">
-                      <div class="item">
-                         <div class="row">
-                            <div class="col-lg-3 px-4 py-3">
-                               <img class="img-frame" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/DrOrbeck-197x300-197x300-e1479285899794.jpg" alt="">
-                            </div>
-                            <div class="col-lg-9 px-4 pt-3 mt-lg-5 mt-sm-3 text-center text-lg-start">
-                               <p class="doctors-review"> "What is special about Celergen is that it is not a pharmaceutical and yet truly works on a cellular level to promote
-                                  regeneration and can slow, if not reverse, the aging process."
-                               </p>
-                               <p class="w-100 doctor-name m-0"> Dr. Kenneth Orbeck
-                               </p>
-                               <p>
-                               </p>
-                               <p class="w-100 doctor-designation">- </p>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="owl-item cloned" style="width: 1116px;">
-                      <div class="item">
-                         <div class="row">
-                            <div class="col-lg-3 px-4 py-3">
-                               <img class="img-frame" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/Dr.-Rene.jpg" alt="">
-                            </div>
-                            <div class="col-lg-9 px-4 pt-3 mt-lg-5 mt-sm-3 text-center text-lg-start">
-                               <p class="doctors-review "> "Celergen is amazing because I look more youthful and my skin is glowing. My energy
-                                  throughout the day is boosted so much that I don't need caffeine to sustain."
-                               </p>
-                               <p class="w-100 doctor-name m-0"> Dr. Rene Dell’Acqua </p>
-                               <p class="w-100 doctor-designation"> Dental Studio, Palm Desert, CA </p>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="owl-item cloned active center" style="width: 1116px;">
-                      <div class="item">
-                         <div class="row">
-                            <div class="col-lg-3 px-4 py-3">
-                               <img class="img-frame" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/dr-juan-remos-e1479280710760.jpg" alt="">
-                            </div>
-                            <div class="col-lg-9 px-4 pt-3 mt-lg-5 mt-sm-3 text-center text-lg-start">
-                               <p class="doctors-review "> “Celergen is the best natural product that I have come across since I started practicing medicine.
-                                  It is definitely the next big thing for those seeking wellbeing and good health.”
-                               </p>
-                               <p class="w-100 doctor-name m-0"> Dr. Juan Remos </p>
-                               <p class="w-100 doctor-designation"> The Wellness Institute
-                               </p>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="owl-item" style="width: 1116px;">
-                      <div class="item">
-                         <div class="row">
-                            <div class="col-lg-3 px-4 py-3">
-                               <img class="img-frame" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/DrBruceKLowellMD_3684_162.png" alt="">
-                            </div>
-                            <div class="col-lg-9 px-4 pt-3 mt-lg-5 mt-sm-3 text-center text-lg-start">
-                               <p class="doctors-review">"Celergen affects different patients in different ways. Some of my male atients reported
-                                  improved libido and sexual performance. While some said it helped to reduce joint pain
-                                  and give them a better night's sleep."
-                               </p>
-                               <p class="w-100 doctor-name m-0"> Dr. Bruce Lowell </p>
-                               <p class="w-100 doctor-designation">-</p>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="owl-item" style="width: 1116px;">
-                      <div class="item">
-                         <div class="row">
-                            <div class="col-lg-3 px-4 py-3">
-                               <img class="img-frame" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/beilinA-e1479285690261.jpg" alt="">
-                            </div>
-                            <div class="col-lg-9 px-4 pt-3 mt-lg-5 mt-sm-3 text-center text-lg-start">
-                               <p class="doctors-review "> "I am very pleased with the outstanding benefits of Celergen my patients experience
-                                  in terms of energy and stamina, mental alertness and enhanced memory."
-                               </p>
-                               <p class="w-100 doctor-name m-0"> Dr. Ghislaine Beilin </p>
-                               <p class="w-100 doctor-designation"> President of European Society for Anti-Aging and Preventive Medicine </p>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="owl-item" style="width: 1116px;">
-                      <div class="item">
-                         <div class="row">
-                            <div class="col-lg-3 px-4 py-3">
-                               <img class="img-frame" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/druziURHQ-e1479285472801.jpeg" alt="">
-                            </div>
-                            <div class="col-lg-9 px-4 pt-3 mt-lg-5 mt-sm-3 text-center text-lg-start">
-                               <p class="doctors-review "> "Celergen is a remarkable tool that can help improve our wellbeing on multiple
-                                  levels. It is the Rolls Royce of supplement for the human body."
-                               </p>
-                               <p class="w-100 doctor-name m-0"> Dr. Uzzi Reiss </p>
-                               <p class="w-100 doctor-designation"> Berverly Hills Anti-Aging Centre </p>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="owl-item" style="width: 1116px;">
-                      <div class="item">
-                         <div class="row">
-                            <div class="col-lg-3 px-4 py-3">
-                               <img class="img-frame" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/DrOrbeck-197x300-197x300-e1479285899794.jpg" alt="">
-                            </div>
-                            <div class="col-lg-9 px-4 pt-3 mt-lg-5 mt-sm-3 text-center text-lg-start">
-                               <p class="doctors-review"> "What is special about Celergen is that it is not a pharmaceutical and yet truly works on a cellular level to promote
-                                  regeneration and can slow, if not reverse, the aging process."
-                               </p>
-                               <p class="w-100 doctor-name m-0"> Dr. Kenneth Orbeck
-                               </p>
-                               <p>
-                               </p>
-                               <p class="w-100 doctor-designation">- </p>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="owl-item" style="width: 1116px;">
-                      <div class="item">
-                         <div class="row">
-                            <div class="col-lg-3 px-4 py-3">
-                               <img class="img-frame" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/Dr.-Rene.jpg" alt="">
-                            </div>
-                            <div class="col-lg-9 px-4 pt-3 mt-lg-5 mt-sm-3 text-center text-lg-start">
-                               <p class="doctors-review "> "Celergen is amazing because I look more youthful and my skin is glowing. My energy
-                                  throughout the day is boosted so much that I don't need caffeine to sustain."
-                               </p>
-                               <p class="w-100 doctor-name m-0"> Dr. Rene Dell’Acqua </p>
-                               <p class="w-100 doctor-designation"> Dental Studio, Palm Desert, CA </p>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="owl-item" style="width: 1116px;">
-                      <div class="item">
-                         <div class="row">
-                            <div class="col-lg-3 px-4 py-3">
-                               <img class="img-frame" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/dr-juan-remos-e1479280710760.jpg" alt="">
-                            </div>
-                            <div class="col-lg-9 px-4 pt-3 mt-lg-5 mt-sm-3 text-center text-lg-start">
-                               <p class="doctors-review "> “Celergen is the best natural product that I have come across since I started practicing medicine.
-                                  It is definitely the next big thing for those seeking wellbeing and good health.”
-                               </p>
-                               <p class="w-100 doctor-name m-0"> Dr. Juan Remos </p>
-                               <p class="w-100 doctor-designation"> The Wellness Institute
-                               </p>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="owl-item cloned" style="width: 1116px;">
-                      <div class="item">
-                         <div class="row">
-                            <div class="col-lg-3 px-4 py-3">
-                               <img class="img-frame" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/DrBruceKLowellMD_3684_162.png" alt="">
-                            </div>
-                            <div class="col-lg-9 px-4 pt-3 mt-lg-5 mt-sm-3 text-center text-lg-start">
-                               <p class="doctors-review">"Celergen affects different patients in different ways. Some of my male atients reported
-                                  improved libido and sexual performance. While some said it helped to reduce joint pain
-                                  and give them a better night's sleep."
-                               </p>
-                               <p class="w-100 doctor-name m-0"> Dr. Bruce Lowell </p>
-                               <p class="w-100 doctor-designation">-</p>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="owl-item cloned" style="width: 1116px;">
-                      <div class="item">
-                         <div class="row">
-                            <div class="col-lg-3 px-4 py-3">
-                               <img class="img-frame" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/beilinA-e1479285690261.jpg" alt="">
-                            </div>
-                            <div class="col-lg-9 px-4 pt-3 mt-lg-5 mt-sm-3 text-center text-lg-start">
-                               <p class="doctors-review "> "I am very pleased with the outstanding benefits of Celergen my patients experience
-                                  in terms of energy and stamina, mental alertness and enhanced memory."
-                               </p>
-                               <p class="w-100 doctor-name m-0"> Dr. Ghislaine Beilin </p>
-                               <p class="w-100 doctor-designation"> President of European Society for Anti-Aging and Preventive Medicine </p>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="owl-item cloned" style="width: 1116px;">
-                      <div class="item">
-                         <div class="row">
-                            <div class="col-lg-3 px-4 py-3">
-                               <img class="img-frame" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/druziURHQ-e1479285472801.jpeg" alt="">
-                            </div>
-                            <div class="col-lg-9 px-4 pt-3 mt-lg-5 mt-sm-3 text-center text-lg-start">
-                               <p class="doctors-review "> "Celergen is a remarkable tool that can help improve our wellbeing on multiple
-                                  levels. It is the Rolls Royce of supplement for the human body."
-                               </p>
-                               <p class="w-100 doctor-name m-0"> Dr. Uzzi Reiss </p>
-                               <p class="w-100 doctor-designation"> Berverly Hills Anti-Aging Centre </p>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
+                    <div class="col-lg-6 col-md-6 d-flex align-content-center align-items-center  px-0"
+                        style="background-color: #001026; color: #FFFFFF" align="center">
+                        <div class="col-lg-9 col-md-11 px-3 py-5 float-none m-auto" align="center">
+                            <h3 class="mb-lg-4 mb-2 h3" style="color: #fff;">Olympian Stefanos Dimitriadis, Greece</h3>
+                            <h5 class="mb-lg-5 mb-2 h5" style="color: #fff;">Dietitian-Nutritionist, BSc, MSc, RD</h5>
+                            <p class="text-white GothamLight m-0">"Caviarlieri makes my road to Olympics easier."</p>
+                            <div class="col-lg-6 col-md-6 my-lg-5 my-2" style="border-bottom: 1px solid #fff"></div>
+                            <p class="text-white GothamLight m-0">Since I started using Caviarlieri, I noticed a huge
+                                improvement in my Stamina and Endurance. Overall, my muscle fatigue and soreness were
+                                reduced significantly.My sleep quality has improved tremendously and my mood is also
+                                elevated. I can train harder and I am definitely more focused.</p>
+                        </div>
+                    </div>
                 </div>
-             </div>
-             <div class="owl-nav disabled">
-                <div class="owl-prev"><span aria-label="Previous">‹</span></div>
-                <div class="owl-next"><span aria-label="Next">›</span></div>
-             </div>
+            </div>
+        </section>
 
-          </div>
-       </div>
-    </div>
- </section>
-  <!-- abouts-Secthion End -->
+        <section>
+            <div class="container-fluid px-0">
+                <img alt="" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/bgndc.png"
+                    width="100%">
+            </div>
+        </section>
 
-  <!-- About Section Start-->
-  <section id="customer-review">
-    <div class="container-fluaid py-5">
-       <div class="customer-slide owl-carousel owl-loaded owl-drag">
-          <div class="owl-stage-outer">
-             <div class="owl-stage" style="transform: translate3d(-1527px, 0px, 0px); transition: all; width: 6810px; padding-left: 350px; padding-right: 350px;">
-                <div class="owl-item cloned" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/elizabethm.jpg');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name"> Elizabeth M, London, UK </p>
-                            <p class="reviewer-job"> Champion Jockey </p>
-                            <p class="review">
-                               “Yes....... I have already recommended it to my friends.”
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#elizabeth" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item cloned" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/test_grace.jpg');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name">Grace Zenno, Lebanon</p>
-                            <p class="reviewer-job"> Champion Jockey </p>
-                            <p class="review">
-                               “I am beyond happy and I vow to continue taking Celergen forever.”
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#grace-zenno" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item cloned" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/test_bisimwa.jpg');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name">Bisimwa Voglet, Belgium </p>
-                            <p class="reviewer-job"></p>
-                            <p class="review"> “With Celergen, I can expect a shorter recovery period to allow me to start winter training sooner that expected.” </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#bisimwa-voglet" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item cloned active" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/maserati_dealership_main-e1479286552250.jpg');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name"> Phil McCarroll, Australia </p>
-                            <p class="reviewer-job"></p>
-                            <p class="review"> “I don’t wake up in pain anymore and my knee is getting stronger.” </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#phil-mccarroll" class="text-darkred Read-btn "><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item cloned active" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/test_hector.jpg');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name">Héctor Sánchez Torres, Mexico </p>
-                            <p class="reviewer-job"></p>
-                            <p class="review"> “Without Celergen, it is impossible for an ordinary man like me to accomplish extraordinary feats.” </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#hector" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/nea1.jpg');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div class="opensans">
-                            <p class="reviewer-name">Nea Wasell, Finland </p>
-                            <p class="reviewer-job"></p>
-                            <p class="review">
-                               “I feel better, I look better and I am feeling proud of myself.”
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#nea-wasell" class="text-darkred Read-btn">READ MORE</a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/lupita-jones2.png');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name"> Lupita Jones (Miss Mexico 1990) </p>
-                            <p class="reviewer-job"> Miss Universe 1991 </p>
-                            <p class="review">
-                               “I take Celergen every day and start my day knowing that I am doing the best to take
-                               care of my health, to stay strong, full of energy.”
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#lupita" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/curtis-mitchell.png');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name"> Curtis Mitchell (Elite Sprinter) </p>
-                            <p class="reviewer-job"> IAAF World Championship 200m Bronze Medallist </p>
-                            <p class="review">
-                               “The first thing I noticed was that I was able to recover a lot quicker from my workouts... a
-                               huge boost to my training regimen because it allows me to work harder without a drop-off in energy
-                               and really take it to the next level."
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#curtis-mitchell" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/george-michael.png');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name"> Michael George </p>
-                            <p class="reviewer-job"> Celebrity Personal Trainer </p>
-                            <p class="review">
-                               “I now suggest that my clients reconsider all the supplements they take and reduce the
-                               long list to only Celergen.”
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#michael-george" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/anthony-stephen.png');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name"> Anthony Stephen </p>
-                            <p class="reviewer-job"> Champion Jockey </p>
-                            <p class="review">
-                               “I could feel a difference the very next day. I was more alert and organised.”
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#anthony-stephen" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/elizabethm.jpg');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name"> Elizabeth M, London, UK </p>
-                            <p class="reviewer-job"> Champion Jockey </p>
-                            <p class="review">
-                               “Yes....... I have already recommended it to my friends.”
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#elizabeth" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/test_grace.jpg');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name">Grace Zenno, Lebanon</p>
-                            <p class="reviewer-job"> Champion Jockey </p>
-                            <p class="review">
-                               “I am beyond happy and I vow to continue taking Celergen forever.”
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#grace-zenno" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/test_bisimwa.jpg');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name">Bisimwa Voglet, Belgium </p>
-                            <p class="reviewer-job"></p>
-                            <p class="review"> “With Celergen, I can expect a shorter recovery period to allow me to start winter training sooner that expected.” </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#bisimwa-voglet" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/maserati_dealership_main-e1479286552250.jpg');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name"> Phil McCarroll, Australia </p>
-                            <p class="reviewer-job"></p>
-                            <p class="review"> “I don’t wake up in pain anymore and my knee is getting stronger.” </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#phil-mccarroll" class="text-darkred Read-btn "><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/test_hector.jpg');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name">Héctor Sánchez Torres, Mexico </p>
-                            <p class="reviewer-job"></p>
-                            <p class="review"> “Without Celergen, it is impossible for an ordinary man like me to accomplish extraordinary feats.” </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#hector" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item cloned" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/nea1.jpg');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div class="opensans">
-                            <p class="reviewer-name">Nea Wasell, Finland </p>
-                            <p class="reviewer-job"></p>
-                            <p class="review">
-                               “I feel better, I look better and I am feeling proud of myself.”
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#nea-wasell" class="text-darkred Read-btn">READ MORE</a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item cloned" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/lupita-jones2.png');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name"> Lupita Jones (Miss Mexico 1990) </p>
-                            <p class="reviewer-job"> Miss Universe 1991 </p>
-                            <p class="review">
-                               “I take Celergen every day and start my day knowing that I am doing the best to take
-                               care of my health, to stay strong, full of energy.”
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#lupita" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item cloned" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/curtis-mitchell.png');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name"> Curtis Mitchell (Elite Sprinter) </p>
-                            <p class="reviewer-job"> IAAF World Championship 200m Bronze Medallist </p>
-                            <p class="review">
-                               “The first thing I noticed was that I was able to recover a lot quicker from my workouts... a
-                               huge boost to my training regimen because it allows me to work harder without a drop-off in energy
-                               and really take it to the next level."
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#curtis-mitchell" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item cloned" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/george-michael.png');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name"> Michael George </p>
-                            <p class="reviewer-job"> Celebrity Personal Trainer </p>
-                            <p class="review">
-                               “I now suggest that my clients reconsider all the supplements they take and reduce the
-                               long list to only Celergen.”
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#michael-george" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="owl-item cloned" style="width: 275.5px; margin-right: 30px;">
-                   <div class="item">
-                      <div class="reviewer-pic" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/anthony-stephen.png');"></div>
-                      <div class="reviewer-details d-flex flex-column justify-content-between">
-                         <div>
-                            <p class="reviewer-name"> Anthony Stephen </p>
-                            <p class="reviewer-job"> Champion Jockey </p>
-                            <p class="review">
-                               “I could feel a difference the very next day. I was more alert and organised.”
-                            </p>
-                         </div>
-                         <div class="p-3">
-                            <a href="{{ route ('celergenreviews') }}#anthony-stephen" class="text-darkred Read-btn"><strong>READ MORE</strong></a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="owl-nav">
-             <div class="owl-prev"><a class="prev-btn" aria-hidden="true"><img src="{{ asset('/frontend/images/home/ic_left_arrow.png') }}"></a></div>
-             <div class="owl-next"><a class="next-btn" aria-hidden="true"><img src="{{ asset('/frontend/images/home/ic_right_arrow.png') }}"></a></div>
-          </div>
-          <div class="owl-dots disabled"></div>
-       </div>
-    </div>
- </section>
-  <!-- About Section End-->
 
-  <!-- Saving-Secthion Start -->
-  <section>
-    <div class="clinical-studies container-fluid px-0 pb-5">
-       <div class="container pt-3">
-          <header>
-             <h4 class="section-heading text-blue text-center my-4"> CLINICAL STUDIES </h4>
-          </header>
-          <div class="clinical-content">
-             <p class="heading opensans text-center mb-5"> Celergen is the World’s only Swiss Marine Oral Cell Therapy.
-                Celergen is clinically proven to enhance your body’s natural ability to heal itself.
-             </p>
-             <p class="heading opensans text-center pb-lg-5"> Unlike most supplements that use intense heat in the production process, Celergen is manufactured
-                using our proprietary Swiss Cold Extraction Technology, which ensures that Celergen’s product integrity
-                is not compromised.
-             </p>
-          </div>
-          <div class="row py-4">
-             <div class="col-12 col-lg-4 mb-2 p-lg-1 px-4">
-                <div class="w-100 aos-init" data-aos="fade-up" data-aos-delay="150" data-aos-easing="linear" data-aos-duration="1000">
-                   <a href="{{ route ('clinicalstudies') }}#tab1" class="clinical-button">
-                   <span>BIO-DNA CELLULAR COMPLEX</span><span class="clinical-button-downarrow"></span>
-                   </a>
-                </div>
-             </div>
-             <div class="col-12 col-lg-4  mb-2 p-lg-1 px-4">
-                <div class="w-100 aos-init" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="1000">
-                   <a href="{{ route ('clinicalstudies') }}#tab2" class="clinical-button">
-                   <span>PEPTIDE E COLLAGEN</span><span class="clinical-button-downarrow"></span>
-                   </a>
-                </div>
-             </div>
-             <div class="col-12 col-lg-4 mb-2 p-lg-1 px-4">
-                <div class="w-100 aos-init" data-aos="fade-up" data-aos-delay="450" data-aos-easing="linear" data-aos-duration="1000">
-                   <a href="{{ route ('clinicalstudies') }}#tab3" class="clinical-button">
-                   <span>HYDRO MN PEPTIDE</span><span class="clinical-button-downarrow"></span>
-                   </a>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
- </section>
-  <!-- Saving-Secthion End -->
+        <section class="section">
+            <div class="col-lg-4 col-md-4 m-auto float-none">
+                <h1 class="h1 text-center text-md-start" style="font-weight: 400;">JOURNALS</h1>
+                <h1 class="h1 text-center text-md-end" style="font-weight: 400;">AND <span
+                        style="color:#817552 !important;">FINDINGS</span></h1>
+            </div>
+        </section>
 
-  <!-- Map-Secthion Start -->
-  <section>
-    <a href="#products" id="products"></a>
-    <div class="container-fluid home-products-bg px-0">
-       <div class="col-lg-9 col-md-12 col-12 px-4 px-lg-0 float-none mx-auto home-product-list">
-          <ul class="home-product-list d-lg-flex d-block px-0 px-lg-0">
-             <li id="product1" class="home-product mb-4 mb-lg-0 scale1" onmouseover="scale1()">
-                <div class="d-flex flex-column justify-content-between align-items-center h-100">
-                   <h3 class="mb-0 p-2 text-blue">1 SERUM ROYALE</h3>
-                   <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/product1.png" style="max-width:200px;">
-                   <h3 class="mb-0 pb-4 price text-grey">$270.00</h3>
-                   <form action="add.php" method="post">
-                      <div class="order-buttons row m-0 align-self-end w-100">
-                         <div class="col-6 px-0"><a class="view-btn d-block bg-blue" href="1-serum-royale.php">VIEW ITEM</a>
-                         </div>
-                         <div class="col-6 px-0">
-                            <input name="add1" type="submit" class="border-0 outline-none add-btn d-block bg-darkred" value="ADD TO CART">
-                            <input type="hidden" name="product_id" value="1">
-                            <input type="hidden" name="correct" value="return1">
-                         </div>
-                      </div>
-                   </form>
+        <section class="section">
+            <div class="col-lg-10 col-md-10 m-auto float-none px-2">
+                <div class="row mb-5 m-0">
+                    <div class="col-lg-6 col-md-6 mb-5 px-lg-5">
+                        <img alt=""
+                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/caviarlieri-caviar-supplement-softgels.jpg"
+                            width="100%">
+                        <h4 class="h4 mb-1 mt-3" style="font-family: 'Gothamlight', sans-serif;">The Amazing Benefits of
+                            Highly Polymerized Fish Collagen Peptides with Elastin – Caviarlieri</h4>
+                        <p class="mb-4 GothamLight">What is Fish Collagen? Fish Collagenis collagen protein derived from
+                            fish, specifically fish skin, scales, and bones. Fish collagen is special because it ...</p>
+                        <a href="blog-content.php?bid=16" class="blog-white-btn"><span class="btn-content-wrapper"><span
+                                    class="btn-content-text">Read More <span><img
+                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/btn-arrow.png"
+                                            alt="" /></span></span></span></a>
+                    </div>
+
+                    <div class="col-lg-6  col-md-6 mb-5 px-lg-5">
+                        <img alt=""
+                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/caviarlieri-cellular-therapy-supplement.jpg"
+                            width="100%">
+                        <h4 class="h4 mb-1 mt-3" style="font-family: 'Gothamlight', sans-serif;">The World’s Most
+                            Effective Caviar DNA Extract with Marine Bioactive Peptides</h4>
+                        <p class="mb-4 GothamLight">Sturgeon Caviar is an exceptional nutritional ingredient, rich in amino
+                            acids and essential fatty acids. The human body can make most of the types of fats it needs for
+                            our body from other fats or raw materials...</p>
+                        <a href="blog-content.php?bid=26" class="blog-white-btn"><span class="btn-content-wrapper"><span
+                                    class="btn-content-text">Read More <span><img
+                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/btn-arrow.png"
+                                            alt="" /></span></span></span></a>
+                    </div>
                 </div>
-             </li>
-             <li id="product2" class="home-product mb-4 mb-lg-0" onmouseover="scale2()">
-                <div class="d-flex flex-column justify-content-between align-items-center h-100">
-                   <h3 class="mb-0 p-2 text-blue">1 BOX OF CELERGEN </h3>
-                   <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/product2.png" style="max-width:200px;">
-                   <h3 class="mb-0 pb-4 price text-grey">$350.00</h3>
-                   <form action="add.php" method="post">
-                      <div class="order-buttons row m-0 align-self-end w-100">
-                         <div class="col-6 px-0"><a class="view-btn d-block bg-blue" href="1-boxof-celergen.php">VIEW ITEM</a>
-                         </div>
-                         <div class="col-6 px-0">
-                            <input name="add1" type="submit" class="border-0 outline-none add-btn d-block bg-darkred" value="ADD TO CART">
-                            <input type="hidden" name="product_id" value="2">
-                            <input type="hidden" name="correct" value="return1">
-                         </div>
-                      </div>
-                   </form>
+
+                <div class="row m-0">
+                    <div class="col-lg-4  col-md-6 mb-5 px-lg-4"><img alt=""
+                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/effective-supplements-for-joint-pain.jpg"
+                            width="100%">
+                        <h4 class="h4 mb-1 mt-3" style="font-family: 'Gothamlight', sans-serif;">Are Supplements effective
+                            for Joint Pain?</h4>
+                        <p class="mb-4 GothamLight">If you have joint pain from arthritis, you may be looking for ways to
+                            help to reduce the severity of your...</p>
+                        <a href="blog-content.php?bid=53" class="blog-white-btn"><span class="btn-content-wrapper"><span
+                                    class="btn-content-text">Read More <span><img
+                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/btn-arrow.png"
+                                            alt="" /></span></span></span></a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5 px-lg-4">
+                        <img alt=""
+                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/sustainable-immunity-for-long-term-health.jpg"
+                            width="100%">
+                        <h4 class="h4 mb-1 mt-3" style="font-family: 'Gothamlight', sans-serif;">Why Is Sustainable
+                            Immunity Important for Your Long-Term Health</h4>
+                        <p class="mb-4 GothamLight">For those of us who had hoped that 2021 will be the year that will put
+                            the pandemic in the...</p>
+                        <a href="blog-content.php?bid=54" class="blog-white-btn"><span class="btn-content-wrapper"><span
+                                    class="btn-content-text">Read More <span><img
+                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/btn-arrow.png"
+                                            alt="" /></span></span></span></a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5 px-lg-4">
+                        <img alt=""
+                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/what-is-biological-age.jpg"
+                            width="100%">
+                        <h4 class="h4 mb-1 mt-3" style="font-family: 'Gothamlight', sans-serif;">What is your “Body Age” –
+                            Biological Age?</h4>
+                        <p class="mb-4 GothamLight">Do you know that you have 2 “ages”? Chronological age is the age of a
+                            person as measured from birth...</p>
+                        <a href="blog-content.php?bid=1" class="blog-white-btn"><span class="btn-content-wrapper"><span
+                                    class="btn-content-text">Read More <span><img
+                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/btn-arrow.png"
+                                            alt="" /></span></span></span></a>
+                    </div>
                 </div>
-             </li>
-             <li id="product3" class="home-product mb-4 mb-lg-0" onmouseover="scale3()">
-                <div class="d-flex flex-column justify-content-between align-items-center h-100">
-                   <h3 class="mb-0 p-2 text-blue">1 BOX OF CELERGEN + 1 SERUM ROYALE
-                   </h3>
-                   <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/home/product3.png" style="max-width:200px;">
-                   <h3 class="mb-0 pb-4 price text-grey">$620.00</h3>
-                   <form action="add.php" method="post">
-                      <div class="order-buttons row m-0 align-self-end w-100">
-                         <div class="col-6 px-0"><a class="view-btn d-block bg-blue" href="1-boxof-celergen-1-serum-royale.php">VIEW ITEM</a>
-                         </div>
-                         <div class="col-6 px-0">
-                            <input name="add1" type="submit" class="border-0 outline-none add-btn d-block bg-darkred" value="ADD TO CART">
-                            <input type="hidden" name="product_id" value="3">
-                            <input type="hidden" name="correct" value="return1">
-                         </div>
-                      </div>
-                   </form>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="col-lg-9 col-md-11 m-auto float-none">
+                <div class="p-2" align="center">
+                    <h1 class="h1 mb-0" style="font-weight: 400;">GLOBALLY ACCREDITED <span
+                            style="color:#817552;">CERTIFICATIONS</span></h1>
                 </div>
-             </li>
-          </ul>
-       </div>
+                <div class="section">
+                    <div class="row m-0 seven-cols px-5 px-md-0" align="center">
+                        <div class="col-md-1 px-3"><img
+                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo1.png"
+                                width="100%" alt="" /></div>
+                        <div class="col-md-1 px-3"><img
+                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo2.png"
+                                width="100%" alt="" /></div>
+                        <div class="col-md-1 px-3"><img
+                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo3.png"
+                                width="100%" alt="" /></div>
+                        <div class="col-md-1 px-3"><img
+                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo4.png"
+                                width="100%" alt="" /></div>
+                        <div class="col-md-1 px-3"><img
+                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo5.png"
+                                width="100%" alt="" /></div>
+                        <div class="col-md-1 px-3"><img
+                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo6.png"
+                                width="100%" alt="" /></div>
+                        <div class="col-md-1 px-3"><img
+                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo7.png"
+                                width="100%" alt="" /></div>
+                    </div>
+                </div>
+                <div class="container section px-3 text-center" align="center" style="padding-bottom: 60px;">
+                    <div class="col-lg-8 col-md-6 m-auto float-none">
+                        <p class="p-small mb-0 GothamLight text-grey2">These statements have not been evaluated by the Food
+                            and Drug Administration.</p>
+                        <p class="p-small GothamLight text-grey2">This product is not intended to diagnose, treat, cure or
+                            prevent any disease.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
- </section>
-  <!-- Map-Secthion End -->
 @endsection

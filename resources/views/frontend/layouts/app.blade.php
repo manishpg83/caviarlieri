@@ -4,13 +4,13 @@
 
 <head>
     <!-- Title -->
-    <title>{{ isset($pageTitle) ? $pageTitle . ' —' : '' }} {{ isset($siteTitle) ? $siteTitle : 'Celergen' }}</title>
+    <title>{{ isset($pageTitle) ? $pageTitle . ' —' : '' }} {{ isset($siteTitle) ? $siteTitle : 'CAVIARLIERI' }}</title>
     <!-- Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- FAVICONS ICON -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/favicon.png" />
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
@@ -19,6 +19,11 @@
     <link rel="stylesheet"
         href="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/style1.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/owl.theme.default.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/owl.carousel.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/owl.theme.default.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/container1.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/globle.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/test.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/register.css') }}" />
@@ -39,9 +44,12 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet" />
     <script src="{{ asset('/frontend/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('/frontend/js/owl.carousel.js') }}"></script>
+    <script src="{{ asset('/frontend/js/caviarlieri.js') }}"></script>
     <script src="{{ asset('/frontend/js/jquery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('/frontend/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('/frontend/js/dashboard-account.js') }}"></script>
+    <script src="{{ asset('/frontend/js/jquery-3.6.3.min.js') }}"></script>
 
     <!-- Favicon -->
     @livewireStyles
@@ -70,9 +78,9 @@
 
             <div class="layout-page">
                 @include('frontend.layouts.header')
-                <section class="margin-top">
+                {{-- <section class="margin-top">
 
-                </section>
+                </section> --}}
                 <div class="content-wrapper">
                     @yield('content')
 
