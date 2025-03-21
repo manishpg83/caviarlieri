@@ -3,11 +3,11 @@
     <div class="app-brand demo">
         <a href="{{ route('admin.dashboard') }}" class="app-brand-link">
             <span class="app-brand-logo">
-                <img src="{{ asset('/admin/assets/img/branding/Celergen-Logo.png') }}" alt="Girl in a jacket"
+                <img src="{{ asset('/admin/assets/img/caviarlieri-logo.png') }}" alt="Girl in a jacket"
                     width="180" height="30">
             </span>
         </a>
-
+ 
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
             <i class="ti menu-toggle-icon d-none d-xl-block align-middle"></i>
             <i class="ti ti-x d-block d-xl-none ti-md align-middle"></i>
