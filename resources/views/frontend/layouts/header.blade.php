@@ -27,7 +27,7 @@
                     <li class="nav-item"><a class="nav-link text-dark" href="{{ route('swisscaviarlieribeauty') }}">Swiss Caviarlieri Beauty</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="{{ route('contact') }}">CONTACT US</a></li>
                 </ul>
-                <a href="https://store.swisscaviarlieri.com/" class="gold-btn d-none d-xl-block"><span class="btn-content-wrapper"><span class="btn-content-text navbar-gold-btn">ORDER NOW</span></span></a>
+                <a href="{{ route('cart') }}" class="gold-btn d-none d-xl-block"><span class="btn-content-wrapper"><span class="btn-content-text navbar-gold-btn">ORDER NOW</span></span></a>
             </div>
         </div>
     </nav>
