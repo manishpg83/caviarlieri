@@ -2,14 +2,6 @@
 
 /* CSS Document */
 /* ============ Header & Footer CSS =========== */
-.header {
-  z-index: 99;
-  background: white;
-  position: fixed;
-  float: left;
-  width: 100%;
-  top: 0px;
-}
 .headerhide {
   z-index: 99;
   float: left;
@@ -2034,7 +2026,7 @@ h3 {
 .doctor-name {
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: #212529;
   float: left;
   font-family: "AdelleSansW01-Bold";
 }

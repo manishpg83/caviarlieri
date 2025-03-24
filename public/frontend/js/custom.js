@@ -195,15 +195,14 @@ var Glower = function () {
 		} else {
 			jQuery('.tabindex').removeAttr("tabindex");
 		}
-	}
-	
+	}	
 	var contactform = function () {
 		jQuery('.menu-btn').on('click', function () {
-			jQuery('body').append('<div class="menu-backdrop"></div>');
+			// jQuery('body').append('<div class="menu-backdrop"></div>');
 			jQuery('.menu-backdrop').on('click', function () {
 				jQuery('.contact-sidebar').removeClass('active');
 				$(this).remove();
-			})
+			})			
 		});
 		jQuery('.menu-btn, .openbtn').on('click', function () {
 			jQuery('.contact-sidebar').addClass('active');

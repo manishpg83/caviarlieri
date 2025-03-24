@@ -8,116 +8,135 @@
     <div class="page-content bg-light">
         <!--banner-->
         <div class="container-fluid px-0">
-			<div id="home-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
-				
-				
+            <div id="home-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <div class="item">
+                                <div class="video-wrapper">
+                                    <video autoplay="" muted="" loop="" playsinline="" preload="metadata"
+                                        class="video-slide">
+                                        <source
+                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/Video-Bg.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="item">
+                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner1.jpg"
+                                    alt="">
+                                <div class="home-banner-container">
+                                    <div class="banner1-txt">
+                                        <h1 class="h1">ENDURING YOUTH <br>IS A DREAM NO LONGER</h1>
+                                        <div class="p-3" align="center"><img
+                                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png"
+                                                style="width: 30px;" alt=""></div>
+                                        <p class="text-uppercase mb-lg-5 mt-lg-3 mb-3 mt-1  GothamLight">Swiss Caviar
+                                            Cellular Therapy Supplement</p>
+                                        <a href="outstanding-benefits.php" class="gold-btn"><span
+                                                class="btn-content-wrapper"><span
+                                                    class="btn-content-text">Discover</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="item">
+                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner2.jpg"
+                                    alt="">
+                                <div class="home-banner-container">
+                                    <div class="banner2-txt">
+                                        <h1 class="h1">MAKE YOUR <br>CELLS YOUNG AGAIN </h1>
+                                        <div class="p-3" align="center"><img
+                                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png"
+                                                style="width: 30px;" alt=""></div>
+                                        <p class="text-uppercase  mb-lg-5 mt-lg-3 mb-3 mt-1 GothamLight">Swiss Caviar
+                                            Cellular Therapy Supplement</p>
+                                        <a href="outstanding-benefits.php" class="gold-btn"><span
+                                                class="btn-content-wrapper"><span
+                                                    class="btn-content-text">Discover</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--home slider for mobile -->
+            <div id="home-slider-mobile" class="owl-carousel owl-theme owl-loaded owl-drag" style="">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <div class="item mob-banner1"
+                                style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/banner1M.jpg'); background-repeat: no-repeat;">
+                                <div class="home-banner-container">
+                                    <div class="banner1-txt">
+                                        <h2>ENDURING YOUTH <br>IS A DREAM NO LONGER</h2>
+                                        <div class="p-2" align="center"><img
+                                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png"
+                                                style="width: 25px;" alt=""></div>
+                                        <p class="text-uppercase mb-3 mt-1 GothamLight">Swiss Caviar Cellular Therapy
+                                            Supplement</p>
+                                        <a href="outstanding-benefits.php" class="gold-btn"><span
+                                                class="btn-content-wrapper"><span
+                                                    class="btn-content-text">Discover</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="item mob-banner2"
+                                style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/banner2M.jpg'); background-repeat: no-repeat;">
+                                <div class="home-banner-container">
+                                    <div class="banner2-txt">
+                                        <h2>MAKE YOUR <br>CELLS YOUNG AGAIN </h2>
+                                        <div class="p-2" align="center"><img
+                                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png"
+                                                style="width: 25px;" alt=""></div>
+                                        <p class="text-uppercase mb-3 mt-1 GothamLight">Swiss Caviar Cellular Therapy
+                                            Supplement</p>
+                                        <a href="outstanding-benefits.php" class="gold-btn"><span
+                                                class="btn-content-wrapper"><span
+                                                    class="btn-content-text">Discover</span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="item mob-banner3">
+                                <div class="video-wrapper">
+                                    <video autoplay="" muted="" loop="" playsinline=""
+                                        preload="metadata" class="video-slide">
+                                        <source
+                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/Video-Bg.mp4"
+                                            type="video/mp4" style="width: 100%">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav disabled">
+                    <div aria-hidden="true" class="fa owl-prev fa-angle-left"></div>
+                    <div class="fa owl-next fa-angle-right"></div>
+                </div>
+                <div class="owl-dots">
+                    <div class="owl-dot active"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                </div>
+            </div>
 
-				
-
-
-			<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2570px, 0px, 0px); transition: all; width: 8995px;"><div class="owl-item cloned" style="width: 1285px;"><div class="item">
-					<img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner1.jpg" alt="" width="100%">
-					<div class="home-banner-container">
-						<div class="banner1-txt">
-							<h1 class="h1">ENDURING YOUTH <br>IS A DREAM NO LONGER</h1>
-							<div class="p-3" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 30px;" alt=""></div>
-							<p class="text-uppercase mb-lg-5 mt-lg-3 mb-3 mt-1  GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
-							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
-						</div>
-					</div>
-				</div></div><div class="owl-item cloned" style="width: 1285px;"><div class="item">
-					<img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner2.jpg" alt="" width="100%">
-					<div class="home-banner-container">
-						<div class="banner2-txt">
-							<h1 class="h1">MAKE YOUR <br>CELLS YOUNG AGAIN </h1>
-							<div class="p-3" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 30px;" alt=""></div>
-							<p class="text-uppercase  mb-lg-5 mt-lg-3 mb-3 mt-1 GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
-							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
-						</div>
-					</div>
-				</div></div><div class="owl-item active" style="width: 1285px;"><div class="item">
-					<div class="video-wrapper">
-						<video autoplay="" muted="" loop="" playsinline="" preload="metadata" class="video-slide">
-							<source src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/Video-Bg.mp4" type="video/mp4" style="width: 100%">
-						</video>
-					</div>
-				</div></div><div class="owl-item" style="width: 1285px;"><div class="item">
-					<img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner1.jpg" alt="" width="100%">
-					<div class="home-banner-container">
-						<div class="banner1-txt">
-							<h1 class="h1">ENDURING YOUTH <br>IS A DREAM NO LONGER</h1>
-							<div class="p-3" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 30px;" alt=""></div>
-							<p class="text-uppercase mb-lg-5 mt-lg-3 mb-3 mt-1  GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
-							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
-						</div>
-					</div>
-				</div></div><div class="owl-item" style="width: 1285px;"><div class="item">
-					<img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner2.jpg" alt="" width="100%">
-					<div class="home-banner-container">
-						<div class="banner2-txt">
-							<h1 class="h1">MAKE YOUR <br>CELLS YOUNG AGAIN </h1>
-							<div class="p-3" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 30px;" alt=""></div>
-							<p class="text-uppercase  mb-lg-5 mt-lg-3 mb-3 mt-1 GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
-							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
-						</div>
-					</div>
-				</div></div><div class="owl-item cloned" style="width: 1285px;"><div class="item">
-					<div class="video-wrapper">
-						<video autoplay="" muted="" loop="" playsinline="" preload="metadata" class="video-slide">
-							<source src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/Video-Bg.mp4" type="video/mp4" style="width: 100%">
-						</video>
-					</div>
-				</div></div><div class="owl-item cloned" style="width: 1285px;"><div class="item">
-					<img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner1.jpg" alt="" width="100%">
-					<div class="home-banner-container">
-						<div class="banner1-txt">
-							<h1 class="h1">ENDURING YOUTH <br>IS A DREAM NO LONGER</h1>
-							<div class="p-3" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 30px;" alt=""></div>
-							<p class="text-uppercase mb-lg-5 mt-lg-3 mb-3 mt-1  GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
-							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
-						</div>
-					</div>
-				</div></div></div></div><div class="owl-nav disabled"><div aria-hidden="true" class="fa owl-prev fa-angle-left"></div><div class="fa owl-next fa-angle-right"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
-			<!--home slider for mobile -->
-			<div id="home-slider-mobile" class="owl-carousel owl-theme owl-loaded owl-drag" style="">
-				
-
-				
-
-				
-			<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all;"><div class="owl-item"><div class="item mob-banner1" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/banner1M.jpg'); background-repeat: no-repeat;">
-					<div class="home-banner-container">
-						<div class="banner1-txt">
-							<h2>ENDURING YOUTH <br>IS A DREAM NO LONGER</h2>
-							<div class="p-2" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 25px;" alt=""></div>
-							<p class="text-uppercase mb-3 mt-1 GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
-							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
-						</div>
-					</div>
-				</div></div><div class="owl-item"><div class="item mob-banner2" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/banner2M.jpg'); background-repeat: no-repeat;">
-					<div class="home-banner-container">
-						<div class="banner2-txt">
-							<h2>MAKE YOUR <br>CELLS YOUNG AGAIN </h2>
-							<div class="p-2" align="center"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 25px;" alt=""></div>
-							<p class="text-uppercase mb-3 mt-1 GothamLight">Swiss Caviar Cellular Therapy Supplement</p>
-							<a href="outstanding-benefits.php" class="gold-btn"><span class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
-						</div>
-					</div>
-				</div></div><div class="owl-item"><div class="item mob-banner3">
-					<div class="video-wrapper">
-						<video autoplay="" muted="" loop="" playsinline="" preload="metadata" class="video-slide">
-							<source src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/Video-Bg.mp4" type="video/mp4" style="width: 100%">
-						</video>
-					</div>
-				</div></div></div></div><div class="owl-nav disabled"><div aria-hidden="true" class="fa owl-prev fa-angle-left"></div><div class="fa owl-next fa-angle-right"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
-
-			<!--home  slider for mobile slider-->
-		</div>
+            <!--home  slider for mobile slider-->
+        </div>
         <!--banner-->
         <!-- Product Start-->
         <section class="content-inner bg-light">
             <div class="container">
-                <div class="section-head style-1 wow fadeInUp text-start" data-wow-delay="0.1s" style="margin-bottom: 20px">
+                <div class="section-head style-1 wow fadeInUp text-start" data-wow-delay="0.1s"
+                    style="margin-bottom: 20px">
                     <div class="" style="text-align: center;">
                         <h2 class="title">YOUTH, VITALITY AND
                             TIMELESS BEAUTY WITH <span style="color: #817552">CAVIAR</span></h2>
@@ -126,7 +145,8 @@
 
                 <div class="row product-style1">
                     <p style="text-align: center">
-                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" alt="image"><br><br>
+                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png"
+                            alt="image"><br><br>
                     </p>
 
                     <div class="col-lg-12 col-md-12 GothamLight text-grey2"
@@ -146,7 +166,8 @@
                     <br>
 
                     <p style="text-align: center; padding: 0px">
-                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner3.jpg" alt="image"><br><br>
+                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner3.jpg"
+                            alt="image"><br><br>
                     </p>
 
                     <div class="" style="text-align: center; padding-top: 30px; padding-bottom: 60px;">
@@ -160,7 +181,6 @@
             </div>
             <!-- </section> -->
 
-
             <!-- <section class="section"> -->
             <div class="container-fluid" style="background-color: #000810">
                 <div class="col-lg-9 col-md-9 m-auto float-none">
@@ -171,9 +191,11 @@
                         </div>
                         <div class="col-lg-7 col-md-7 d-flex align-content-center align-items-center" align="center">
                             <div class="col-lg-10 col-md-12 py-5 float-none m-auto">
-                                <h1 class="text-white h1" style="font-size: 50px; letter-spacing: .025em;">ACTIVATE YOUR<br>
+                                <h1 class="text-white h1" style="font-size: 50px; letter-spacing: .025em;">ACTIVATE
+                                    YOUR<br>
                                     ANTI-AGING GENES</h1>
-                                <p style="color: #C8C3C3; font-size: 18px;padding-top:10px">Caviarlieri is clinically tested
+                                <p style="color: #C8C3C3; font-size: 18px;padding-top:10px">Caviarlieri is clinically
+                                    tested
                                     and scientifically proven
                                     to combat the effects of biological aging</p>
 
@@ -192,7 +214,8 @@
             <!-- <section class="section"> -->
             <div class="col-lg-8 col-md-10 m-auto py-5 px-4 float-none" align="center">
                 <div>
-                    <h1 class="text-uppercase h1 mb-4" style="font-size: 50px; letter-spacing: .025em; padding-top: 40px; ">
+                    <h1 class="text-uppercase h1 mb-4"
+                        style="font-size: 50px; letter-spacing: .025em; padding-top: 40px; ">
                         This Is No Miracle. This Is <span style="color:#817552">Science </span></h1>
                     <p class="text-uppercase" style="font-size: 20px">A Leader in Scientific Research for Biological Aging
                     </p>
@@ -204,19 +227,23 @@
                         (mRNA gene expression) levels of clinical subjects are measured before and after taking Caviarlieri.
                         The studies show significant therapeutic outcomes on key anti-aging biomarkers.</p>
                     <div class="p-3 mb-4"><a href="clinical-science.php" class="gold-btn"><span
-                                class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a></div>
+                                class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
+                    </div>
                 </div>
 
                 <div class="p-3 mb-3"><img src="images/home/Vector.png" width="30" alt=""></div>
 
                 <div class="section1">
-                    <h4 class="text-uppercase section h4" style="padding-bottom: 10px;">2. PEER-REVIEWED SCIENTIFIC STUDIES
+                    <h4 class="text-uppercase section h4" style="padding-bottom: 10px;">2. PEER-REVIEWED SCIENTIFIC
+                        STUDIES
                         ON <span style="color:#817552">CAVIARLIERI </span></h4>
-                    <p class="GothamLight text-grey2">These studies, which are published in PubMed and Europe PMC, validated
+                    <p class="GothamLight text-grey2">These studies, which are published in PubMed and Europe PMC,
+                        validated
                         the outstanding benefit claims of Caviarlieri as a potent caviar supplement, which can help delay
                         the onset and progression of aging and chronic degenerative diseases.</p>
                     <div class="p-3 mb-4"><a href="clinical-science.php" class="gold-btn"><span
-                                class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a></div>
+                                class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
+                    </div>
                 </div>
 
                 <div class="p-3 mb-3"><img src="images/home/Vector.png" width="30" alt=""></div>
@@ -228,13 +255,14 @@
                         ingredients of Caviarlieri demonstrated and validated the benefits experienced by clinical subjects
                         from the inherent and known properties of the bioactive ingredients encapsulated in Caviarlieri.</p>
                     <div class="p-3 mb-4"><a href="clinical-science.php" class="gold-btn"><span
-                                class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a></div>
+                                class="btn-content-wrapper"><span class="btn-content-text">Discover</span></span></a>
+                    </div>
                 </div>
 
             </div>
             <!-- </section>
-      
-      <section> -->
+          
+          <section> -->
             <div class="container-fluid"
                 style="background-image:url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/bg2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 50px 0">
                 <div class="col-lg-10 col-md-11 float-none m-auto" align="center">
@@ -329,7 +357,7 @@
             </div>
             <!-- </section>
 
-      <section> -->
+          <section> -->
             <div class="col-lg-8 col-md-8 m-auto float-none px-3" style="padding: 100px 0">
                 <h1 class="h1 text-center text-md-start" style="font-weight: 400;">TRUSTED BY <span
                         style="color:#817552 !important;">OLYMPIANS</span></h1>
@@ -339,7 +367,7 @@
             <!-- </section>
 
 
-      <section> -->
+          <section> -->
             <div class="container-fluid px-4 px-md-0">
                 <div class="row m-0">
                     <div class="col-lg-6 col-md-6 px-0">
@@ -520,6 +548,5 @@
                 </div>
             </div>
         </section>
-
     </div>
 @endsection

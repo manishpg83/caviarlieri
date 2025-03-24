@@ -81,7 +81,7 @@
 
             <div class="bg-darkblue col-12 text-white">
                 <div class="col-lg-7 col-md-12 float-none mx-auto text-center" style="padding: 70px 0;">
-                    <h4 class="h4 GothamLight mb-5">CAVIAR CELLULAR DNA EXTRACTS AND MARINE PEPTIDES</h4>
+                    <h4 class="h4 GothamLight text-white mb-5">CAVIAR CELLULAR DNA EXTRACTS AND MARINE PEPTIDES</h4>
                     <div class="GothamLight px-4 px-md-2">
                         <p class="font-16px GothamMedium mb-2"><strong>Why is it effective?</strong></p>
                         <p class="font-16px">Caviar (sturgeon caviar) is an exceptional nutritional ingredient, rich in

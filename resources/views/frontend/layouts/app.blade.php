@@ -35,18 +35,15 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/custom.css') }}" />
     <!-- Custom Stylesheet -->
     <link class="main-css" rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/style.css') }}" />
-    <link href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css" rel="stylesheet"
-        type="text/css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css" rel="stylesheet" type="text/css" />
     <!-- GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <script src="{{ asset('/frontend/js/jquery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('/frontend/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('/frontend/js/owl.carousel.js') }}"></script>
     <script src="{{ asset('/frontend/js/caviarlieri.js') }}"></script>
-    <script src="{{ asset('/frontend/js/jquery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('/frontend/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('/frontend/js/dashboard-account.js') }}"></script>
     <script src="{{ asset('/frontend/js/jquery-3.6.3.min.js') }}"></script>
@@ -98,7 +95,7 @@
 
     @livewireScripts
     <script src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/js/header.js"></script>
-    <script>
+    <script>        
         function toggleClass1() {
             var screensize = screen.width;
             var dropmenu1 = document.getElementById("sub-menu1");
@@ -488,7 +485,7 @@
             if (hash == 'aboutbtn3') {
                 setActiveButton('#aboutbtn3');
             }
-        });
+        });        
     </script>
 </body>
 

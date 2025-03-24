@@ -22,14 +22,13 @@
                 <!--main logo above 768-->
                 <div class="col-lg-1 d-none d-xl-block main-logo" align="center"><a href="{{ route('home') }}"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/logo_main.png" width="160" alt=""></a></div>
                 <!--main logo above 768-->
-                <ul class="navbar-nav mb-2 mb-xl-0 ps-4 text-uppercase">
+                <ul class="navbar-nav mb-2 mb-xl-0 px-4 text-uppercase">
                     <li class="nav-item"><a class="nav-link text-dark" href="{{ route('luxuryofcaviar') }}">Luxury of Caviar</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="{{ route('swisscaviarlieribeauty') }}">Swiss Caviarlieri Beauty</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="{{ route('contact') }}">CONTACT US</a></li>
-                </ul>
-                <a href="{{ route('cart') }}" class="gold-btn d-none d-xl-block"><span class="btn-content-wrapper"><span class="btn-content-text navbar-gold-btn">ORDER NOW</span></span></a>
+                    <li class="nav-item"><a href="{{ route('cart') }}" class="gold-btn d-none d-xl-block"><span class="btn-content-wrapper"><span class="btn-content-text navbar-gold-btn">ORDER NOW</span></span></a></li>
+                </ul>                
             </div>
         </div>
     </nav>
 </div>
-

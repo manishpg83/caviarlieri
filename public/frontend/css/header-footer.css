@@ -1,14 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 /* ============ Header & Footer CSS =========== */
-.header {
-    z-index: 99;
-    background: white;
-    position: fixed;
-    float: left;
-    width: 100%;
-    top: 0px;
-}
 .headerhide {
     z-index: 99;
     float: left;

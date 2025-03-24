@@ -37,9 +37,8 @@
         <div class="container-fluid px-0">
             <div id="expert-slider" class="owl-carousel owl-theme px-0 owl-loaded owl-drag">
                 <div class="owl-stage-outer">
-                    <div class="owl-stage"
-                        style="transform: translate3d(-6425px, 0px, 0px); transition: 0.5s; width: 14135px;">
-                        <div class="owl-item cloned" style="width: 1285px;">
+                    <div class="owl-stage">
+                        <div class="owl-item cloned">
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/imcas-academy.jpg')">
@@ -50,7 +49,7 @@
                                                 <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Ghislaine.jpg"
                                                     width="100%" alt="">
                                             </div>
-                                            <h3 class="h3 mb-4">Dr. Ghislaine Beilin, France</h3>
+                                            <h3 class="h3 mb-4 text-white">Dr. Ghislaine Beilin, France</h3>
                                             <p class="p-small GothamLight mb-4">Dermatologist, World renowned Aesthetic
                                                 Medicine Speaker, IMCAS Academy</p>
                                             <p class="p-small GothamBook mb-4">“Caviarlieri is a great breakthrough in the
@@ -64,7 +63,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-item cloned" style="width: 1285px;">
+                        <div class="owl-item cloned" >
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/ivana-scheiz2.jpg')">
@@ -75,7 +74,7 @@
                                                 <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/ivana-scaled.jpg"
                                                     width="100%" alt="">
                                             </div>
-                                            <h3 class="h3 mb-4">Ms. Ivana Sgheiz, Switzerland</h3>
+                                            <h3 class="h3 mb-4 text-white">Ms. Ivana Sgheiz, Switzerland</h3>
                                             <p class="p-small GothamLight mb-4">CEO, Chenot Palace, Weggis Switzerland, <br>
                                                 Group Director - Chenot International</p>
                                             <p class="p-small GothamBook mb-4">“Caviarlieri has helped to improve my energy
@@ -89,7 +88,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-item cloned" style="width: 1285px;">
+                        <div class="owl-item cloned" >
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/dr-Michael-papacharalampous.jpg')">
@@ -100,7 +99,7 @@
                                                 <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Michael.jpg"
                                                     width="100%" alt="">
                                             </div>
-                                            <h3 class="h3 mb-4">Dr. Michael Papacharalambous, Greece</h3>
+                                            <h3 class="h3 mb-4 text-white">Dr. Michael Papacharalambous, Greece</h3>
                                             <p class="p-small GothamLight mb-4">Director of Internal Medicine, Metropolitan
                                                 Hospital Athens,
                                                 Medical Director of Orthobiotiki S.A</p>
@@ -115,7 +114,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-item" style="width: 1285px;">
+                        <div class="owl-item" >
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/emmanouil-karalis-tokyo-olympics-1.jpg')">
@@ -126,7 +125,7 @@
                                                 <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/emmanouil-karalis-profile.jpg"
                                                     width="100%" alt="">
                                             </div>
-                                            <h3 class="h3 mb-4">Ranked 4th in Tokyo Olympic Pole Vault</h3>
+                                            <h3 class="h3 mb-4 text-white">Ranked 4th in Tokyo Olympic Pole Vault</h3>
                                             <p class="p-small GothamLight mb-4">Olympian Emmanouil Karalis, World Best
                                                 Performance Holder, Greece</p>
                                             <p class="p-small GothamBook mb-4">“Caviarlieri helps boost my strength and
@@ -140,7 +139,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-item" style="width: 1285px;">
+                        <div class="owl-item" >
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/grand-resort-bad-ragaz-spa.jpg')">
@@ -151,7 +150,7 @@
                                                 <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Brigitte-Bollinger.jpg"
                                                     width="100%" alt="">
                                             </div>
-                                            <h3 class="h3 mb-4">Dr.Med. Brigette Bollinger, Switzerland</h3>
+                                            <h3 class="h3 mb-4 text-white">Dr.Med. Brigette Bollinger, Switzerland</h3>
                                             <p class="p-small GothamLight mb-4">Specialist FMH for Dermatology and
                                                 Venereology, Medical Centre Bad Ragaz, Switzerland</p>
                                             <p class="p-small GothamBook mb-4">“Cell Regeneration Is Activated in
@@ -165,7 +164,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-item active" style="width: 1285px;">
+                        <div class="owl-item active" >
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/imcas-academy.jpg')">
@@ -176,7 +175,7 @@
                                                 <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Ghislaine.jpg"
                                                     width="100%" alt="">
                                             </div>
-                                            <h3 class="h3 mb-4">Dr. Ghislaine Beilin, France</h3>
+                                            <h3 class="h3 mb-4 text-white">Dr. Ghislaine Beilin, France</h3>
                                             <p class="p-small GothamLight mb-4">Dermatologist, World renowned Aesthetic
                                                 Medicine Speaker, IMCAS Academy</p>
                                             <p class="p-small GothamBook mb-4">“Caviarlieri is a great breakthrough in the
@@ -190,7 +189,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-item" style="width: 1285px;">
+                        <div class="owl-item" >
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/ivana-scheiz2.jpg')">
@@ -201,7 +200,7 @@
                                                 <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/ivana-scaled.jpg"
                                                     width="100%" alt="">
                                             </div>
-                                            <h3 class="h3 mb-4">Ms. Ivana Sgheiz, Switzerland</h3>
+                                            <h3 class="h3 mb-4 text-white">Ms. Ivana Sgheiz, Switzerland</h3>
                                             <p class="p-small GothamLight mb-4">CEO, Chenot Palace, Weggis Switzerland,
                                                 <br>
                                                 Group Director - Chenot International
@@ -217,7 +216,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-item" style="width: 1285px;">
+                        <div class="owl-item" >
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/dr-Michael-papacharalampous.jpg')">
@@ -228,7 +227,7 @@
                                                 <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Michael.jpg"
                                                     width="100%" alt="">
                                             </div>
-                                            <h3 class="h3 mb-4">Dr. Michael Papacharalambous, Greece</h3>
+                                            <h3 class="h3 mb-4 text-white">Dr. Michael Papacharalambous, Greece</h3>
                                             <p class="p-small GothamLight mb-4">Director of Internal Medicine, Metropolitan
                                                 Hospital Athens,
                                                 Medical Director of Orthobiotiki S.A</p>
@@ -243,7 +242,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-item cloned" style="width: 1285px;">
+                        <div class="owl-item cloned" >
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/emmanouil-karalis-tokyo-olympics-1.jpg')">
@@ -254,7 +253,7 @@
                                                 <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/emmanouil-karalis-profile.jpg"
                                                     width="100%" alt="">
                                             </div>
-                                            <h3 class="h3 mb-4">Ranked 4th in Tokyo Olympic Pole Vault</h3>
+                                            <h3 class="h3 mb-4 text-white">Ranked 4th in Tokyo Olympic Pole Vault</h3>
                                             <p class="p-small GothamLight mb-4">Olympian Emmanouil Karalis, World Best
                                                 Performance Holder, Greece</p>
                                             <p class="p-small GothamBook mb-4">“Caviarlieri helps boost my strength and
@@ -268,7 +267,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-item cloned" style="width: 1285px;">
+                        <div class="owl-item cloned" >
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/grand-resort-bad-ragaz-spa.jpg')">
@@ -279,7 +278,7 @@
                                                 <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Brigitte-Bollinger.jpg"
                                                     width="100%" alt="">
                                             </div>
-                                            <h3 class="h3 mb-4">Dr.Med. Brigette Bollinger, Switzerland</h3>
+                                            <h3 class="h3 mb-4 text-white">Dr.Med. Brigette Bollinger, Switzerland</h3>
                                             <p class="p-small GothamLight mb-4">Specialist FMH for Dermatology and
                                                 Venereology, Medical Centre Bad Ragaz, Switzerland</p>
                                             <p class="p-small GothamBook mb-4">“Cell Regeneration Is Activated in
@@ -293,7 +292,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-item cloned" style="width: 1285px;">
+                        <div class="owl-item cloned" >
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/imcas-academy.jpg')">
@@ -304,7 +303,7 @@
                                                 <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Ghislaine.jpg"
                                                     width="100%" alt="">
                                             </div>
-                                            <h3 class="h3 mb-4">Dr. Ghislaine Beilin, France</h3>
+                                            <h3 class="h3 mb-4 text-white">Dr. Ghislaine Beilin, France</h3>
                                             <p class="p-small GothamLight mb-4">Dermatologist, World renowned Aesthetic
                                                 Medicine Speaker, IMCAS Academy</p>
                                             <p class="p-small GothamBook mb-4">“Caviarlieri is a great breakthrough in the
@@ -320,11 +319,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="owl-nav disabled">
-                    <div aria-hidden="true" class="fa owl-prev fa-angle-left"></div>
-                    <div class="fa owl-next fa-angle-right"></div>
-                </div>
-                <div class="owl-dots disabled"></div>
             </div>
         </div>
     </section>
@@ -333,12 +327,11 @@
     <section>
         <div id="doctor-a1" class="container-fluid" style="padding: 60px 0; background-color: #f1f1f1;" align="center">
             <h2 class="h2 GothamLight mb-5">DOCTOR'S REVIEW</h2>
-            <div class="col-lg-10 col-xl-10 col-xxl-8 float-none mx-auto">
+            <div class="col-lg-12 col-xl-10 float-none mx-auto">
                 <div id="doctors-review" class="owl-carousel owl-theme owl-loaded owl-drag">
                     <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                            style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1428px;">
-                            <div class="owl-item active" style="width: 356.943px;">
+                        <div class="owl-stage">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -366,7 +359,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item active" style="width: 356.943px;">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -393,7 +386,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item active" style="width: 356.943px;">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -420,7 +413,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item active" style="width: 356.943px;">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -449,14 +442,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="owl-nav disabled">
-                        <div aria-hidden="true" class="fa owl-prev fa-angle-left"></div>
-                        <div class="fa owl-next fa-angle-right"></div>
-                    </div>
-                    <div class="owl-dots">
-                        <div class="owl-dot active"><span></span></div>
-                        <div class="owl-dot"><span></span></div>
-                    </div>
                 </div>
 
             </div>
@@ -471,12 +456,11 @@
                 <h2 class="h2 GothamLight mb-5">EXPERTS' REVIEW</h2>
             </div>
 
-            <div id="expert-review1" class="col-lg-10 col-xl-10 col-xxl-8 float-none mx-auto">
+            <div id="expert-review1" class="col-lg-12 col-xl-10 float-none mx-auto">
                 <div class="expert-review owl-carousel owl-theme mb-5 px-md-4 owl-loaded owl-drag">
                     <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                            style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1023px;">
-                            <div class="owl-item active" style="width: 340.943px;">
+                        <div class="owl-stage">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -502,7 +486,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item active" style="width: 340.943px;">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -527,7 +511,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item active" style="width: 340.943px;">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -556,11 +540,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="owl-nav disabled">
-                        <div aria-hidden="true" class="fa owl-prev fa-angle-left"></div>
-                        <div class="fa owl-next fa-angle-right"></div>
-                    </div>
-                    <div class="owl-dots disabled"></div>
                 </div>
 
                 <div class="expert-review owl-carousel owl-theme mb-5 px-md-4 owl-loaded owl-drag">
@@ -570,9 +549,8 @@
 
 
                     <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                            style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1023px;">
-                            <div class="owl-item active" style="width: 340.943px;">
+                        <div class="owl-stage">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -597,7 +575,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item active" style="width: 340.943px;">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -623,7 +601,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item active" style="width: 340.943px;">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -653,18 +631,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="owl-nav disabled">
-                        <div aria-hidden="true" class="fa owl-prev fa-angle-left"></div>
-                        <div class="fa owl-next fa-angle-right"></div>
-                    </div>
-                    <div class="owl-dots disabled"></div>
                 </div>
 
                 <div class="expert-review owl-carousel owl-theme mb-5 px-md-4 owl-loaded owl-drag">
                     <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                            style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1023px;">
-                            <div class="owl-item active" style="width: 340.943px;">
+                        <div class="owl-stage">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -688,7 +660,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item active" style="width: 340.943px;">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -713,7 +685,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item active" style="width: 340.943px;">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -741,11 +713,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="owl-nav disabled">
-                        <div aria-hidden="true" class="fa owl-prev fa-angle-left"></div>
-                        <div class="fa owl-next fa-angle-right"></div>
-                    </div>
-                    <div class="owl-dots disabled"></div>
                 </div>
 
                 <div class="expert-review owl-carousel owl-theme mb-5 px-md-4 owl-loaded owl-drag">
@@ -755,9 +722,8 @@
 
 
                     <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                            style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1023px;">
-                            <div class="owl-item active" style="width: 340.943px;">
+                        <div class="owl-stage">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -783,7 +749,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item active" style="width: 340.943px;">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -808,7 +774,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item active" style="width: 340.943px;">
+                            <div class="owl-item active" >
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
@@ -835,11 +801,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="owl-nav disabled">
-                        <div aria-hidden="true" class="fa owl-prev fa-angle-left"></div>
-                        <div class="fa owl-next fa-angle-right"></div>
-                    </div>
-                    <div class="owl-dots disabled"></div>
                 </div>
             </div>
         </div>
@@ -1145,7 +1106,7 @@
     <!--video review-->
     <section>
         <div id="video-div" class="container-fluid bg-darkblue" style="padding: 60px 0;">
-            <div class="col-md-12 col-lg-10 col-xl-10 col-xxl-8  float-none mx-auto mb-4 text-white px-4 position-relative"
+            <div class="col-md-12 col-lg-10 col-xl-10 float-none mx-auto mb-4 text-white px-4 position-relative"
                 align="center">
                 <h2 class="h2 text-white GothamLight mb-5">VIDEO REVIEWS BY EXPERTS</h2>
                 <div class="row">
@@ -1153,7 +1114,7 @@
                         <div class="tab-content overflow-hidden">
                             <!--review left text1-->
                             <div class="tab-pane move-right active" id="ex-review1" role="tabpanel">
-                                <h4 class="h5 small m-0"><small>Dr.Med. Brigitte Bollinger, Switzerland</small></h4>
+                                <h4 class="h5 small m-0 text-white"><small>Dr.Med. Brigitte Bollinger, Switzerland</small></h4>
                                 <h4 class="h5 small text-lightgold mb-4" style="line-height: 1;"><small>Specialist FMH for
                                         Dermatology and Venereology</small></h4>
                                 <p class="p-small GothamLight"><i>"Cell Regeneration is activated in Caviarlieri"</i></p>
@@ -1241,15 +1202,14 @@
                 </div>
             </div>
 
-            <div class="col-lg-10 col-xl-10 col-xxl-8 float-none mx-auto px-3">
+            <div class="col-lg-12 col-xl-10 float-none mx-auto px-3">
                 <ul class="video-gallery owl-carousel owl-theme owl-loaded owl-drag" id="video-gallery" role="tablist">
 
 
 
 
                     <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                            style="transform: translate3d(0px, 0px, 0px); transition: all; width: 2078px;">
+                        <div class="owl-stage">
                             <div class="owl-item active" style="width: 1038.83px;">
                                 <li class="item px-2">
                                     <div class="row">
@@ -1363,14 +1323,6 @@
                                 </li>
                             </div>
                         </div>
-                    </div>
-                    <div class="owl-nav disabled">
-                        <div aria-hidden="true" class="fa owl-prev fa-angle-left"></div>
-                        <div class="fa owl-next fa-angle-right"></div>
-                    </div>
-                    <div class="owl-dots">
-                        <div class="owl-dot active"><span></span></div>
-                        <div class="owl-dot"><span></span></div>
                     </div>
                 </ul>
             </div>

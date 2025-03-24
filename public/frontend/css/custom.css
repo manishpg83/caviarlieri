@@ -1,6 +1,17 @@
 .navbar-nav .nav-link {
     line-height: 1;
     letter-spacing: 0.5px;
+    padding-block: 13px;
+}
+.navbar-nav .gold-btn {
+    margin-left: 8px;
+}
+.content-wrapper #home-slider {
+    height: 100vh;
+}
+.content-wrapper .container-fluid {
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
 }
 .cart-count-badge,
 .cart-count-badge1 {
@@ -13,6 +24,13 @@
     padding: 3px 0;
     min-width: auto;
     font-family: 'AdelleSansW01-Regular';
+}
+body .text-lightgold {
+    color: #cebc92;
+}
+section.bgclr-black .heading2 {
+    text-align: center;
+    color: var(--title);
 }
 .nav-item.position-relative a {
     position: relative;
@@ -36,7 +54,7 @@
 }
 .footer-bottom p,
 .footer-bottom a {
-    color: #212529 !important;
+    color: #ffffff;
 }
 @media screen and (max-width: 1320px) {
     .sidbar-main-menu .nav-item {
@@ -1471,7 +1489,7 @@ h3{font-size:13px;}
 	    padding-top: 0px !important;
 	}
 }
-@media (min-width: 991px) {
+@media screen and (min-width: 991px) {
 	/* Show the table header rows and set all cells to display: table-cell */
 	.table-res td,
     .table-res th,
@@ -1491,6 +1509,9 @@ h3{font-size:13px;}
     .myBox-left {
 	    padding: 0px 30px;
 	}
+    .navbar-expand-xl .navbar-collapse {
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 768px){

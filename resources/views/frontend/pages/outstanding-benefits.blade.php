@@ -20,7 +20,7 @@
 </style>
 
 <section>
-    <div class="container-fluid bg-black pb-5 benifits bg-water">
+    <div class="container-fluid bg-black py-5 benifits bg-water">
         <div class="">
             <div class="container1 title-top-margin">
                 <div class="row">
