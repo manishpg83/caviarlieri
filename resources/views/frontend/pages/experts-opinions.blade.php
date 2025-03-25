@@ -39,6 +39,7 @@
                 <div class="owl-stage-outer">
                     <div class="owl-stage">
                         <div class="owl-item" >
+                        <div class="owl-item cloned">
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('{{ asset('frontend/images/experts-opinions/emmanouil-karalis-tokyo-olympics-1.jpg') }}')">
@@ -47,6 +48,82 @@
                                         <div class="text-left">
                                             <div class="profile-circle">
                                                 <img src="{{ asset('frontend/images/experts-opinions/emmanouil-karalis-profile.jpg') }}"
+                                                    width="100%" alt="">
+                                            </div>
+                                            <h3 class="h3 mb-4 text-white">Dr. Ghislaine Beilin, France</h3>
+                                            <p class="p-small GothamLight mb-4">Dermatologist, World renowned Aesthetic
+                                                Medicine Speaker, IMCAS Academy</p>
+                                            <p class="p-small GothamBook mb-4">“Caviarlieri is a great breakthrough in the
+                                                field of stem cell research and anti-aging medicine.”</p>
+                                            <a href="#" class="doctor-a1 white-btn-expert"><span
+                                                    class="btn-content-wrapper"><span
+                                                        class="btn-content-text navbar-round-btn">READ FULL
+                                                        QUOTE</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" >
+                            <div class="item">
+                                <div class="expert-bg"
+                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/ivana-scheiz2.jpg')">
+                                    <div
+                                        class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
+                                        <div class="text-left">
+                                            <div class="profile-circle">
+                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/ivana-scaled.jpg"
+                                                    width="100%" alt="">
+                                            </div>
+                                            <h3 class="h3 mb-4 text-white">Ms. Ivana Sgheiz, Switzerland</h3>
+                                            <p class="p-small GothamLight mb-4">CEO, Chenot Palace, Weggis Switzerland, <br>
+                                                Group Director - Chenot International</p>
+                                            <p class="p-small GothamBook mb-4">“Caviarlieri has helped to improve my energy
+                                                and vitality tremendously.”</p>
+                                            <a href="#" class="doctor-a1 white-btn-expert"><span
+                                                    class="btn-content-wrapper"><span
+                                                        class="btn-content-text navbar-round-btn">READ FULL
+                                                        QUOTE</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" >
+                            <div class="item">
+                                <div class="expert-bg"
+                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/dr-Michael-papacharalampous.jpg')">
+                                    <div
+                                        class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
+                                        <div class="text-left">
+                                            <div class="profile-circle">
+                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Michael.jpg"
+                                                    width="100%" alt="">
+                                            </div>
+                                            <h3 class="h3 mb-4 text-white">Dr. Michael Papacharalambous, Greece</h3>
+                                            <p class="p-small GothamLight mb-4">Director of Internal Medicine, Metropolitan
+                                                Hospital Athens,
+                                                Medical Director of Orthobiotiki S.A</p>
+                                            <p class="p-small GothamBook mb-4">“Caviarlieri helps Reduce the Inflammation of
+                                                the joints, so No Pain of the Joints.”</p>
+                                            <a href="#" class="doctor-a1 white-btn-expert"><span
+                                                    class="btn-content-wrapper"><span
+                                                        class="btn-content-text navbar-round-btn">READ FULL
+                                                        QUOTE</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" >
+                            <div class="item">
+                                <div class="expert-bg"
+                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/emmanouil-karalis-tokyo-olympics-1.jpg')">
+                                    <div
+                                        class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
+                                        <div class="text-left">
+                                            <div class="profile-circle">
+                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/emmanouil-karalis-profile.jpg"
                                                     width="100%" alt="">
                                             </div>
                                             <h3 class="h3 mb-4 text-white">Ranked 4th in Tokyo Olympic Pole Vault</h3>
@@ -89,6 +166,7 @@
                             </div>
                         </div>
                         <div class="owl-item active">
+                        <div class="owl-item active" >
                             <div class="item">
                                 <div class="expert-bg"
                                     style="background-image: url('{{ asset('frontend/images/experts-opinions/imcas-academy.jpg') }}')">
@@ -157,6 +235,81 @@
                                                 Medical Director of Orthobiotiki S.A</p>
                                             <p class="p-small GothamBook mb-4">“Caviarlieri helps Reduce the Inflammation
                                                 of the joints, so No Pain of the Joints.”</p>
+                                            <a href="#" class="doctor-a1 white-btn-expert"><span
+                                                    class="btn-content-wrapper"><span
+                                                        class="btn-content-text navbar-round-btn">READ FULL
+                                                        QUOTE</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" >
+                            <div class="item">
+                                <div class="expert-bg"
+                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/emmanouil-karalis-tokyo-olympics-1.jpg')">
+                                    <div
+                                        class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
+                                        <div class="text-left">
+                                            <div class="profile-circle">
+                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/emmanouil-karalis-profile.jpg"
+                                                    width="100%" alt="">
+                                            </div>
+                                            <h3 class="h3 mb-4 text-white">Ranked 4th in Tokyo Olympic Pole Vault</h3>
+                                            <p class="p-small GothamLight mb-4">Olympian Emmanouil Karalis, World Best
+                                                Performance Holder, Greece</p>
+                                            <p class="p-small GothamBook mb-4">“Caviarlieri helps boost my strength and
+                                                stamina.”</p>
+                                            <a href="#" class="expert-a1 white-btn-expert"><span
+                                                    class="btn-content-wrapper"><span
+                                                        class="btn-content-text navbar-round-btn">READ FULL
+                                                        QUOTE</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" >
+                            <div class="item">
+                                <div class="expert-bg"
+                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/grand-resort-bad-ragaz-spa.jpg')">
+                                    <div
+                                        class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
+                                        <div class="text-left">
+                                            <div class="profile-circle">
+                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Brigitte-Bollinger.jpg"
+                                                    width="100%" alt="">
+                                            </div>
+                                            <h3 class="h3 mb-4 text-white">Dr.Med. Brigette Bollinger, Switzerland</h3>
+                                            <p class="p-small GothamLight mb-4">Specialist FMH for Dermatology and
+                                                Venereology, Medical Centre Bad Ragaz, Switzerland</p>
+                                            <p class="p-small GothamBook mb-4">“Cell Regeneration Is Activated in
+                                                Caviarlieri.”</p>
+                                            <a href="#" class="doctor-a1 white-btn-expert"><span
+                                                    class="btn-content-wrapper"><span
+                                                        class="btn-content-text navbar-round-btn">READ FULL
+                                                        QUOTE</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" >
+                            <div class="item">
+                                <div class="expert-bg"
+                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/imcas-academy.jpg')">
+                                    <div
+                                        class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
+                                        <div class="text-left">
+                                            <div class="profile-circle">
+                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Ghislaine.jpg"
+                                                    width="100%" alt="">
+                                            </div>
+                                            <h3 class="h3 mb-4 text-white">Dr. Ghislaine Beilin, France</h3>
+                                            <p class="p-small GothamLight mb-4">Dermatologist, World renowned Aesthetic
+                                                Medicine Speaker, IMCAS Academy</p>
+                                            <p class="p-small GothamBook mb-4">“Caviarlieri is a great breakthrough in the
+                                                field of stem cell research and anti-aging medicine.”</p>
                                             <a href="#" class="doctor-a1 white-btn-expert"><span
                                                     class="btn-content-wrapper"><span
                                                         class="btn-content-text navbar-round-btn">READ FULL
