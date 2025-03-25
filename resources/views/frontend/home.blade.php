@@ -129,10 +129,8 @@
                 </div>
             </div>
 
-<<<<<<< Updated upstream
             <!--home  slider for mobile slider-->
         </div>
-=======
 
 
 			<div class="owl-stage-outer"><div class="owl-stage"><div class="owl-item cloned"><div class="item">
