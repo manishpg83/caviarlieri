@@ -38,91 +38,15 @@
             <div id="expert-slider" class="owl-carousel owl-theme px-0 owl-loaded owl-drag">
                 <div class="owl-stage-outer">
                     <div class="owl-stage">
-                        <div class="owl-item cloned">
-                            <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/imcas-academy.jpg')">
-                                    <div
-                                        class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
-                                        <div class="text-left">
-                                            <div class="profile-circle">
-                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Ghislaine.jpg"
-                                                    width="100%" alt="">
-                                            </div>
-                                            <h3 class="h3 mb-4 text-white">Dr. Ghislaine Beilin, France</h3>
-                                            <p class="p-small GothamLight mb-4">Dermatologist, World renowned Aesthetic
-                                                Medicine Speaker, IMCAS Academy</p>
-                                            <p class="p-small GothamBook mb-4">“Caviarlieri is a great breakthrough in the
-                                                field of stem cell research and anti-aging medicine.”</p>
-                                            <a href="#" class="doctor-a1 white-btn-expert"><span
-                                                    class="btn-content-wrapper"><span
-                                                        class="btn-content-text navbar-round-btn">READ FULL
-                                                        QUOTE</span></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" >
-                            <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/ivana-scheiz2.jpg')">
-                                    <div
-                                        class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
-                                        <div class="text-left">
-                                            <div class="profile-circle">
-                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/ivana-scaled.jpg"
-                                                    width="100%" alt="">
-                                            </div>
-                                            <h3 class="h3 mb-4 text-white">Ms. Ivana Sgheiz, Switzerland</h3>
-                                            <p class="p-small GothamLight mb-4">CEO, Chenot Palace, Weggis Switzerland, <br>
-                                                Group Director - Chenot International</p>
-                                            <p class="p-small GothamBook mb-4">“Caviarlieri has helped to improve my energy
-                                                and vitality tremendously.”</p>
-                                            <a href="#" class="doctor-a1 white-btn-expert"><span
-                                                    class="btn-content-wrapper"><span
-                                                        class="btn-content-text navbar-round-btn">READ FULL
-                                                        QUOTE</span></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" >
-                            <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/dr-Michael-papacharalampous.jpg')">
-                                    <div
-                                        class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
-                                        <div class="text-left">
-                                            <div class="profile-circle">
-                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Michael.jpg"
-                                                    width="100%" alt="">
-                                            </div>
-                                            <h3 class="h3 mb-4 text-white">Dr. Michael Papacharalambous, Greece</h3>
-                                            <p class="p-small GothamLight mb-4">Director of Internal Medicine, Metropolitan
-                                                Hospital Athens,
-                                                Medical Director of Orthobiotiki S.A</p>
-                                            <p class="p-small GothamBook mb-4">“Caviarlieri helps Reduce the Inflammation of
-                                                the joints, so No Pain of the Joints.”</p>
-                                            <a href="#" class="doctor-a1 white-btn-expert"><span
-                                                    class="btn-content-wrapper"><span
-                                                        class="btn-content-text navbar-round-btn">READ FULL
-                                                        QUOTE</span></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="owl-item" >
                             <div class="item">
                                 <div class="expert-bg"
-                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/emmanouil-karalis-tokyo-olympics-1.jpg')">
+                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/emmanouil-karalis-tokyo-olympics-1.jpg') }}')">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
                                             <div class="profile-circle">
-                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/emmanouil-karalis-profile.jpg"
+                                                <img src="{{ asset('frontend/images/experts-opinions/emmanouil-karalis-profile.jpg') }}"
                                                     width="100%" alt="">
                                             </div>
                                             <h3 class="h3 mb-4 text-white">Ranked 4th in Tokyo Olympic Pole Vault</h3>
@@ -142,12 +66,12 @@
                         <div class="owl-item" >
                             <div class="item">
                                 <div class="expert-bg"
-                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/grand-resort-bad-ragaz-spa.jpg')">
+                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/grand-resort-bad-ragaz-spa.jpg') }}')">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
                                             <div class="profile-circle">
-                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Brigitte-Bollinger.jpg"
+                                                <img src="{{ asset('frontend/images/experts-opinions/Brigitte-Bollinger.jpg') }}"
                                                     width="100%" alt="">
                                             </div>
                                             <h3 class="h3 mb-4 text-white">Dr.Med. Brigette Bollinger, Switzerland</h3>
@@ -164,15 +88,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-item active" >
+                        <div class="owl-item active">
                             <div class="item">
                                 <div class="expert-bg"
-                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/imcas-academy.jpg')">
+                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/imcas-academy.jpg') }}')">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
                                             <div class="profile-circle">
-                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Ghislaine.jpg"
+                                                <img src="{{ asset('frontend/images/experts-opinions/Ghislaine.jpg') }}"
                                                     width="100%" alt="">
                                             </div>
                                             <h3 class="h3 mb-4 text-white">Dr. Ghislaine Beilin, France</h3>
@@ -192,12 +116,12 @@
                         <div class="owl-item" >
                             <div class="item">
                                 <div class="expert-bg"
-                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/ivana-scheiz2.jpg')">
+                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/ivana-scheiz2.jpg') }}')">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
                                             <div class="profile-circle">
-                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/ivana-scaled.jpg"
+                                                <img src="{{ asset('frontend/images/experts-opinions/ivana-scaled.jpg') }}"
                                                     width="100%" alt="">
                                             </div>
                                             <h3 class="h3 mb-4 text-white">Ms. Ivana Sgheiz, Switzerland</h3>
@@ -219,12 +143,12 @@
                         <div class="owl-item" >
                             <div class="item">
                                 <div class="expert-bg"
-                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/dr-Michael-papacharalampous.jpg')">
+                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/dr-Michael-papacharalampous.jpg') }}')">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
                                             <div class="profile-circle">
-                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Michael.jpg"
+                                                <img src="{{ asset('frontend/images/experts-opinions/Michael.jpg') }}"
                                                     width="100%" alt="">
                                             </div>
                                             <h3 class="h3 mb-4 text-white">Dr. Michael Papacharalambous, Greece</h3>
@@ -233,81 +157,6 @@
                                                 Medical Director of Orthobiotiki S.A</p>
                                             <p class="p-small GothamBook mb-4">“Caviarlieri helps Reduce the Inflammation
                                                 of the joints, so No Pain of the Joints.”</p>
-                                            <a href="#" class="doctor-a1 white-btn-expert"><span
-                                                    class="btn-content-wrapper"><span
-                                                        class="btn-content-text navbar-round-btn">READ FULL
-                                                        QUOTE</span></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" >
-                            <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/emmanouil-karalis-tokyo-olympics-1.jpg')">
-                                    <div
-                                        class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
-                                        <div class="text-left">
-                                            <div class="profile-circle">
-                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/emmanouil-karalis-profile.jpg"
-                                                    width="100%" alt="">
-                                            </div>
-                                            <h3 class="h3 mb-4 text-white">Ranked 4th in Tokyo Olympic Pole Vault</h3>
-                                            <p class="p-small GothamLight mb-4">Olympian Emmanouil Karalis, World Best
-                                                Performance Holder, Greece</p>
-                                            <p class="p-small GothamBook mb-4">“Caviarlieri helps boost my strength and
-                                                stamina.”</p>
-                                            <a href="#" class="expert-a1 white-btn-expert"><span
-                                                    class="btn-content-wrapper"><span
-                                                        class="btn-content-text navbar-round-btn">READ FULL
-                                                        QUOTE</span></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" >
-                            <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/grand-resort-bad-ragaz-spa.jpg')">
-                                    <div
-                                        class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
-                                        <div class="text-left">
-                                            <div class="profile-circle">
-                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Brigitte-Bollinger.jpg"
-                                                    width="100%" alt="">
-                                            </div>
-                                            <h3 class="h3 mb-4 text-white">Dr.Med. Brigette Bollinger, Switzerland</h3>
-                                            <p class="p-small GothamLight mb-4">Specialist FMH for Dermatology and
-                                                Venereology, Medical Centre Bad Ragaz, Switzerland</p>
-                                            <p class="p-small GothamBook mb-4">“Cell Regeneration Is Activated in
-                                                Caviarlieri.”</p>
-                                            <a href="#" class="doctor-a1 white-btn-expert"><span
-                                                    class="btn-content-wrapper"><span
-                                                        class="btn-content-text navbar-round-btn">READ FULL
-                                                        QUOTE</span></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" >
-                            <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//expert-review/imcas-academy.jpg')">
-                                    <div
-                                        class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
-                                        <div class="text-left">
-                                            <div class="profile-circle">
-                                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Ghislaine.jpg"
-                                                    width="100%" alt="">
-                                            </div>
-                                            <h3 class="h3 mb-4 text-white">Dr. Ghislaine Beilin, France</h3>
-                                            <p class="p-small GothamLight mb-4">Dermatologist, World renowned Aesthetic
-                                                Medicine Speaker, IMCAS Academy</p>
-                                            <p class="p-small GothamBook mb-4">“Caviarlieri is a great breakthrough in the
-                                                field of stem cell research and anti-aging medicine.”</p>
                                             <a href="#" class="doctor-a1 white-btn-expert"><span
                                                     class="btn-content-wrapper"><span
                                                         class="btn-content-text navbar-round-btn">READ FULL
@@ -336,7 +185,7 @@
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
                                             <img class="doc-pic"
-                                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Brigitte-Bollinger1.jpg"
+                                                src="{{ asset('frontend/images/experts-opinions/Brigitte-Bollinger1.jpg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Dr.Med. Brigette Bollinger, Switzerland</p>
@@ -364,7 +213,7 @@
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
                                             <img class="doc-pic"
-                                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Ghislaine1.jpg"
+                                                src="{{ asset('frontend/images/experts-opinions/Ghislaine1.jpg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Dr. Ghislaine Beilin, France</p>
@@ -391,7 +240,7 @@
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
                                             <img class="doc-pic"
-                                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/ivana1.jpg"
+                                                src="{{ asset('frontend/images/experts-opinions/ivana1.jpg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Ms. Ivana Sgheiz, Switzerland</p>
@@ -418,7 +267,7 @@
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
                                             <img class="doc-pic"
-                                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/michael1.jpg"
+                                                src="{{ asset('frontend/images/experts-opinions/michael1.jpg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Dr. Michael Papacharalambous, Greece</p>
@@ -464,7 +313,7 @@
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
-                                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/stefanos-1.jpg"
+                                            <img src="{{ asset('frontend/images/experts-opinions/stefanos-1.jpg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Stefanos Dimitriadis, Greece</p>
@@ -490,7 +339,7 @@
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
-                                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/karalis1.jpg"
+                                            <img src="{{ asset('frontend/images/experts-opinions/karalis1.jpg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Emmanouil Karalis, Greece</p>
@@ -515,7 +364,7 @@
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
-                                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/florence.png"
+                                            <img src="{{ asset('frontend/images/experts-opinions/florence.png') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Florence Schaeffer, France</p>
@@ -554,7 +403,7 @@
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
-                                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/gillianyip.jpg"
+                                            <img src="{{ asset('frontend/images/experts-opinions/gillianyip.jpg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Dr. Gillian Yip, China</p>
@@ -579,7 +428,7 @@
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
-                                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/sotaris.jpg"
+                                            <img src="{{ asset('frontend/images/experts-opinions/sotaris.jpg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Dr. Sotiris Nikolopoulos, United States</p>
@@ -605,7 +454,7 @@
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
-                                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/reddy-3.jpg"
+                                            <img src="{{ asset('frontend/images/experts-opinions/reddy-3.jpg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Dr. Prathap Chandra Reddy, India</p>
@@ -640,7 +489,7 @@
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
-                                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Evi-Laskaridis-Greece.jpg"
+                                            <img src="{{ asset('frontend/images/experts-opinions/Evi-Laskaridis-Greece.jpg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Evi Laskaridis,</p>
@@ -664,7 +513,7 @@
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
-                                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Le-Grand-Spa.jpeg"
+                                            <img src="{{ asset('frontend/images/experts-opinions/Le-Grand-Spa.jpeg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Isabel Bastos, Switzerland</p>
@@ -689,7 +538,7 @@
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
-                                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Dr-YH.jpg"
+                                            <img src="{{ asset('frontend/images/experts-opinions/Dr-YH.jpg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Dr. YH, United States</p>
@@ -727,7 +576,7 @@
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
-                                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/saeng-lin-website9540.png"
+                                            <img src="{{ asset('frontend/images/experts-opinions/saeng-lin-website9540.png') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Prof. Seang Lin Tan, Canada</p>
@@ -753,7 +602,7 @@
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
-                                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Carol-Norris.png"
+                                            <img src="{{ asset('frontend/images/experts-opinions/Carol-Norris.png') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Carol Norris, United Kingdom</p>
@@ -778,7 +627,7 @@
                                 <div class="item h-100 px-5 px-md-2 px-lg-4">
                                     <div class="d-flex h-100 flex-column justify-content-between bg-grey1" align="left">
                                         <div>
-                                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/martha-mitropoulou-caviarlieri-review.jpg"
+                                            <img src="{{ asset('frontend/images/experts-opinions/martha-mitropoulou-caviarlieri-review.jpg') }}"
                                                 width="100%" alt="">
                                             <div class="p-3">
                                                 <p class="doctor-name">Ms. Martha Mitropoulos, Greece</p>
@@ -1195,7 +1044,7 @@
                         <video id="vplayer" playsinline="" autoplay="" controls="" width="100%"
                             webkit-playsinline="">
                             <source
-                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/video1.mp4"
+                                src="{{ asset('frontend/images/experts-opinions/video1.mp4') }}"
                                 type="video/mp4">
                         </video>
                     </div>
@@ -1216,10 +1065,10 @@
                                         <div class="col-lg-3 col-md-4 mb-4">
                                             <a class="video-thumb text-decoration-none active" data-bs-toggle="tab"
                                                 data-bs-target="#ex-review1" aria-selected="true"
-                                                onclick="javascript:setvideosrc('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/video1.mp4');"
+                                                onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video1.mp4') }}');"
                                                 role="tab">
                                                 <div class="thumb-container"
-                                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Brigitte-Bollinger1.jpg')">
+                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/Brigitte-Bollinger1.jpg') }}')">
                                                 </div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">Dr.Med. Brigitte Bollinger,
@@ -1231,10 +1080,10 @@
                                         <div class="col-lg-3 col-md-4 mb-4">
                                             <a class="video-thumb text-decoration-none" data-bs-toggle="tab"
                                                 data-bs-target="#ex-review2" aria-selected="false"
-                                                onclick="javascript:setvideosrc('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/video2.mp4');"
+                                                onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video2.mp4') }}');"
                                                 tabindex="-1" role="tab">
                                                 <div class="thumb-container"
-                                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/Ghislaine1.jpg')">
+                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/Ghislaine1.jpg') }}')">
                                                 </div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">Dr. Ghislaine Beilin,
@@ -1245,10 +1094,10 @@
                                         <div class="col-lg-3 col-md-4 mb-4">
                                             <a class="video-thumb text-decoration-none" data-bs-toggle="tab"
                                                 data-bs-target="#ex-review3" aria-selected="false"
-                                                onclick="javascript:setvideosrc('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/video3.mp4');"
+                                                onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video3.mp4') }}');"
                                                 tabindex="-1" role="tab">
                                                 <div class="thumb-container"
-                                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/ivana1.jpg')">
+                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/ivana1.jpg') }}')">
                                                 </div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">MS. Ivana Sgheiz,
@@ -1259,10 +1108,10 @@
                                         <div class="col-lg-3 col-md-4 mb-4">
                                             <a class="video-thumb text-decoration-none" data-bs-toggle="tab"
                                                 data-bs-target="#ex-review4" aria-selected="false"
-                                                onclick="javascript:setvideosrc('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/video4.mp4');"
+                                                onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video4.mp4') }}');"
                                                 tabindex="-1" role="tab">
                                                 <div class="thumb-container"
-                                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/maxmillan.jpg')">
+                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/maxmillan.jpg') }}')">
                                                 </div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">Maximilian Warth,
@@ -1279,10 +1128,10 @@
                                         <div class="col-lg-3 col-md-4 mb-4">
                                             <a class="video-thumb text-decoration-none" data-bs-toggle="tab"
                                                 data-bs-target="#ex-review5" aria-selected="false"
-                                                onclick="javascript:setvideosrc('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/video5.mp4');"
+                                                onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video5.mp4') }}');"
                                                 tabindex="-1" role="tab">
                                                 <div class="thumb-container"
-                                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/michael1.jpg')">
+                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/michael1.jpg') }}')">
                                                 </div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">Dr. Michael Papacharalambous,
@@ -1294,10 +1143,10 @@
                                         <div class="col-lg-3 col-md-4 mb-4">
                                             <a class="video-thumb text-decoration-none" data-bs-toggle="tab"
                                                 data-bs-target="#ex-review6" aria-selected="false"
-                                                onclick="javascript:setvideosrc('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/video6.mp4');"
+                                                onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video6.mp4') }}');"
                                                 tabindex="-1" role="tab">
                                                 <div class="thumb-container"
-                                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/caviarlieri_lunch-scaled.jpg')">
+                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/caviarlieri_lunch-scaled.jpg') }}')">
                                                 </div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">Caviarlieri Launch, Switzerland</p>
@@ -1308,10 +1157,10 @@
                                         <div class="col-lg-3 col-md-4 mb-4">
                                             <a class="video-thumb text-decoration-none" data-bs-toggle="tab"
                                                 data-bs-target="#ex-review7" aria-selected="false"
-                                                onclick="javascript:setvideosrc('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/video7.mp4');"
+                                                onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video7.mp4') }}');"
                                                 tabindex="-1" role="tab">
                                                 <div class="thumb-container"
-                                                    style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/expert-review/screen-shot1.jpg')">
+                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/screen-shot1.jpg') }}')">
                                                 </div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">Caviarlieri Product Conference, Bad

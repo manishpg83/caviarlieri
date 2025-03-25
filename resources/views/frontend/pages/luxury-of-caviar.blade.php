@@ -18,7 +18,7 @@
                 <h2 class="h2 GothamLight" style="color: #cebc92">LUXURY OF CAVIAR</h2>
             </div>
             <img style="top:-339%; position: absolute; left: 0; opacity: .2"
-                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/luxury/Caviarlieri_CoverRevised-scaled.jpg"
+                src="{{ asset('frontend/images/luxury-of-caviar/Caviarlieri_CoverRevised-scaled.jpg') }}"
                 alt="" />
         </div>
     </section>
@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 px-md-4">
                         <img class="animate-img mb-4"
-                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/luxury/luxury-of-caviar.png"
+                            src="{{ asset('frontend/images/luxury-of-caviar/luxury-of-caviar.png') }}"
                             width="100%" alt="" />
                     </div>
 
@@ -59,7 +59,7 @@
                     <div class="col-lg-6 col-md-6 px-md-5 GothamLight" style="line-height: 1.7">
                         <h2 class="h2">THE REVOLUTIONARY BREAKTHROUGH OF CAVIAR</h2>
                         <img class="d-block d-md-none my-3"
-                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/luxury/box-on-the-water.jpg"
+                            src="{{ asset('frontend/images/luxury-of-caviar/box-on-the-water.jpg') }}"
                             width="100%" alt="" />
                         <p class="font-16px">Encapsulating the potent bio active nutrients of Caviar into a supplement has
                             been a drearn and a formidable challenge for the Anti-Aging Medical World for several decades.

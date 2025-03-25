@@ -21,7 +21,7 @@
 </section>
 
 <section>
-    <div class="container-fluid px-0" style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//Clinical/Mountain-background.png'); background-repeat: no-repeat; background-size:cover">
+    <div class="container-fluid px-0" style="background-image: url('{{ asset('frontend/images/clinical-science/Mountain-background.png') }}'); background-repeat: no-repeat; background-size:cover">
         <div style="background-color: rgba(0,9,22,.8);">
             <div class="container-fluid px-md-5">
                 <div class="row" style="padding: 75px 0;">
@@ -47,7 +47,7 @@
                             </li>
                         </ol>
                     </div>
-                    <div class="col-lg-7 col-md-7 px-5"><img alt="" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Clinical/logo_main.png" width="100%"></div>
+                    <div class="col-lg-7 col-md-7 px-5"><img alt="" src="{{ asset('frontend/images/clinical-science/logo_main.png') }}" width="100%"></div>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
                 <p class="font-16px">Further ongoing research studies on Caviarlieri at the molecular level have proven that this caviar supplement is effective in the gene expression of genes related to anti-aging, inflammation, collagen type 1 and energy. This will mean that Caviarlieri, Swiss Caviar Cellular Therapy Supplement can help reduce and control inflammation and potentially delay the onset and progression of degenerative diseases.</p>
             </div>
             <div class="col-lg-6 col-md-6 px-md-5 px-4">
-                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Clinical/scientificstudies.jpg" width="100%" alt="" />
+                <img src="{{ asset('frontend/images/clinical-science/scientificstudies.jpg') }}" width="100%" alt="" />
             </div>
         </div>
 
@@ -95,7 +95,7 @@
                 <div class="col-lg-5 col-md-5 text-md-end text-center px-5 px-md-0" align="right">
                     <h3 class="h3 d-block d-md-none mb-4" style="color: #cebc92">DOWNLOAD A COPY OF OUR CAVIARLIERI SCIENTIFIC STUDIES</h3>
                     <div class="col-lg-8 float-none d-md-inline-block px-4 px-md-0" align="right">
-                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Clinical/cover.jpg" width="100%" alt="" />
+                        <img src="{{ asset('frontend/images/clinical-science/cover.jpg') }}" width="100%" alt="" />
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-7" align="center">

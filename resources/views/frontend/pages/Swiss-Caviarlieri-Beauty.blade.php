@@ -35,7 +35,7 @@
         }
 
         .CVbeauty-bg {
-            background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Swiss-Caviarlieri-Beauty/CV_Beauty Girl-03.jpg');
+            background-image: url("{{ asset('frontend/images/Swiss-Caviarlieri-Beauty/CV_Beauty_Girl-03.jpg') }}");
             background-position: top center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -44,7 +44,7 @@
         }
 
         .serumbanner-bg {
-            background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Swiss-Caviarlieri-Beauty/Serum Banner-02.jpg');
+            background-image: url("{{ asset('frontend/images/Swiss-Caviarlieri-Beauty/Serum Banner-02.jpg') }}");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -53,7 +53,7 @@
         }
 
         .girlbanner-bg {
-            background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Swiss-Caviarlieri-Beauty/Girl banner.jpg');
+            background-image: url("{{ asset('frontend/images/Swiss-Caviarlieri-Beauty/Girl banner.jpg') }}");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -68,7 +68,7 @@
 
 
         .eyeimage-bg {
-            background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Swiss-Caviarlieri-Beauty/Eye Image.jpg');
+            background-image: url("{{ asset('frontend/images/Swiss-Caviarlieri-Beauty/Eye Image.jpg') }}");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -78,7 +78,7 @@
 
 
         .bettertogether-bg {
-            background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Swiss-Caviarlieri-Beauty/BETTER TOGETHER.jpg');
+            background-image: url("{{ asset('frontend/images/Swiss-Caviarlieri-Beauty/BETTER TOGETHER.jpg') }}");
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -143,7 +143,7 @@
             <h2 class="heading2 
          text-white pt-5">
                 <img class="pb-4"
-                    src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/cavialieri-beauty/cropped-Caviarlieri-logo.png"
+                    src="{{ asset('frontend/images/Swiss-Caviarlieri-Beauty/cropped-Caviarlieri-logo.png') }}"
                     alt="" width="150"><br>
 
                 SWISS CAVIARLIERI BEAUTY
@@ -156,7 +156,7 @@
                 <div class="col-lg-6 float-none m-auto ingredients text-center d-lg-block d-none">
                     <h2 class="heading2">
                         <img class="pb-4"
-                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/cavialieri-beauty/cropped-Caviarlieri-logo.png"
+                            src="{{ asset('frontend/images/Swiss-Caviarlieri-Beauty/cropped-Caviarlieri-logo.png') }}"
                             alt="" width="150"><br>
                         SWISS CAVIARLIERI BEAUTY
                     </h2>
@@ -239,7 +239,7 @@
             </div>
         </div>
         <div class="d-lg-none d-block ">
-            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Swiss-Caviarlieri-Beauty/Serum Banner-02.jpg"
+            <img src="{{ asset('frontend/images/Swiss-Caviarlieri-Beauty/Serum Banner-02.jpg') }}"
                 alt="" width="100%">
         </div>
         <div class="container-fluid serumbanner-bg d-lg-block d-none">
@@ -292,7 +292,7 @@
             </div>
         </div>
         <div class="d-lg-none d-block">
-            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Swiss-Caviarlieri-Beauty/Girl banner.jpg"
+            <img src="{{ asset('frontend/images/Swiss-Caviarlieri-Beauty/Girl banner.jpg') }}"
                 alt="" width="100%">
         </div>
         <div class="container-fluid girlbanner-bg d-lg-block d-none">
@@ -347,7 +347,7 @@
             </div>
         </div>
         <div class="d-lg-none d-block">
-            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Swiss-Caviarlieri-Beauty/Eye Image.jpg"
+            <img src="{{ asset('frontend/images/Swiss-Caviarlieri-Beauty/Eye Image.jpg') }}"
                 alt="" width="100%">
         </div>
         <div class="container-fluid eyeimage-bg d-lg-block d-none">
@@ -398,7 +398,7 @@
 
         </div>
         <div class="d-lg-none">
-            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Swiss-Caviarlieri-Beauty/BETTER TOGETHER.jpg"
+            <img src="{{ asset('frontend/images/Swiss-Caviarlieri-Beauty/BETTER TOGETHER.jpg') }}"
                 alt="" width="100%">
         </div>
 
@@ -443,7 +443,7 @@
                     THOSE WHO KNOW WILL KNOW
                 </div>
                 <div class="p-3" align="center"><img
-                        src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png" style="width: 30px;"
+                        src="{{ asset('/frontend/images/home-slider/Vector.png') }}" style="width: 30px;"
                         alt=""></div>
             </div>
         </div>

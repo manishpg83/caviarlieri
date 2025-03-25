@@ -17,7 +17,7 @@
                                     <video autoplay="" muted="" loop="" playsinline="" preload="metadata"
                                         class="video-slide">
                                         <source
-                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/Video-Bg.mp4"
+                                            src="{{ asset('/frontend/images/home-slider/Video-Bg.mp4') }}"
                                             type="video/mp4">
                                     </video>
                                 </div>
@@ -25,13 +25,13 @@
                         </div>
                         <div class="owl-item">
                             <div class="item">
-                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner1.jpg"
+                                <img src="{{ asset('/frontend/images/home-slider/banner1.jpg') }}"
                                     alt="">
                                 <div class="home-banner-container">
                                     <div class="banner1-txt">
                                         <h1 class="h1">ENDURING YOUTH <br>IS A DREAM NO LONGER</h1>
                                         <div class="p-3" align="center"><img
-                                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png"
+                                                src="{{ asset('/frontend/images/home-slider/Vector.png') }}"
                                                 style="width: 30px;" alt=""></div>
                                         <p class="text-uppercase mb-lg-5 mt-lg-3 mb-3 mt-1  GothamLight">Swiss Caviar
                                             Cellular Therapy Supplement</p>
@@ -44,13 +44,13 @@
                         </div>
                         <div class="owl-item">
                             <div class="item">
-                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner2.jpg"
+                                <img src="{{ asset('/frontend/images/home-slider/banner2.jpg') }}"
                                     alt="">
                                 <div class="home-banner-container">
                                     <div class="banner2-txt">
                                         <h1 class="h1">MAKE YOUR <br>CELLS YOUNG AGAIN </h1>
                                         <div class="p-3" align="center"><img
-                                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png"
+                                                src="{{ asset('/frontend/images/home-slider/Vector.png') }}"
                                                 style="width: 30px;" alt=""></div>
                                         <p class="text-uppercase  mb-lg-5 mt-lg-3 mb-3 mt-1 GothamLight">Swiss Caviar
                                             Cellular Therapy Supplement</p>
@@ -145,7 +145,7 @@
 
                 <div class="row product-style1">
                     <p style="text-align: center">
-                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png"
+                        <img src="{{ asset('/frontend/images/home-slider/Vector.png') }}"
                             alt="image"><br><br>
                     </p>
 
@@ -166,7 +166,7 @@
                     <br>
 
                     <p style="text-align: center; padding: 0px">
-                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/banner3.jpg"
+                        <img src="{{ asset('/frontend/images/home/banner3.jpg') }}"
                             alt="image"><br><br>
                     </p>
 
@@ -186,7 +186,7 @@
                 <div class="col-lg-9 col-md-9 m-auto float-none">
                     <div class="row">
                         <div class="col-lg-5 col-md-5">
-                            <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/image-27.png"
+                            <img src="{{ asset('/frontend/images/home/image-27.png') }}"
                                 width="120%" alt="" style="max-width: 110%">
                         </div>
                         <div class="col-lg-7 col-md-7 d-flex align-content-center align-items-center" align="center">
@@ -264,7 +264,7 @@
           
           <section> -->
             <div class="container-fluid"
-                style="background-image:url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/bg2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 50px 0">
+                style="background-image:url('{{ asset('frontend/images/home/bg2.jpg') }}'); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 50px 0">
                 <div class="col-lg-10 col-md-11 float-none m-auto" align="center">
 
                     <h1 style="color: #FFFFFF; line-height: 1.2;" class="h1 mb-4 px-2">PHARMACEUTICAL GRADE CAVIAR
@@ -371,7 +371,7 @@
             <div class="container-fluid px-4 px-md-0">
                 <div class="row m-0">
                     <div class="col-lg-6 col-md-6 px-0">
-                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/haeth2.jpg"
+                        <img src="{{ asset('frontend/images/home/haeth2.jpg') }}"
                             width="100%" alt="">
                     </div>
 
@@ -392,7 +392,7 @@
                 </div>
                 <div class="row m-0">
                     <div class="col-lg-6 col-md-6 px-0 order-md-2">
-                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/haeth1.jpg"
+                        <img src="{{ asset('frontend/images/home/haeth1.jpg') }}"
                             width="100%" height="100%" alt="">
                     </div>
 
@@ -415,7 +415,7 @@
 
         <section>
             <div class="container-fluid px-0">
-                <img alt="" src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/bgndc.png"
+                <img alt="" src="{{ asset('frontend/images/home/bgndc.png') }}"
                     width="100%">
             </div>
         </section>
@@ -434,7 +434,7 @@
                 <div class="row mb-5 m-0">
                     <div class="col-lg-6 col-md-6 mb-5 px-lg-5">
                         <img alt=""
-                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/caviarlieri-caviar-supplement-softgels.jpg"
+                            src="{{ asset('frontend/images/home/caviarlieri-caviar-supplement-softgels.jpg') }}"
                             width="100%">
                         <h4 class="h4 mb-1 mt-3" style="font-family: 'Gothamlight', sans-serif;">The Amazing Benefits of
                             Highly Polymerized Fish Collagen Peptides with Elastin – Caviarlieri</h4>
@@ -442,13 +442,13 @@
                             fish, specifically fish skin, scales, and bones. Fish collagen is special because it ...</p>
                         <a href="blog-content.php?bid=16" class="blog-white-btn"><span class="btn-content-wrapper"><span
                                     class="btn-content-text">Read More <span><img
-                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/btn-arrow.png"
+                                            src="{{ asset('frontend/images/home/btn-arrow.png') }}"
                                             alt="" /></span></span></span></a>
                     </div>
 
                     <div class="col-lg-6  col-md-6 mb-5 px-lg-5">
                         <img alt=""
-                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/caviarlieri-cellular-therapy-supplement.jpg"
+                            src="{{ asset('frontend/images/home/caviarlieri-cellular-therapy-supplement.jpg') }}"
                             width="100%">
                         <h4 class="h4 mb-1 mt-3" style="font-family: 'Gothamlight', sans-serif;">The World’s Most
                             Effective Caviar DNA Extract with Marine Bioactive Peptides</h4>
@@ -457,14 +457,14 @@
                             our body from other fats or raw materials...</p>
                         <a href="blog-content.php?bid=26" class="blog-white-btn"><span class="btn-content-wrapper"><span
                                     class="btn-content-text">Read More <span><img
-                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/btn-arrow.png"
+                                            src="{{ asset('frontend/images/home/btn-arrow.png') }}"
                                             alt="" /></span></span></span></a>
                     </div>
                 </div>
 
                 <div class="row m-0">
                     <div class="col-lg-4  col-md-6 mb-5 px-lg-4"><img alt=""
-                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/effective-supplements-for-joint-pain.jpg"
+                            src="{{ asset('frontend/images/home/effective-supplements-for-joint-pain.jpg') }}"
                             width="100%">
                         <h4 class="h4 mb-1 mt-3" style="font-family: 'Gothamlight', sans-serif;">Are Supplements effective
                             for Joint Pain?</h4>
@@ -472,13 +472,13 @@
                             help to reduce the severity of your...</p>
                         <a href="blog-content.php?bid=53" class="blog-white-btn"><span class="btn-content-wrapper"><span
                                     class="btn-content-text">Read More <span><img
-                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/btn-arrow.png"
+                                            src="{{ asset('frontend/images/home/btn-arrow.png') }}"
                                             alt="" /></span></span></span></a>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mb-5 px-lg-4">
                         <img alt=""
-                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/sustainable-immunity-for-long-term-health.jpg"
+                            src="{{ asset('frontend/images/home/sustainable-immunity-for-long-term-health.jpg') }}"
                             width="100%">
                         <h4 class="h4 mb-1 mt-3" style="font-family: 'Gothamlight', sans-serif;">Why Is Sustainable
                             Immunity Important for Your Long-Term Health</h4>
@@ -486,13 +486,13 @@
                             the pandemic in the...</p>
                         <a href="blog-content.php?bid=54" class="blog-white-btn"><span class="btn-content-wrapper"><span
                                     class="btn-content-text">Read More <span><img
-                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/btn-arrow.png"
+                                            src="{{ asset('frontend/images/home/btn-arrow.png') }}"
                                             alt="" /></span></span></span></a>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mb-5 px-lg-4">
                         <img alt=""
-                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/what-is-biological-age.jpg"
+                            src="{{ asset('frontend/images/home/what-is-biological-age.jpg') }}"
                             width="100%">
                         <h4 class="h4 mb-1 mt-3" style="font-family: 'Gothamlight', sans-serif;">What is your “Body Age” –
                             Biological Age?</h4>
@@ -500,7 +500,7 @@
                             person as measured from birth...</p>
                         <a href="blog-content.php?bid=1" class="blog-white-btn"><span class="btn-content-wrapper"><span
                                     class="btn-content-text">Read More <span><img
-                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/btn-arrow.png"
+                                            src="{{ asset('frontend/images/home/btn-arrow.png') }}"
                                             alt="" /></span></span></span></a>
                     </div>
                 </div>
@@ -516,25 +516,25 @@
                 <div class="section">
                     <div class="row m-0 seven-cols px-5 px-md-0" align="center">
                         <div class="col-md-1 px-3"><img
-                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo1.png"
+                                src="{{ asset('frontend/images/home/logo1.png') }}"
                                 width="100%" alt="" /></div>
                         <div class="col-md-1 px-3"><img
-                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo2.png"
+                                src="{{ asset('frontend/images/home/logo2.png') }}"
                                 width="100%" alt="" /></div>
                         <div class="col-md-1 px-3"><img
-                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo3.png"
+                                src="{{ asset('frontend/images/home/logo3.png') }}"
                                 width="100%" alt="" /></div>
                         <div class="col-md-1 px-3"><img
-                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo4.png"
+                                src="{{ asset('frontend/images/home/logo4.png') }}"
                                 width="100%" alt="" /></div>
                         <div class="col-md-1 px-3"><img
-                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo5.png"
+                                src="{{ asset('frontend/images/home/logo5.png') }}"
                                 width="100%" alt="" /></div>
                         <div class="col-md-1 px-3"><img
-                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo6.png"
+                                src="{{ asset('frontend/images/home/logo6.png') }}"
                                 width="100%" alt="" /></div>
                         <div class="col-md-1 px-3"><img
-                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/logo7.png"
+                                src="{{ asset('frontend/images/home/logo7.png') }}"
                                 width="100%" alt="" /></div>
                     </div>
                 </div>

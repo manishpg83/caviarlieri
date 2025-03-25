@@ -50,9 +50,9 @@ Route::middleware('auth')->group(function () {
     })->name('order.success');
 
     Route::get('/addbillingaddress/{id?}', [HomeController::class, 'addbillingaddress'])->name('addbillingaddress');
-    Route::get('/cart', [HomeController::class, 'cart'])->name('cart');
     Route::get('/checkout', [HomeController::class, 'checkout'])->name('checkout');
 });
+Route::get('/cart', [HomeController::class, 'cart'])->name('cart');
 
 //cavilairy
 Route::get('/swiss-cellular-therapy', [HomeController::class, 'swisscellulartherapy'])->name('swisscellulartherapy');

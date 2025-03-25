@@ -36,7 +36,7 @@
                 <h2 class="h2 GothamLight text-white">CAVIAR SUPPLEMENT</h2>
             </div>
             <img style="top:-339%; position: absolute; left: 0; opacity: .2"
-                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/luxury/Caviarlieri_CoverRevised-scaled.jpg"
+                src="{{ asset('frontend/images/key-ingredients/Caviarlieri_CoverRevised-scaled.jpg') }}"
                 alt="" />
         </div>
     </section>
@@ -47,7 +47,7 @@
             <div class="row">
                 <div class="col-lg-5 col-md-5 px-3 px-md-2 mb-5">
                     <div style="border-radius: 5px; overflow: hidden" class="animate-img img-shadow">
-                        <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/key-ingredients/GettyImages-500363028_o.jpg"
+                        <img src="{{ asset('frontend/images/key-ingredients/GettyImages-500363028_o.jpg') }}"
                             width="100%" alt="" />
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                     <div class="col-lg-5 col-md-5 px-3 px-md-4" align="right">
                         <div class="col-lg-9 col-md-11 float-end">
                             <div style="border-radius: 5px; overflow: hidden" class="animate-img">
-                                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/key-ingredients/image3.jpg"
+                                <img src="{{ asset('frontend/images/key-ingredients/image3.jpg') }}"
                                     width="100%" alt="" />
                             </div>
                         </div>

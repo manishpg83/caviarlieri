@@ -12,7 +12,7 @@
     }
 
     .bg-water {
-        background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//benifits/body-of-water-2071319-scaled.png');
+        background-image: url("{{ asset('frontend/images/outstanding-benefits/body-of-water-2071319-scaled.png') }}");
         background-repeat: no-repeat;
         background-position: 0 -100px;
         background-size: 100% 300%;
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 px-0">
-                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/Cellular-Energy2.jpg" alt="" width="100%" />
+                <img src="{{ asset('frontend/images/outstanding-benefits/Cellular-Energy2.jpg') }}" alt="" width="100%" />
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 pr-md-0 pl-md-5 benifit-small-row">
-                    <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/2-Beauty-Enhancement.jpg" alt="" width="100%" />
+                    <img src="{{ asset('frontend/images/outstanding-benefits/2-Beauty-Enhancement.jpg') }}" alt="" width="100%" />
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 px-0">
-                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/3-Joint-Pain2.jpg" alt="" width="100%" />
+                <img src="{{ asset('frontend/images/outstanding-benefits/3-Joint-Pain2.jpg') }}" alt="" width="100%" />
             </div>
         </div>
     </div>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 pr-md-0 pl-md-5 benifit-small-row">
-                    <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/4-Strengthen-Immunity.jpg" alt="" width="100%" />
+                    <img src="{{ asset('frontend/images/outstanding-benefits/4-Strengthen-Immunity.jpg') }}" alt="" width="100%" />
                 </div>
             </div>
         </div>
@@ -153,7 +153,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 px-0">
-                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/5-Reduction-in-Inflammation.jpg" alt="" width="100%" />
+                <img src="{{ asset('frontend/images/outstanding-benefits/5-Reduction-in-Inflammation.jpg') }}" alt="" width="100%" />
             </div>
         </div>
     </div>
@@ -178,7 +178,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 pr-md-0 pl-md-5 benifit-small-row">
-                    <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/6-Sexual-Performance.jpg" alt="" width="100%" />
+                    <img src="{{ asset('frontend/images/outstanding-benefits/6-Sexual-Performance.jpg') }}" alt="" width="100%" />
                 </div>
             </div>
         </div>
@@ -203,7 +203,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 px-0">
-                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/7-Improve-Mental-Health-Sleep-Quality.png" alt="" width="100%" />
+                <img src="{{ asset('frontend/images/outstanding-benefits/7-Improve-Mental-Health-Sleep-Quality.png') }}" alt="" width="100%" />
             </div>
         </div>
     </div>
@@ -226,7 +226,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 pr-md-0 pl-md-5 benifit-small-row">
-                    <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/8-Brain-Enhancement2.png" alt="" width="100%" />
+                    <img src="{{ asset('frontend/images/outstanding-benefits/8-Brain-Enhancement2.png') }}" alt="" width="100%" />
                 </div>
             </div>
         </div>
@@ -250,7 +250,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 px-0">
-                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/9-Diabetes-Management.jpg" alt="" width="100%" />
+                <img src="{{ asset('frontend/images/outstanding-benefits/9-Diabetes-Management.jpg') }}" alt="" width="100%" />
             </div>
         </div>
     </div>
@@ -272,7 +272,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 pr-md-0 pl-md-5 benifit-small-row">
-                    <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/10-Support-Bone-Health.jpg" alt="" width="100%" />
+                    <img src="{{ asset('frontend/images/outstanding-benefits/10-Support-Bone-Health.jpg') }}" alt="" width="100%" />
                 </div>
             </div>
         </div>
@@ -294,7 +294,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 px-0">
-                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/control-high-blood-pressure.png" alt="" width="100%" />
+                <img src="{{ asset('frontend/images/outstanding-benefits/control-high-blood-pressure.png') }}" alt="" width="100%" />
             </div>
         </div>
     </div>
@@ -313,7 +313,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 px-0">
-                <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/eye-benefits9751.png" alt="" width="100%" />
+                <img src="{{ asset('frontend/images/outstanding-benefits/eye-benefits9751.png') }}" alt="" width="100%" />
             </div>
         </div>
     </div>
@@ -324,7 +324,7 @@
         <div class="container float-none mx-auto">
             <div class="row">
                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 order-md-2">
-                    <img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/benifits/home-5-768x960.jpg" alt="" width="100%" />
+                    <img src="{{ asset('frontend/images/outstanding-benefits/home-5-768x960.jpg') }}" alt="" width="100%" />
                 </div>
 
                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 d-flex align-items-center">
