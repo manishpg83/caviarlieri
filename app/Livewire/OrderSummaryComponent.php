@@ -19,7 +19,7 @@ class OrderSummaryComponent extends Component
 
     public function mount($showCheckoutButton = true)
     {
-        $this->showCheckoutButton = $showCheckoutButton;
+        $this->showCheckoutButton = true;
         $this->updateSummary();
     }
 
