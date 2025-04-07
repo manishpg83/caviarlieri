@@ -8,11 +8,11 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>{{ isset($pageTitle) ? $pageTitle . ' —' : '' }} {{ isset($siteTitle) ? $siteTitle : 'Caviarlieri' }}
+    <title>{{ isset($pageTitle) ? $pageTitle . ' —' : '' }} {{ isset($siteTitle) ? $siteTitle : 'Celergen' }}
     </title>
     <meta name="description" content="Celergen" />
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('/admin/assets/img/favicon/favicon.png') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('/admin/assets/img/favicon/favicon.ico') }}" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,8 +23,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <link rel="stylesheet" href="{{ asset('/admin/assets/vendor/fonts/fontawesome.css') }}" />
     <link rel="stylesheet" href="{{ asset('/admin/assets/vendor/fonts/tabler-icons.css') }}" />
     <link rel="stylesheet" href="{{ asset('/admin/assets/vendor/fonts/flag-icons.css') }}" />
@@ -65,6 +63,7 @@
         .main-body {
             font-family: 'Poppins', Helvetica, sans-serif !important;
         }
+
         .mt-8 {
             margin-top: 8rem !important;
         }
@@ -116,7 +115,7 @@
     <script src="{{ asset('/admin/assets/vendor/libs/cleavejs/cleave.js') }}"></script>
     <script src="{{ asset('/admin/assets/vendor/libs/cleavejs/cleave-phone.js') }}"></script>
     <script src="{{ asset('/admin/assets/vendor/libs/sweetalert2/sweetalert2.js') }}"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Main JS -->
     <script src="{{ asset('/admin/assets/js/main.js') }}"></script>
 

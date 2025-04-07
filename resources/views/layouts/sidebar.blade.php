@@ -3,11 +3,11 @@
     <div class="app-brand demo">
         <a href="{{ route('admin.dashboard') }}" class="app-brand-link">
             <span class="app-brand-logo">
-                <img src="{{ asset('/admin/assets/img/caviarlieri-logo.png') }}" alt="Girl in a jacket"
+                <img src="{{ asset('/admin/assets/img/branding/Celergen-Logo.png') }}" alt="Girl in a jacket"
                     width="180" height="30">
             </span>
         </a>
- 
+
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
             <i class="ti menu-toggle-icon d-none d-xl-block align-middle"></i>
             <i class="ti ti-x d-block d-xl-none ti-md align-middle"></i>
@@ -359,18 +359,24 @@
         <!-- Inventory Management End -->
 
         <!-- Accounts and Billing -->
-        <li class="menu-item">
+        <li class="menu-item {{ request()->routeIs('admin.debtors*') || request()->routeIs('admin.consignment*') ? 'active open' : '' }}">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-file-dollar"></i>
                 <div data-i18n="Accounts">Accounts</div>
             </a>
             <ul class="menu-sub">
-                <li class="menu-item">
-                    <a href="#" class="menu-link">
+                <li class="menu-item {{ request()->routeIs('admin.debtors.index') ? 'active' : '' }}">
+                    <a href="{{ route('admin.debtors.index') }}" class="menu-link">
                         <div data-i18n="Debtors List">Debtors List</div>
                     </a>
                 </li>
-                <li class="menu-item">
+
+                <li class="menu-item {{ request()->routeIs('admin.consignment.index') ? 'active' : '' }}">
+                    <a href="{{ route('admin.consignment.index') }}" class="menu-link">
+                        <div data-i18n="Consignment List">Consignment List</div>
+                    </a>
+                </li>
+                <li class="menu-item {{ request()->routeIs('admin.debtors.manage') ? 'active' : '' }}">
                     <a href="#" class="menu-link">
                         <div data-i18n="Manage Debtors">Manage Debtors</div>
                     </a>

@@ -3,11 +3,13 @@
 use App\Http\Controllers\Admin\AdminEntityController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\BatchNumberController;
+use App\Http\Controllers\Admin\ConsignmentOrderController;
 use App\Http\Controllers\Admin\CountryManagerController;
 use App\Http\Controllers\Admin\CurrencyController;
 use App\Http\Controllers\Admin\CustomerController;
 use App\Http\Controllers\Admin\CustomersTypeController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\DebtorsController;
 use App\Http\Controllers\Admin\InventoryController;
 use App\Http\Controllers\Admin\InvoiceController;
 use App\Http\Controllers\Admin\OrderMasterController;
@@ -20,6 +22,7 @@ use App\Http\Controllers\Admin\VendorController;
 use App\Http\Controllers\Admin\WarehouseController;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+
 
 
 
@@ -54,6 +57,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
             Route::delete('profile/delete', [ProfileController::class, 'destroy'])->name('profile.delete');
 
             Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+            Route::get('/customers/import', function () {
+                return view('admin.customers.import');
+            })->name('customers.import');
 
             Route::middleware(['permission:manage vendors'])->group(function () {
                 Route::get('user', [VendorController::class, 'index'])->name('user.index');
@@ -120,6 +126,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
                 Route::get('customerstype', [CustomersTypeController::class, 'index'])->name('customerstype.index');
                 Route::get('customerstype/add', [CustomersTypeController::class, 'add'])->name('customerstype.add');
                 Route::get('invoices', [InvoiceController::class, 'index'])->name('invoices.index');
+                Route::get('debtors', [DebtorsController::class, 'index'])->name('debtors.index');
+                Route::get('consignment-list', [ConsignmentOrderController::class, 'index'])->name('consignment.index');
             });
             
             Route::middleware(['permission:manage invoices'])->group(function () {           
@@ -150,5 +158,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
             Route::get('roles', [RoleController::class, 'index'])->name('roles.index')->middleware('role:super-admin');
         });
+    });
+    Route::fallback(function(){
+        return response()->view('errors.404' , [], 404);
     });
 });

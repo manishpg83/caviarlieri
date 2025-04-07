@@ -10,7 +10,7 @@ class BatchNumber extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $table = 'batchnumbers'; // Explicitly define the table name
+    protected $table = 'batchnumbers';
 
     protected $fillable = [
         'batch_number',
