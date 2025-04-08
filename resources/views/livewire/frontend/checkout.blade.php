@@ -48,7 +48,7 @@
                             <input type="text" maxlength="100" name="billing_lname" id="billing_lname"
                                 class="form-control" placeholder="Last Name" data-validation="required"
                                 value="{{ $billingAddress->last_name ?? '' }}" wire:model="billing_lname">
-                            @error('billing_fname')
+                            @error('billing_lname')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -57,7 +57,7 @@
                                 class="form-control" placeholder="Company Name" data-validation="required"
                                 value="{{ $billingAddress->billing_company_name ?? '' }}"
                                 wire:model="billing_company_name">
-                            @error('billing_fname')
+                            @error('billing_company_name')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -65,7 +65,7 @@
                             <input type="text" maxlength="100" name="billing_address" id="billing_address"
                                 class="form-control" placeholder="Address 1" data-validation="required"
                                 value="{{ $billingAddress->billing_address ?? '' }}" wire:model="billing_address">
-                            @error('billing_fname')
+                            @error('billing_address')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -73,7 +73,7 @@
                             <input type="text" maxlength="100" name="billing_address_2" id="billing_address_2"
                                 class="form-control" placeholder="Address 2" data-validation="required"
                                 value="{{ $billingAddress->billing_address_2 ?? '' }}" wire:model="billing_address_2">
-                            @error('billing_fname')
+                            @error('billing_address_2')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -81,7 +81,7 @@
                             <input type="text" maxlength="100" name="billing_city" id="billing_city"
                                 class="form-control" placeholder="City" data-validation="required"
                                 value="{{ $billingAddress->billing_city ?? '' }}" wire:model="billing_city">
-                            @error('billing_fname')
+                            @error('billing_city')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -90,7 +90,7 @@
                                 class="form-control" placeholder="Postcode" data-validation="number"
                                 value="{{ $billingAddress->billing_postal_code ?? '' }}"
                                 wire:model="billing_postal_code">
-                            @error('billing_fname')
+                            @error('billing_postal_code')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -106,7 +106,7 @@
                                 @endforeach
                             </select>
                             <span class="select-dropdown-icon glyphicon glyphicon-chevron-down">&nbsp;</span>
-                            @error('billing_fname')
+                            @error('billing_country')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -114,7 +114,7 @@
                             <input maxlength="100" type="text" name="billing_state" id="billing_state"
                                 class="form-control" placeholder="States" data-validation="required"
                                 wire:model="billing_state" value="{{ $billingAddress->billing_state ?? '' }}">
-                            @error('billing_fname')
+                            @error('billing_state')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -122,7 +122,7 @@
                             <input type="text" maxlength="20" name="billing_phone" id="billing_phone"
                                 class="form-control" placeholder="Phone" data-validation="number"
                                 wire:model="billing_phone" value="{{ $billingAddress->billing_phone ?? '' }}">
-                            @error('billing_fname')
+                            @error('billing_phone')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -130,7 +130,7 @@
                             <input type="email" maxlength="100" name="billing_email" id="billing_email"
                                 class="form-control" placeholder="Email" data-validation="required"
                                 wire:model="billing_email" value="{{ $billingAddress->billing_email ?? '' }}">
-                            @error('billing_fname')
+                            @error('billing_email')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -168,7 +168,7 @@
                                     <input type="text" maxlength="100" name="firstname" id="firstname"
                                         class="form-control" placeholder="First Name" data-validation="required"
                                         wire:model="shipping_firstname">
-                                    @error('billing_fname')
+                                    @error('shipping_firstname')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -176,7 +176,7 @@
                                     <input type="text" maxlength="100" name="lastname" id="lastname"
                                         class="form-control" placeholder="Last Name" data-validation="required"
                                         wire:model="shipping_lastname">
-                                    @error('billing_fname')
+                                    @error('shipping_lastname')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -185,7 +185,7 @@
                                         id="shipping_company_name" class="form-control"
                                         placeholder="Shipping Company Name" data-validation="required"
                                         wire:model="shipping_company_name">
-                                    @error('billing_fname')
+                                    @error('shipping_company_name')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -193,14 +193,14 @@
                                     <input type="text" maxlength="100" name="address1" id="address1"
                                         class="form-control" placeholder="Address 1" data-validation="required"
                                         wire:model="shipping_address1">
-                                    @error('billing_fname')
+                                    @error('shipping_address1')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
                                 <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
                                     <input type="text" maxlength="100" name="address2" id="address2"
                                         class="form-control" placeholder="Address 2" wire:model="shipping_address2">
-                                    @error('billing_fname')
+                                    @error('shipping_address2')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -208,7 +208,7 @@
                                     <input type="text" maxlength="100" name="city" id="city"
                                         class="form-control" placeholder="City" data-validation="required"
                                         wire:model="shipping_city">
-                                    @error('billing_fname')
+                                    @error('shipping_city')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -216,7 +216,7 @@
                                     <input type="text" maxlength="20" name="zip" id="zip"
                                         class="form-control" placeholder="Postcode" data-validation="required"
                                         wire:model="shipping_zip">
-                                    @error('billing_fname')
+                                    @error('shipping_zip')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -232,7 +232,7 @@
                                         @endforeach
                                     </select>
                                     <span class="select-dropdown-icon glyphicon glyphicon-chevron-down">&nbsp;</span>
-                                    @error('billing_fname')
+                                    @error('shipping_country')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -240,7 +240,7 @@
                                     <input type="text" maxlength="100" name="state" id="state"
                                         class="form-control" placeholder="State" data-validation="required"
                                         wire:model="shipping_state">
-                                    @error('billing_fname')
+                                    @error('shipping_state')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -248,7 +248,7 @@
                                     <input type="text" maxlength="20" name="phone" id="phone"
                                         class="form-control" placeholder="Phone" data-validation="number"
                                         wire:model="shipping_phone">
-                                    @error('billing_fname')
+                                    @error('shipping_phone')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -256,7 +256,7 @@
                                     <input type="email" maxlength="20" name="shipping_email" id="shipping_email"
                                         class="form-control" placeholder="shipping_email" data-validation="number"
                                         wire:model="shipping_email">
-                                    @error('billing_fname')
+                                    @error('shipping_email')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
