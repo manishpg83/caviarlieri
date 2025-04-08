@@ -33,26 +33,26 @@ Route::middleware('auth')->group(function () {
     Route::get('/addbillingaddress/{id?}', [HomeController::class, 'addbillingaddress'])->name('addbillingaddress');
     Route::get('/shippingaddress/{addressNumber?}', [HomeController::class, 'shippingaddress'])->name('shippingaddress');
     Route::get('/addshippingaddress', [HomeController::class, 'addshippingaddress'])->name('addshippingaddress');
-    Route::post('/paypal-webhook', [PayPalWebhookController::class, 'handle'])->name('paypal.webhook');
-    Route::get('/paypal/success', [PayPalWebhookController::class, 'success'])->name('paypal.success');
-    Route::get('/paypal/cancel', [PayPalWebhookController::class, 'cancel'])->name('paypal.cancel');
     // Add these with your other routes
     Route::get('/checkout/error', function () {
         return view('frontend.checkout.error');
     })->name('checkout.error');
-
+    
     Route::get('/checkout', function () {
         return view('frontend.checkout');
     })->name('checkout');
-
-    Route::get('/order/success', function () {
-        return view('frontend.order.success');
-    })->name('order.success');
-
+    
+    
     Route::get('/addbillingaddress/{id?}', [HomeController::class, 'addbillingaddress'])->name('addbillingaddress');
 });
-Route::get('/checkout', [HomeController::class, 'checkout'])->name('checkout');
 Route::get('/cart', [HomeController::class, 'cart'])->name('cart');
+Route::get('/checkout', [HomeController::class, 'checkout'])->name('checkout');
+Route::post('/paypal-webhook', [PayPalWebhookController::class, 'handle'])->name('paypal.webhook');
+Route::get('/paypal/success', [PayPalWebhookController::class, 'success'])->name('paypal.success');
+Route::get('/paypal/cancel', [PayPalWebhookController::class, 'cancel'])->name('paypal.cancel');
+Route::get('/order/success', function () {
+    return view('frontend.order.success');
+})->name('order.success');
 
 //cavilairy
 Route::get('/swiss-cellular-therapy', [HomeController::class, 'swisscellulartherapy'])->name('swisscellulartherapy');
