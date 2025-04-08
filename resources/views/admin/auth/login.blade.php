@@ -13,7 +13,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('admin/assets/img/favicon/favicon.ico') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('admin/assets/img/favicon/favicon.png') }}" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -66,14 +66,14 @@
             <div class="authentication-inner py-6">
                 <div class="card">
                     <div class="card-body">
-                        <div class="app-brand justify-content-center mb-6">
+                        <div class="app-brand justify-content-center mb-4">
                             <a href="index.html" class="app-brand-link">
                                 <span class="app-brand-text demo text-heading fw-bold"></span>
-                                <img src="{{ asset('admin/assets/img/branding/Celergen-Logo.png') }}"
-                                    alt="Celergen Swiss" width="auto" height="40">
+                                <img src="{{ asset('/admin/assets/img/caviarlieri-logo.png') }}"
+                                    alt="Celergen Swiss" width="280" height="50">
                             </a>
                         </div>
-                        <h4 class="mb-1">Welcome to Celergen Swiss! 👋</h4>
+                        <h4 class="mb-1">Welcome to Swiss Caviarlieri! 👋</h4>
                         <p class="mb-6">Please sign-in to your account and start the adventure</p>
 
                         @if (session('success'))

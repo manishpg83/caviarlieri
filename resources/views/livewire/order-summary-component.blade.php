@@ -1,6 +1,6 @@
-
 <div class="myBox-right">
-    <div class="section-title">ORDER SUMMARY</div>
+    <!-- Order Summary Section -->
+    <div class="section-title" style="border-bottom: 1px solid #000;padding-bottom:5px;">ORDER SUMMARY</div>
     <table width="100%" id="itemslist" border="0" cellspacing="0" cellpadding="0">
         <tbody>
             @foreach($products as $product)
@@ -26,39 +26,64 @@
         </tbody>
     </table>
 
-    <table style="border-collapse: collapse; width: 100%;" id="cart-summary-table">
+    <table style="border-collapse: collapse; width: 100%;">
         <tbody>
             <tr>
-                <td class="col-md-6" style="padding: 8px; text-align: left; border-bottom: 1px solid #858585;">
+                <td style="padding: 8px; text-align: left; border-bottom: 1px solid #000;">
                     Sub Total :
                 </td>
-                <td class="bortom" align="right" style="padding: 8px; text-align: right; font-size:13px;">
-                    USD {{ number_format($subtotal, 2) }}
+                <td align="right" style="padding: 8px; text-align: right; border-bottom: 1px solid #000; font-size:13px;">
+                    @if(count($products) > 0)
+                        @php $firstProduct = $products->first(); @endphp
+                        <input class="noborder paypal-payment filled" disabled type="text" style="text-align:right;" id="subtotal_text" name="subtotal_text" value="{{ $firstProduct->currency }} {{ number_format($subtotal, 2) }}">
+                    @else
+                        <input class="noborder paypal-payment filled" disabled type="text" style="text-align:right;" id="subtotal_text" name="subtotal_text" value="USD 0.00">
+                    @endif
+                    <input class="noborder filled" type="hidden" style="text-align:right;" id="subtotal" name="subtotal" value="{{ $subtotal }}">
+                    <input class="noborder" type="hidden" style="text-align:right;" id="promocode" name="promocode" value="">
                 </td>
             </tr>
             <tr>
-                <td class="col-md-6" style="padding: 8px; text-align: left; border-bottom: 1px solid #858585;">
+                <td style="padding: 8px; text-align: left; border-bottom: 1px solid #000;">
                     Shipping :
                 </td>
-                <td class="bortom" align="right" style="padding: 8px; text-align: right; font-size:13px;">FREE</td>
+                <td align="right" style="padding: 8px; text-align: right; border-bottom: 1px solid #000; font-size:13px;">FREE</td>
             </tr>
             <tr>
-                <td style="padding: 8px; text-align: left;">
+                <td style="padding: 8px; text-align: left; border-bottom: 1px solid #000;width: 100px">
                     Order Total :
                 </td>
-                <td align="right" style="padding: 8px; text-align: right; font-size:13px;">
-                    USD {{ number_format($total, 2) }}
+                <td align="right" style="padding: 8px; text-align: right; border-bottom: 1px solid #000; font-size:13px;">
+                    @if(count($products) > 0)
+                        @php $firstProduct = $products->first(); @endphp
+                        <input class="noborder paypal-payment filled" disabled style="text-align:right; font-weight:bold;" type="text" id="nettotal_text" name="nettotal_text" value="{{ $firstProduct->currency }} {{ number_format($total, 2) }}">
+                    @else
+                        <input class="noborder paypal-payment filled" disabled style="text-align:right; font-weight:bold;" type="text" id="nettotal_text" name="nettotal_text" value="USD 0.00">
+                    @endif
+                    <input class="noborder filled" style="text-align:right; font-weight:bold;" type="hidden" id="nettotal" name="nettotal" value="{{ $total }}">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="font-size:12px;">
+                    <br>
+                    <u>Refund policy:</u><br> All sales are final and non-refundable. Please see our <a target="_blank" href="terms_conditions.html"> terms and conditions.</a>
+                    <br><br>
+                    <div style="text-align:center;">
+                        <span id="siteseal">
+                            <!-- SSL seal will go here -->
+                        </span>
+                    </div>
                 </td>
             </tr>
         </tbody>
     </table>
 
-   @unless(request()->routeIs('checkout'))
+    @unless(request()->routeIs('checkout'))
     <div id="paypalinfo" style="margin-top:10px;">
         <div class="col-lg-12 col-md-12 col-sm-12" align="right">
             <button 
                 wire:click="attemptCheckout" 
-                class="myButton @if($isCartEmpty) disabled @endif" 
+                class="myButton1 @if($isCartEmpty) disabled @endif" 
                 id="submitbutton"
                 @if($isCartEmpty) disabled @endif
             >
@@ -66,8 +91,7 @@
             </button>
         </div>
     </div>
-   @endunless
-
+    @endunless
 
     <style>
         .disabled {
@@ -93,5 +117,4 @@
             });
         });
     </script>
-
 </div>

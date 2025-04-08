@@ -1,4 +1,4 @@
-<footer class="site-footer style-1 footer-dark" style="background-color: #333; background-image: url('{{ asset('/frontend/images/mountain-footer.jpg') }}'); background-size: cover; background-position: top;">
+<footer class="site-footer style-1 footer-dark" style="background-color: #333; background-image: url('{{ asset('/frontend/images/mountain-footer.jpg') }}'); background-size: cover; background-position: top; margin-top: 50px;">
    <!-- Footer Top -->
    <div class="footer-top">
        <div class="container">
