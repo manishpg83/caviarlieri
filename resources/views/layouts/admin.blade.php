@@ -8,9 +8,9 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>{{ isset($pageTitle) ? $pageTitle . ' —' : '' }} {{ isset($siteTitle) ? $siteTitle : 'Celergen' }}
+    <title>{{ isset($pageTitle) ? $pageTitle . ' —' : '' }} {{ isset($siteTitle) ? $siteTitle : 'Swiss Caviarlieri' }}
     </title>
-    <meta name="description" content="Celergen" />
+    <meta name="description" content="Swiss Caviarlieri" />
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('/admin/assets/img/favicon/favicon.png') }}" />
 

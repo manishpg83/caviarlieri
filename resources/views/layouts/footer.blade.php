@@ -11,7 +11,7 @@
           , Powered by <a href="#" target="_blank" class="footer-link">PRED Solutions</a>
         </div>
         <div class="d-none d-lg-inline-block">
-          <a href="#" class="footer-link me-4" target="_blank">Celergen</a>
+          <a href="#" class="footer-link me-4" target="_blank">Swiss Caviarlieri</a>
           <a href="#" target="_blank" class="footer-link me-4">Ver 1.0</a>
 
           <a href="#" target="_blank" class="footer-link d-none d-sm-inline-block">Support</a>

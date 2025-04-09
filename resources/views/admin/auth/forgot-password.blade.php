@@ -8,7 +8,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Login Basic | Celergen Swiss</title>
+    <title>Login Basic | Swiss Caviarlieri</title>
 
     <meta name="description" content="" />
 
@@ -68,11 +68,11 @@
                         <div class="app-brand justify-content-center mb-6">
                             <a href="index.html" class="app-brand-link">
                                 <span class="app-brand-text demo text-heading fw-bold"></span><img
-                                    src="{{ asset('admin/assets/img/branding/Celergen-Logo.png') }}"
-                                    alt="Celergen Swiss" width="auto" height="40">
+                                    src="{{ asset('/admin/assets/img/caviarlieri-logo.png') }}"
+                                    alt="Swiss Caviarlieri" width="auto" height="40">
                             </a>
                         </div>
-                        <h4 class="mb-1">Welcome to Celergen Swiss! 👋</h4>
+                        <h4 class="mb-1">Welcome to Swiss Caviarlieri! 👋</h4>
                         <p class="mb-6">Please sign-in to your account and start the adventure</p>
 
                         @if (session('status'))

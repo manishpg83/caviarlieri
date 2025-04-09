@@ -13,7 +13,7 @@
     <div class="min-h-screen flex items-center justify-center bg-gray-100">
         <div class="max-w-md w-full space-y-8 p-8 bg-white rounded-xl shadow-md">
             <div class="text-center">
-                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Register to Celergen! 👋</h2>
+                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Register to Swiss Caviarlieri! 👋</h2>
                 <p class="mt-2 text-sm text-gray-600">Create a new account to start the adventure</p>
             </div>
             <form class="mt-8 space-y-6" method="POST" action="{{ route('admin.register') }}">

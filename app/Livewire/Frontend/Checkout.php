@@ -249,7 +249,6 @@ class Checkout extends Component
 
     public function processOrder()
     {
-        // Validate the form fields
         $this->validate([
             'billing_fname' => 'required',
             'billing_lname' => 'required',
@@ -265,7 +264,6 @@ class Checkout extends Component
             'email' => 'Please enter a valid email address.'
         ]);
 
-        // Add shipping validation if billing address isn't used for shipping
         if (!$this->useBillingAddress) {
             $this->validate([
                 'shipping_firstname' => 'required',

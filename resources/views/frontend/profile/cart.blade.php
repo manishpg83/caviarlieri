@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Cart | Celergen')
-@section('header', 'Cart | Celergen')
+@section('title', 'Cart | Swiss Caviarlieri')
+@section('header', 'Cart | Swiss Caviarlieri')
 
 @section('content')
     @livewire('cart-component')

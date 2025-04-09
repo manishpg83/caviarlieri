@@ -15,7 +15,7 @@
             <div class="flex justify-between h-16 mt-2">
                 <div class="flex mt-2">
                     <div class="flex-shrink-0">
-                        <a href="#" class="text-2xl font-bold text-gray-900">Celergen</a>
+                        <a href="#" class="text-2xl font-bold text-gray-900">Swiss Caviarlieri</a>
                     </div>
                     <div class="hidden mt-2 md:flex md:space-x-10 ml-10">
                         <a href="#what-we-provide" class="text-gray-900 hover:text-gray-600">What We Provide</a>
@@ -60,7 +60,7 @@
     <!-- Hero Section -->
     <header class="bg-blue-600 text-white">
         <div class="max-w-7xl mx-auto px-4 py-20 text-center">
-            <h1 class="text-5xl font-bold">Welcome to Celergen</h1>
+            <h1 class="text-5xl font-bold">Welcome to Swiss Caviarlieri</h1>
             <p class="mt-4 text-xl">Your one-stop shop for all your needs!</p>
             <a href="#products"
                 class="mt-8 inline-block bg-white text-blue-600 py-2 px-4 rounded-full font-semibold hover:bg-gray-200">Shop

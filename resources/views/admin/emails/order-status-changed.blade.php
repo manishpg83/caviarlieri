@@ -22,7 +22,7 @@
         
         <p style="font-size: 16px;">Thank you for your business!</p>
         
-        <p style="font-size: 16px; color: #666;">Best regards,<br><strong>Celergen</strong></p>
+        <p style="font-size: 16px; color: #666;">Best regards,<br><strong>Swiss Caviarlieri</strong></p>
     </div>
 </body>
 </html>

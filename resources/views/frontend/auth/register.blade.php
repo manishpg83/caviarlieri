@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
-@section('title', 'Home | Celergen')
-@section('header', 'Home | Celergen')
+@section('title', 'Home | Swiss Caviarlieri')
+@section('header', 'Home | Swiss Caviarlieri')
 @section('content')
     <div class="wrapper-fixed">
         <div class="banner">

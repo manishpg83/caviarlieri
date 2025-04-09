@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'About | Celergen')
-@section('header', 'About | Celergen')
+@section('title', 'About | Swiss Caviarlieri')
+@section('header', 'About | Swiss Caviarlieri')
 
 @section('content')
 

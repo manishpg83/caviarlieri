@@ -67,10 +67,10 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="app-brand justify-content-center mb-4">
-                            <a href="index.html" class="app-brand-link">
+                            <a href="#" class="app-brand-link">
                                 <span class="app-brand-text demo text-heading fw-bold"></span>
                                 <img src="{{ asset('/admin/assets/img/caviarlieri-logo.png') }}"
-                                    alt="Celergen Swiss" width="280" height="50">
+                                    alt="Swiss Caviarlieri" width="280" height="50">
                             </a>
                         </div>
                         <h4 class="mb-1">Welcome to Swiss Caviarlieri! 👋</h4>

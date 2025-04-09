@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Celergen'),
+    'name' => env('APP_NAME', 'Swiss Caviarlieri'),
 
     //'asset_url' => env('ASSET_URL', 'https://www.example.com'),
 
