@@ -42,6 +42,11 @@ class Entity extends Model
         return $this->belongsTo(User::class, 'created_by');
     }
 
+    public function orderInvoices()
+    {
+        return $this->hasMany(OrderInvoice::class, 'entity_id');
+    }
+
     /**
      * Scope a query to only include active entities.
      */
