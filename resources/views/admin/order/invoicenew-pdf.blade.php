@@ -205,7 +205,7 @@
 
 <body>
     <div class="logo-container">
-        <img src="{{ asset('admin/assets/img/caviarlieri-logo.png') }}" alt="Company Logo">
+        <img src="{{ public_path('admin/assets/img/caviarlieri-logo.png') }}" alt="Company Logo">
     </div>
 
     <div class="header">
