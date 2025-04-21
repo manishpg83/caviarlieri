@@ -52,7 +52,7 @@
                                      <label for="test2">Remember Me</label>
                                   </div>
                                   <div class="col-sm-6 col-xs-12 pull-right forgot">
-                                     <a href="{{ route('forgot-password') }}" title="">Forgot Password ?</a>
+                                     <a href="{{ route('password.request') }}" title="">Forgot Password ?</a>
                                   </div>
                                </div>
                             </div>
