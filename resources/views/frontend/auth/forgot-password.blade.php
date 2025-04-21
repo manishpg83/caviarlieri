@@ -18,7 +18,7 @@
           <div class="container login-form">
              <div class="con-small frm">
                 <div class="header-form">
-                   Login for Returning Customers
+                   Forgot password
                 </div>
                 <div class="form-item">
                     @if (session('status'))
