@@ -76,3 +76,53 @@
     </form>
  </div>
 @endsection
+
+
+
+
+
+    <!-- Content -->
+    <div class="container-xxl">
+        <div class="authentication-wrapper authentication-basic container-p-y">
+            <div class="authentication-inner py-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="app-brand justify-content-center mb-6">
+                            <a href="index.html" class="app-brand-link">
+                                <span class="app-brand-text demo text-heading fw-bold"></span><img
+                                    src="{{ asset('/admin/assets/img/caviarlieri-logo.png') }}"
+                                    alt="Swiss Caviarlieri" width="auto" height="40">
+                            </a>
+                        </div>
+                        <h4 class="mb-1">Welcome to Swiss Caviarlieri! 👋</h4>
+                        <p class="mb-6">Please sign-in to your account and start the adventure</p>
+
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @endif
+                        @if ($errors->has('email'))
+                            <div class="alert alert-danger">
+                                {{ $errors->first('email') }}
+                            </div>
+                        @endif
+
+                        <form method="POST" action="{{ route('frontend.password.email') }}" id="passwordResetForm"
+                            onsubmit="showLoader()">
+                            @csrf
+                            <div class="mb-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" class="form-control" id="email" name="email"
+                                    placeholder="Enter your email or username" autofocus required />
+                            </div>
+                            <div class="mb-6">
+                                <button class="btn btn-primary d-grid w-100" type="submit" id="submitBtn">Send Password
+                                    Reset Link</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / Content -->

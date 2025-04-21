@@ -18,6 +18,15 @@ Route::get('/register', [FrontAuthController::class, 'showRegistrationForm'])->n
 Route::post('/register', [FrontAuthController::class, 'register'])->name('register');
 Route::post('/logout', [FrontAuthController::class, 'logout'])->name('logout');
 
+Route::get('forgot-password', [FrontAuthController::class, 'showForgotPasswordForm'])
+->name('password.request');
+Route::post('forgot-password', [FrontAuthController::class, 'sendResetLinkEmail'])
+->name('password.email');
+Route::get('reset-password/{token}', [FrontAuthController::class, 'showResetPasswordForm'])
+->name('password.reset');
+Route::post('reset-password', [FrontAuthController::class, 'resetPassword'])
+->name('password.update');
+
 Route::get('/warehouse/update-delivery/{delivery_order_id}', [WarehouseOrderUpdateController::class, 'edit'])
     ->name('warehouse.update.delivery.form');
 
@@ -37,12 +46,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/checkout/error', function () {
         return view('frontend.checkout.error');
     })->name('checkout.error');
-    
+
     Route::get('/checkout', function () {
         return view('frontend.checkout');
     })->name('checkout');
-    
-    
+
+
     Route::get('/addbillingaddress/{id?}', [HomeController::class, 'addbillingaddress'])->name('addbillingaddress');
 });
 Route::get('/cart', [HomeController::class, 'cart'])->name('cart');
