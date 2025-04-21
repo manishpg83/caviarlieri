@@ -13,7 +13,7 @@
        </div>
     </div>
     <form id="formAuthentication" class="mb-4" method="POST"
-        action="{{ route('admin.password.update') }}">
+        action="{{ route('password.update') }}">
         @csrf
         <input type="hidden" name="token" value="{{ $token }}">
        <div class="form-bg">
