@@ -96,6 +96,11 @@ class User extends Authenticatable
         $this->notify(new AdminResetPasswordNotification($token));
     }
 
+    public function sendPasswordResetNotificationFront($token)
+    {
+        $this->notify(new FrontResetPasswordNotification($token));
+    }
+
     public function getEmailForPasswordReset()
     {
         return $this->email;

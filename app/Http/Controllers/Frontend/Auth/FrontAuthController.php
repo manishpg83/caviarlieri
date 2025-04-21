@@ -50,7 +50,7 @@ class FrontAuthController extends Controller
         $status = Password::broker('users')->sendResetLink(
             $request->only('email'),
             function ($user, $token) {
-                $user->sendPasswordResetNotification($token);
+                $user->sendPasswordResetNotificationFront($token);
             }
         );
 

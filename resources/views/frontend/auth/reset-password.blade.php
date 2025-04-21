@@ -12,13 +12,15 @@
           </div>
        </div>
     </div>
-    <form method="POST" action="{{ route('password.email') }}" id="passwordResetForm" onsubmit="showLoader()">
+    <form id="formAuthentication" class="mb-4" method="POST"
+        action="{{ route('admin.password.update') }}">
         @csrf
+        <input type="hidden" name="token" value="{{ $token }}">
        <div class="form-bg">
           <div class="container login-form">
              <div class="con-small frm">
                 <div class="header-form">
-                   Forgot password
+                    Reset Password
                 </div>
                 <div class="form-item">
                     @if (session('status'))
@@ -34,33 +36,7 @@
                    <div class="">
                       <div class="row">
                          <div class="col-md-12 col-xs-12 form-group">
-                            <div class="input">
-                            <input type="text" class="form-control" id="email" name="email"
-                            placeholder="Enter your email or username" autofocus required />
-                            </div>
-                         </div>
-
-                         <div class="col-md-12 col-xs-12">
-                            <div class="input">
-                            <button class="btn btn-primary d-grid w-100" type="submit" id="submitBtn">Send Password
-                            Reset Link</button>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </form>
-
-    <h4 class="mb-1">Reset Password</h4>
-                        <p class="mb-6">Please enter your new password</p>
-
-                        <form id="formAuthentication" class="mb-4" method="POST"
-                            action="{{ route('admin.password.update') }}">
-                            @csrf
-                            <input type="hidden" name="token" value="{{ $token }}">
+                            <p class="mb-6">Please enter your new password</p>
 
                             <div class="mb-6">
                                 <label for="email" class="form-label">E-Mail Address</label>
@@ -104,7 +80,14 @@
                             <div class="mb-6">
                                 <button class="btn btn-primary d-grid w-100" type="submit">Reset Password</button>
                             </div>
-                        </form>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </form>
  </div>
 @endsection
 
