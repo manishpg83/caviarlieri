@@ -106,7 +106,7 @@
                             </div>
                         @endif
 
-                        <form method="POST" action="{{ route('frontend.password.email') }}" id="passwordResetForm"
+                        <form method="POST" action="{{ route('password.email') }}" id="passwordResetForm"
                             onsubmit="showLoader()">
                             @csrf
                             <div class="mb-6">
