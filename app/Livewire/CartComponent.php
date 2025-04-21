@@ -13,7 +13,7 @@ class CartComponent extends Component
     public $products;
 
     protected $listeners = ['cartUpdated' => 'updateCart'];
-
+ 
     public function mount()
     {
         $this->products = Product::where('is_online', true)->get();

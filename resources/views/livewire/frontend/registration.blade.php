@@ -116,11 +116,11 @@
 
                         
                         <div class="text" style="margin-top: 42px;">
-                            <button type="submit" class="join">JOIN CELERGEN</button>
+                            <button type="submit" class="join">JOIN CAVIARLIERI</button>
                         </div>
                         <div class="text">
                             <div class="ext">
-                                When you click JOIN CELERGEN you are agreeing to our <a href="https://celergenswiss.com/privacy-policy" title="">Privacy Policy</a>
+                                When you click JOIN SWISS CAVIARLIERI you are agreeing to our <a href="https://celergenswiss.com/privacy-policy" title="">Privacy Policy</a>
                             </div>
                         </div>
                     </div>

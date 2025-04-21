@@ -8,17 +8,19 @@
         <div class="container" style="margin-bottom: 50px;">
             <div class="container">
                 <div class="row">
-                            <div class="col-lg-6">
-                            <p>Buy Caviarlieri from the following web sites if you reside in</p>
-                              <a style="width: 100%;" href="https://caviarlieriamerica.com/shop/" target="_blank">
-                                <div class="flag">
-                                                <img src="https://store.celergenswiss.com/images/asset-1.png" style="height: 60px">
-                                  <div class="myText" style="margin-top: -34px;"><strong>UNITED STATES CUSTOMERS</strong></div>    
-                                            
-                              </div></a>
-                  </div>
-                  </div>	
+                    <div class="col-lg-6">
+                        <p>Buy Caviarlieri from the following web sites if you reside in</p>
+                        <a style="width: 100%;" href="https://caviarlieriamerica.com/shop/" target="_blank">
+                            <div class="flag">
+                                <img src="https://store.celergenswiss.com/images/asset-1.png" style="height: 60px">
+                                <div class="myText" style="margin-top: -34px;"><strong>UNITED STATES CUSTOMERS</strong>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
                 </div>
+            </div>
             <div class="row cart-row">
                 <div class="col-lg-8 col-md-8 col-xs-12">
                     <div class="myBox-left">
@@ -28,10 +30,10 @@
                                     <tbody>
                                         <tr>
                                             @php
-                                                // Use the actual product image or fall back to a default image if not set
+                                                // Use the actual product image or fall back to default image if not set
                                                 $image = $product->product_img
                                                     ? asset('/' . $product->product_img)
-                                                    : asset('images/default_image.jpg');
+                                                    : asset('frontend/images/download.png');
                                             @endphp
 
                                             <td rowspan="2" class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
@@ -63,8 +65,9 @@
 
                                             <td align="left" valign="top" style="padding-top:10px;"
                                                 class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                <input class="noborder" disabled style="text-align:left;color:#333;font-weight:bold;"
-                                                    type="text" id="unitprice_{{ $product->product_code }}"
+                                                <input class="noborder" disabled
+                                                    style="text-align:left;color:#333;font-weight:bold;" type="text"
+                                                    id="unitprice_{{ $product->product_code }}"
                                                     name="unitprice_{{ $product->product_code }}"
                                                     value="{{ $product->currency }} {{ number_format($product->unit_price, 2) }}">
                                             </td>

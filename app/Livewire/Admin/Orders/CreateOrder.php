@@ -531,7 +531,7 @@ class CreateOrder extends Component
 
         if ($appName === 'Caviarlieri') {
             $startingNumber = 17000;
-        } elseif ($appName === 'Celergen') {
+        } elseif ($appName === 'Caviarlieri') {
             $startingNumber = 13000;
         } else {
             $startingNumber = 10000;
