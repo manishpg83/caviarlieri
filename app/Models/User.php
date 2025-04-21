@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Notifications\AdminResetPasswordNotification;
+use App\Notifications\FrontResetPasswordNotification;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
