@@ -86,7 +86,7 @@ class FrontAuthController extends Controller
         );
 
         return $status === Password::PASSWORD_RESET
-            ? redirect()->route('frontend.login')->with('status', __($status))
+            ? redirect()->route('login.form')->with('status', __($status))
             : back()->withErrors(['email' => [__($status)]]);
     }
 
