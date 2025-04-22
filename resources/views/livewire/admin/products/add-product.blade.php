@@ -130,7 +130,7 @@
                                     <label class="form-label" for="is_online">Is Online</label>
                                     <div class="d-flex align-items-center ps-2 bg-transparent" style="height: 38px;">
                                         <div class="form-check mb-0">
-                                            <input type="checkbox" class="form-check-input" id="is_online" wire:model="is_online" value="1">
+                                            <input type="checkbox" class="form-check-input" id="is_online" wire:model="is_online">
                                             <label class="form-check-label" for="is_online">Available Online</label>
                                         </div>
                                     </div>

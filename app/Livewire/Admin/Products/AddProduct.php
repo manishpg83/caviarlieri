@@ -68,18 +68,20 @@ class AddProduct extends Component
         $this->currencies = Currency::where('status', 'active')->pluck('name', 'code')->toArray();
         $this->minExpireDate = date('Y-m');
         $this->product_id = request()->query('id');
-
+    
         if ($this->product_id) {
             $product = Product::find($this->product_id);
             if ($product) {
                 $this->fill($product->toArray());
                 $this->isEditMode = true;
-
+    
+                // Fix special fields after fill
+                $this->is_online = (bool) $product->is_online;
                 $this->product_img_url = $product->product_img ?: null;
                 $this->expire_date = $product->expire_date ? date('Y-m', strtotime($product->expire_date)) : null;
             }
         }
-    }
+    }    
 
     public function submit()
     {
