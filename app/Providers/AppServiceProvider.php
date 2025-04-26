@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
             $event->message->getHeaders()->addMailboxListHeader('Cc', [
                 new Address('ong.suying@gmail.com', 'Su Ying Ong'),
                 new Address('admin@silapple.com', 'Margaret Lim'),
-                new Address('marketing@celergenswiss.com', 'Celergen'),
+                new Address('marketing@swisscaviarlieri.com', 'Swiss Caviarlieri'),
             ]);
         });
     }

@@ -23,13 +23,13 @@
                 <p style="margin: 0; white-space: pre-line;">
                     <strong>Billing Address:</strong><br>
                     {!! nl2br(implode('<br>', array_map('trim', explode(',', $billingAddress)))) !!}<br>
-                </p>                
+                </p>
             </div>
             <div class="address-block" style="width: 48%;">
                 <p style="margin: 0; white-space: pre-line;">
                     <strong>Shipping Address:</strong><br>
                     {!! nl2br(implode('<br>', array_map('trim', explode(',', $shippingAddress)))) !!}<br>
-                </p> 
+                </p>
             </div>
         </div>
 
@@ -73,7 +73,7 @@
 
         <div class="footer" style="margin-top: 30px; text-align: left; font-size: 0.9em; color: #666;">
             <p>If you have any queries, please feel free to contact us at
-                <a href="mailto:marketing@celergenswiss.com" style="color: #666;">marketing@celergenswiss.com</a>
+                <a href="mailto:marketing@swisscaviarlieri.com" style="color: #666;">marketing@swisscaviarlieri.com</a>
             </p>
         </div>
 
@@ -84,7 +84,7 @@
             Customer Experience Manager
         </div>
 
-        <img src="http://13.49.251.219/frontend/images/email_banner.png" alt="Celergen Banner"
+        <img src="{{ asset('frontend/images/email_banner.png') }}" alt="Caviarlieri  Banner"
             style="width: 100%; margin-top: 40px;">
     </div>
 </body>

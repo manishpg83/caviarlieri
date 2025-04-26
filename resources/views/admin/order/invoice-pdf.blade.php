@@ -299,7 +299,7 @@
     <div class="summary-section">
         <div class="left bank-details"><br>
             <p><strong>DIRECT ALL INQUIRIES TO: </strong></p>
-            <a href="mailto:marketing@celergenswiss.com">marketing@celergenswiss.com</a><br><br>
+            <a href="mailto:marketing@swisscaviarlieri.com">marketing@swisscaviarlieri.com</a><br><br>
 
             <p><strong>Bank Charges must be borne by payer</strong></p><br>
 

@@ -9,16 +9,16 @@
 <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333; margin: 0; padding: 40px; background-color: #fff; line-height: 1.6;">
     <div class="container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
         <div style="text-align: center; margin-bottom: 30px; width: 100%; display: block;">
-            <img src="{{ asset('admin/assets/img/caviarlieri-logo.png') }}" 
-                 alt="Caviarlieri Logo" 
+            <img src="{{ asset('admin/assets/img/caviarlieri-logo.png') }}"
+                 alt="Caviarlieri Logo"
                  style="max-height: 60px; width: auto; display: inline-block; margin: 0 auto;">
         </div>
 
         <div class="greeting" style="margin-bottom: 30px; line-height: 1.6;">
             <p>Dear {{ $warehouseName }} team,</p>
-            
+
             <p style="font-weight: bold; margin-top: 20px;">Shipping Details:</p>
-            
+
             <p>
                 <strong>Address:</strong><br>
                 {!! nl2br(implode('<br>', array_map('trim', explode(',', $shippingAddress)))) !!}<br>
@@ -45,7 +45,7 @@
                     <td style="padding: 12px; text-align: right; border-bottom: 1px solid #eee;">{{ $detail['quantity'] }}</td>
                 </tr>
                 @endforeach
-            </tbody> 
+            </tbody>
         </table>
         <p>Please update the status of the delivery order and add a tracking number.</p>
 
@@ -54,7 +54,7 @@
         </p>
         <div class="footer" style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; color: #666;">
             <p>Thank you for your business!</p>
-            <p>If you have any queries, please feel free to contact us at <a href="mailto:marketing@celergenswiss.com" style="color: #007bff; text-decoration: none;">marketing@celergenswiss.com</a></p>
+            <p>If you have any queries, please feel free to contact us at <a href="mailto:marketing@swisscaviarlieri.com" style="color: #007bff; text-decoration: none;">marketing@swisscaviarlieri.com</a></p>
         </div>
     </div>
 </body>

@@ -230,20 +230,20 @@
             <strong>Shipping Address</strong><br>
             @php
                 $addressParts = explode(',', $order->shipping_address);
-        
+
                 $addressParts = array_map('trim', $addressParts);
-        
+
                 $phoneNumber = array_pop($addressParts);
             @endphp
-        
+
             {!! nl2br(e(str_replace(',', "\n", implode(', ', $addressParts)))) !!}
-        
+
             @if($phoneNumber)
                 <br>PHONE : {{ $phoneNumber }}
             @endif
         </div>
-        
-               
+
+
         <div class="invoice-details">
             <strong>INVOICE NO:</strong> {{ $invoice->invoice_number }}<br>
             <strong>INVOICE DATE:</strong> {{ \Carbon\Carbon::parse($invoice->invoice_date)->format('d-m-Y') }}<br>
@@ -267,17 +267,17 @@
                 $productCount = count($orderInvoiceDetails);
                 $blankRows = max($totalRows - $productCount, 0);
             @endphp
-    
+
             @foreach ($orderInvoiceDetails as $detail)
                 <tr>
                     <td style="width: 42%;">{{ $detail->getDisplayDescription() }}</td>
                     <td style="width: 12%;">{{ $detail->quantity }}</td>
                     <td style="width: 12%;">{{ $detail->sample_quantity ?? 0 }}</td>
                     <td style="width: 10%;">{{ $order->currency->symbol ?? '$' }} {{ number_format($detail->unit_price, 2) }}</td>
-                    <td style="width: 14%;">{{ $order->currency->symbol ?? '$' }} {{ number_format($detail->total, 2) }}</td>                    
+                    <td style="width: 14%;">{{ $order->currency->symbol ?? '$' }} {{ number_format($detail->total, 2) }}</td>
                 </tr>
             @endforeach
-    
+
             @for ($i = 0; $i < $blankRows; $i++)
                 <tr class="blank-row">
                     <td style="width: 42%;">&nbsp;</td>
@@ -287,7 +287,7 @@
                     <td style="width: 10%;">&nbsp;</td>
                 </tr>
             @endfor
-    
+
             <tr>
                 <td style="width: 42%; font-weight: bold;">
                     Country Of Origin: Switzerland <br>
@@ -300,12 +300,12 @@
             </tr>
         </tbody>
     </table>
-    
+
 
     <div class="summary-section">
         <div class="left bank-details"><br>
             <p><strong>DIRECT ALL INQUIRIES TO: </strong></p>
-            <a href="mailto:marketing@celergenswiss.com">marketing@celergenswiss.com</a><br><br>
+            <a href="mailto:marketing@swisscaviarlieri.com">marketing@swisscaviarlieri.com</a><br><br>
         </div>
 
         <div class="right totals">
@@ -332,7 +332,7 @@
                 </tr>
             </table>
         </div>
-        
+
     </div>
     <div class="footer">
         <p>Electronic Invoice. No Signature required</p>
