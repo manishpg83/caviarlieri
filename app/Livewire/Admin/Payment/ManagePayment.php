@@ -34,6 +34,11 @@ class ManagePayment extends Component
             'bank_charge' => 'nullable|numeric|min:0'
         ]);
 
+        if(empty($this->bank_charge))
+            $bank_charge = 0;
+        else
+            $bank_charge = $this->bank_charge;
+
         Payment::create([
             'order_id' => $this->order_id,
             'payment_method' => $this->payment_method,
@@ -43,7 +48,7 @@ class ManagePayment extends Component
             'transaction_id' => $this->transaction_id,
             'payment_date' => $this->payment_date,
             'payment_details' => $this->payment_details,
-            'bank_charge' => $this->bank_charge
+            'bank_charge' => $bank_charge
         ]);
 
         notyf()->success('Payment recorded successfully!');
@@ -74,13 +79,18 @@ class ManagePayment extends Component
                 'editedPaymentDetails' => 'nullable|string',
             ]);
 
+            if(empty($this->editedBankCharge))
+                $bank_charge = 0;
+            else
+                $bank_charge = $this->editedBankCharge;
+
             $payment = Payment::findOrFail($this->editedPaymentId);
             $payment->update([
                 'amount' => $this->editedAmount,
                 'payment_date' => $this->editedPaymentDate,
                 'payment_method' => $this->editedPaymentMethod,
                 'status' => $this->editedStatus,
-                'bank_charge' => $this->editedBankCharge,
+                'bank_charge' => $bank_charge,
                 'payment_details' => $this->editedPaymentDetails,
             ]);
 
