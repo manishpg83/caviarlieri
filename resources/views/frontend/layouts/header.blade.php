@@ -36,7 +36,6 @@
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                             @auth
                                 <li><a class="dropdown-item" href="{{ route('myaccount') }}">My Account</a></li>
-                                <li><a class="dropdown-item" href="{{ route('orders') }}">My Orders</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li>
                                     <form method="POST" action="{{ route('logout') }}">
