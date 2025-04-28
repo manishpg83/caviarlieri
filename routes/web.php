@@ -50,8 +50,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/checkout', function () {
         return view('frontend.checkout');
     })->name('checkout');
-
-
     Route::get('/addbillingaddress/{id?}', [HomeController::class, 'addbillingaddress'])->name('addbillingaddress');
 });
 Route::get('/cart', [HomeController::class, 'cart'])->name('cart');
