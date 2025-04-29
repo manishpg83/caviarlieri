@@ -10,7 +10,6 @@ use App\Http\Controllers\Admin\WarehouseOrderUpdateController;
 
 // Public routes
 Route::get('/', function () {
-    Log::info('Home page accessed');
     return view('frontend.home');
 })->name('home');
 
