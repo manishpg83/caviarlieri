@@ -38,6 +38,7 @@ class PayPalWebhookController extends Controller
                 case 'PAYMENT.CAPTURE.COMPLETED':
                     $payment->status = 'completed';
                     $this->updateOrder($payment->order_id, 'Paid');
+                    session()->forget('cart');
                     break;
 
                 case 'PAYMENT.CAPTURE.DENIED':
@@ -158,7 +159,7 @@ class PayPalWebhookController extends Controller
                         $orderId
                     ));
     
-                    session()->forget('cart');
+                    
     
                     return redirect()->route('order.success')
                         ->with('success', 'Your payment has been processed successfully!');
