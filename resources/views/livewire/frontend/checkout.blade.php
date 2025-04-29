@@ -39,7 +39,7 @@
                         <div class="col-xs-12 col-md-6">
                             <input type="text" maxlength="100" name="billing_fname" id="billing_fname"
                                 class="form-control" placeholder="First Name" data-validation="required"
-                                value="{{ $billingAddress->first_name ?? '' }}" wire:model="billing_fname">
+                                value="{{ $billingAddress->billing_fname ?? '' }}" wire:model="billing_fname">
                             @error('billing_fname')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
@@ -47,7 +47,7 @@
                         <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
                             <input type="text" maxlength="100" name="billing_lname" id="billing_lname"
                                 class="form-control" placeholder="Last Name" data-validation="required"
-                                value="{{ $billingAddress->last_name ?? '' }}" wire:model="billing_lname">
+                                value="{{ $billingAddress->billing_lname ?? '' }}" wire:model="billing_lname">
                             @error('billing_lname')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
@@ -153,7 +153,8 @@
                         </div>
 
                         <div id="ship_address">
-                            <div class="row form-item-ck">
+                            <div class="row form-item-ck">                                
+                                @if(Auth::check())
                                 <div class="col-xs-12 select-address-wrapper">
                                     <select wire:model="selectedShippingAddress" wire:change="handleAddressChange">
                                         @foreach ($shippingAddresses as $address)
@@ -163,7 +164,7 @@
                                     </select>
                                     <span class="select-dropdown-icon glyphicon glyphicon-chevron-down">&nbsp;</span>
                                 </div>
-
+                                @endif
                                 <div class="col-xs-12 col-md-6">
                                     <input type="text" maxlength="100" name="firstname" id="firstname"
                                         class="form-control" placeholder="First Name" data-validation="required"
@@ -254,7 +255,7 @@
                                 </div>
                                 <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
                                     <input type="email" maxlength="20" name="shipping_email" id="shipping_email"
-                                        class="form-control" placeholder="shipping_email" data-validation="number"
+                                        class="form-control" placeholder="Shipping Email" data-validation="email"
                                         wire:model="shipping_email">
                                     @error('shipping_email')
                                         <span class="text-danger">{{ $message }}</span>
