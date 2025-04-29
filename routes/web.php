@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\WarehouseOrderUpdate;
 use App\Http\Controllers\Frontend\HomeController;
@@ -9,6 +10,7 @@ use App\Http\Controllers\Admin\WarehouseOrderUpdateController;
 
 // Public routes
 Route::get('/', function () {
+    Log::info('Home page accessed');
     return view('frontend.home');
 })->name('home');
 

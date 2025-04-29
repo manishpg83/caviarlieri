@@ -11,7 +11,7 @@ use Log;
 class HomeController extends Controller
 {
     public function login()
-    {   Log::info('Login page accessed');
+    {  
         return view('frontend.auth.login');
     }
 
