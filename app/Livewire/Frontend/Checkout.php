@@ -543,7 +543,7 @@ class Checkout extends Component
 
             $response = $provider->createOrder($order);            
 
-            if (isset($response['id']) && $response['id']) {                L
+            if (isset($response['id']) && $response['id']) {
                 Payment::create([
                     'order_id' => $orderId,
                     'payment_method' => 'PayPal',
