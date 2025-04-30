@@ -1,15 +1,21 @@
 <div class="container-xxl flex-grow-1 container-p-y">
     <div
-        class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-6 row-gap-4">
+        class="row-gap-4 mb-6 d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
         <div class="d-flex flex-column justify-content-center">
-            <h4 class="mb-1 text-2xl ml-2">Customer List</h4> 
+            <h4 class="mb-1 ml-2 text-2xl">Customer List</h4>
         </div>
-        <div class="d-flex align-content-center flex-wrap gap-4">
-            <div class="d-flex gap-4">
-                <div class="btn-group"><button
+        <div class="flex-wrap gap-4 d-flex align-content-center">
+            <div class="gap-4 d-flex">
+                <div class="btn-group">
+                    <button
                         class="btn btn-secondary buttons-collection dropdown-toggle btn-label-secondary me-4 waves-effect waves-light"
-                        tabindex="0" aria-controls="DataTables_Table_0" type="button" aria-haspopup="dialog"
-                        aria-expanded="false"><span><i class="ti ti-upload me-1 ti-xs"></i>Export</span></button>
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span><i class="ti ti-upload me-1 ti-xs"></i>Export</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" wire:click="exportExcel">Export to Excel</a></li>
+                        <li><a class="dropdown-item" href="#" wire:click="exportCsv">Export to CSV</a></li>
+                    </ul>
                 </div>
             </div>
             <a href="{{ route('admin.customer.add') }}" class="btn btn-primary">
@@ -22,7 +28,7 @@
     @endif
     <div class="card">
         <div class="card-body">
-            <div class="d-flex justify-content-between mb-3">
+            <div class="mb-3 d-flex justify-content-between">
                 <div class="d-flex">
                     <select wire:model.live="perPage" class="form-select me-2" style="width: auto;">
                         @foreach ($perpagerecords as $pagekey => $pagevalue)
@@ -37,8 +43,8 @@
                     </select>
                 </div>
                 <div class="position-relative">
-                    <input wire:model.live="search" type="text" placeholder="Search Customers..."
-                        class="form-control" style="width: auto;">
+                    <input wire:model.live="search" type="text" placeholder="Search Customers..." class="form-control"
+                        style="width: auto;">
                 </div>
             </div>
             <div class="table-responsive">
@@ -67,34 +73,43 @@
                                     <td>{{ $customer->company_name }}</td>
                                     <td>{{ $customer->billing_country }}</td>
                                     <td class="text-center">
-                                        <div class="d-flex align-items-center justify-content-center gap-2">
-                                            <a href="{{ route('admin.customer.details', $customer->id) }}" class="text-black" title="View Details" target="_blank">
+                                        <div class="gap-2 d-flex align-items-center justify-content-center">
+                                            <a href="{{ route('admin.customer.details', $customer->id) }}" class="text-black"
+                                                title="View Details" target="_blank">
                                                 <i class="fa fa-eye" style="font-size: 20px; color: #7367f0;"></i>
                                             </a>
-                     
+
                                             <div class="dropdown">
-                                                <button class="btn btn-link text-black" type="button" id="actionMenu{{ $customer->id }}" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <button class="text-black btn btn-link" type="button"
+                                                    id="actionMenu{{ $customer->id }}" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
                                                     <i class="fa fa-ellipsis-v" style="font-size: 20px;"></i>
                                                 </button>
                                                 <ul class="dropdown-menu" aria-labelledby="actionMenu{{ $customer->id }}">
-                                                    <li><a class="dropdown-item" wire:click="edit({{ $customer->id }})" style="cursor: pointer;">Edit</a></li>
+                                                    <li><a class="dropdown-item" wire:click="edit({{ $customer->id }})"
+                                                            style="cursor: pointer;">Edit</a></li>
                                                     <li>
-                                                        <a class="dropdown-item {{ $customer->trashed() ? 'text-danger' : 'text-warning' }}" 
-                                                           wire:click="confirmDelete({{ $customer->id }})" 
-                                                           style="cursor: pointer;">
+                                                        <a class="dropdown-item {{ $customer->trashed() ? 'text-danger' : 'text-warning' }}"
+                                                            wire:click="confirmDelete({{ $customer->id }})"
+                                                            style="cursor: pointer;">
                                                             {{ $customer->trashed() ? 'Permanently Delete' : 'Suspend' }}
                                                         </a>
                                                     </li>
                                                     @if ($customer->trashed())
-                                                        <li><a class="dropdown-item text-success" wire:click="restore({{ $customer->id }})" style="cursor: pointer;">Restore</a></li>
+                                                        <li><a class="dropdown-item text-success"
+                                                                wire:click="restore({{ $customer->id }})"
+                                                                style="cursor: pointer;">Restore</a></li>
                                                     @endif
                                                 </ul>
                                             </div>
-                     
+
                                             @if($customer->trashed())
                                                 <span class="text-danger" title="Suspended">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
-                                                        <path d="M7.938 2.016a.13.13 0 0 1 .125 0l6.857 11.987c.042.073.042.163 0 .236a.13.13 0 0 1-.125.061H1.375a.13.13 0 0 1-.125-.061.176.176 0 0 1 0-.236L7.938 2.016zM8 5c-.535 0-.954.462-.9.995l.35 4.507c.035.416.38.748.9.748s.865-.332.9-.748L8.9 5.995C8.954 5.462 8.535 5 8 5zm.002 6a1 1 0 1 0-.002 2 1 1 0 0 0 .002-2z"/>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                        class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16"
+                                                        style="width: 16px; height: 16px;">
+                                                        <path
+                                                            d="M7.938 2.016a.13.13 0 0 1 .125 0l6.857 11.987c.042.073.042.163 0 .236a.13.13 0 0 1-.125.061H1.375a.13.13 0 0 1-.125-.061.176.176 0 0 1 0-.236L7.938 2.016zM8 5c-.535 0-.954.462-.9.995l.35 4.507c.035.416.38.748.9.748s.865-.332.9-.748L8.9 5.995C8.954 5.462 8.535 5 8 5zm.002 6a1 1 0 1 0-.002 2 1 1 0 0 0 .002-2z" />
                                                     </svg>
                                                 </span>
                                             @endif
@@ -103,7 +118,7 @@
                                 </tr>
                             @endforeach
                         @endif
-                     </tbody>
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -119,8 +134,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Confirm Permanent Deletion</h5>
-                        <button type="button" class="btn-close"
-                            wire:click="$set('confirmingDeletion', false)"></button>
+                        <button type="button" class="btn-close" wire:click="$set('confirmingDeletion', false)"></button>
                     </div>
                     <div class="modal-body">
                         <p>Are you sure you want to permanently delete this customer? This action cannot be undone.</p>
@@ -132,6 +146,6 @@
                     </div>
                 </div>
             </div>
-        @endif
+    @endif
     </div>
 </div>
