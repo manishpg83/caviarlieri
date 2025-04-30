@@ -208,7 +208,7 @@
                                                     @endforeach
                                                 </select>
                                             </div>
-                                            
+
                                             <div class="col-md-6">
                                                 <label class="form-label" for="billing_postal_code">Billing Postal
                                                     Code</label>
@@ -384,7 +384,7 @@
                                             </div>
                                         @elseif($oldImage)
                                             <div class="position-relative">
-                                                <img src="{{ Storage::url($oldImage) }}" class="rounded"
+                                                <img src="{{ asset($oldImage) }}" class="rounded"
                                                     style="width: 100px; height: 100px; object-fit: cover;">
                                                 <button type="button"
                                                     class="btn btn-danger btn-sm position-absolute top-0 end-0"
