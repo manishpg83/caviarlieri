@@ -132,12 +132,13 @@ class AddCustomer extends Component
             if ($this->oldImage) {
                 Storage::disk('public')->delete($this->oldImage);
             }
-
-            $imageName = time() . '_' . $this->image->getClientOriginalName();
+    
+            $imageName = time().'_'.$this->image->getClientOriginalName();
             $imagePath = $this->image->storeAs('customers', $imageName, 'public');
+            
             return $imagePath;
         }
-
+    
         return $this->oldImage;
     }
 
