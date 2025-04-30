@@ -182,7 +182,7 @@ class PayPalWebhookController extends Controller
         Log::info('PayPal Payment Cancelled:', ['request' => $request->all()]);
 
         $token = $request->query('token');
-     /*    if ($token) {
+        if ($token) {
 
             Payment::where('transaction_id', $token)
                 ->update(['status' => 'cancelled']);
@@ -196,7 +196,7 @@ class PayPalWebhookController extends Controller
                         'updated_at' => now(),
                     ]);
             }
-        } */
+        }
 
         return redirect()->route('checkout')
             ->with('warning', 'Your payment was cancelled. Please try again.');
