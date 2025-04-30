@@ -527,11 +527,11 @@ class CreateOrder extends Component
     {
         $prefix = ($category === 'shipping') ? 'SHIP-' : 'INV-';
 
-        $appName = env('APP_NAME');
+        $appName = env('INVOICE_VARIABLE_NAME', 'caviarlieri');
 
-        if ($appName === 'Caviarlieri') {
+        if ($appName === 'caviarlieri') {
             $startingNumber = 17000;
-        } elseif ($appName === 'Caviarlieri') {
+        } elseif ($appName === 'celergen') {
             $startingNumber = 13000;
         } else {
             $startingNumber = 10000;
