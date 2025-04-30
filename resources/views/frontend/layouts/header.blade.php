@@ -35,6 +35,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                             @auth
+                                <li><a class="dropdown-item"> {{ Auth::user()->name ?? Auth::user()->first_name }}</a></li>
                                 <li><a class="dropdown-item" href="{{ route('myaccount') }}">My Account</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li>
