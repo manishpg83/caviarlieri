@@ -254,7 +254,7 @@
                                     @enderror
                                 </div>
                                 <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
-                                    <input type="email" maxlength="20" name="shipping_email" id="shipping_email"
+                                    <input type="email" name="shipping_email" id="shipping_email"
                                         class="form-control" placeholder="Shipping Email" data-validation="email"
                                         wire:model="shipping_email">
                                     @error('shipping_email')
