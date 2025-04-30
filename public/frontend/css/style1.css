@@ -28,7 +28,7 @@ Navigation menu inner pages
 #logo{transition: all .2s ease-out;}	
 .change-contactus{font-size: 14px; }	
 
-.round-btn{ font-family: 'GothamBook', sans-serif; letter-spacing: 1px; border-radius:50px; border: 2px solid #ffffff; display: inline-block; line-height: 1; color: #FFFFFF; text-align: center; font-weight: 400; text-transform: uppercase; box-shadow: none; text-decoration: none; font-size: 16px; padding: 10px 16px; box-sizing: border-box; cursor: pointer; }
+.round-btn{ font-family: Lufga, sans-serif; letter-spacing: 1px; border-radius:50px; border: 2px solid #ffffff; display: inline-block; line-height: 1; color: #FFFFFF; text-align: center; font-weight: 400; text-transform: uppercase; box-shadow: none; text-decoration: none; font-size: 16px; padding: 10px 16px; box-sizing: border-box; cursor: pointer; }
 .round-btn:hover{color: #9A9A9A; border: 2px solid #9A9A9A;}
 .navbar-round-btn{font-size: 14px; line-height: 1.6;}
 
