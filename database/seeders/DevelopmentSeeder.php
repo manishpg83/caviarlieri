@@ -11,7 +11,6 @@ class DevelopmentSeeder extends Seeder
      */
     public function run(): void
     {
-        // Call all the seeders you want here
         $this->call([
             CustomerTypeSeeder::class,
             CurrencySeeder::class,

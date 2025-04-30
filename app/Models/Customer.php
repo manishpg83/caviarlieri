@@ -31,6 +31,7 @@ class Customer extends Model
         'billing_fname',
         'billing_lname',
         'billing_address_2',
+        'billing_company_name',
         'billing_city',
         'billing_state',
         'billing_phone',
