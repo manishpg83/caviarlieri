@@ -6,11 +6,12 @@ use App\Http\Controllers\Controller;
 use App\Models\Customer;
 use App\Models\OrderMaster;
 use Illuminate\Support\Facades\Auth;
+use Log;
 
 class HomeController extends Controller
 {
     public function login()
-    {
+    {  
         return view('frontend.auth.login');
     }
 

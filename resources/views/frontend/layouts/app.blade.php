@@ -47,6 +47,8 @@
     <script src="{{ asset('/frontend/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('/frontend/js/dashboard-account.js') }}"></script>
     <script src="{{ asset('/frontend/js/jquery-3.6.3.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 
     <!-- Favicon -->
     @livewireStyles
@@ -94,6 +96,7 @@
     </div>
 
     @livewireScripts
+    @stack('scripts')
     <script>
         Livewire.on('alert', ({type, message}) => {
             alert(message); // Or use a more sophisticated notification system

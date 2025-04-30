@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\WarehouseOrderUpdate;
 use App\Http\Controllers\Frontend\HomeController;

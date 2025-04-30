@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
         $this->call([
             InitialRolesAndPermissionsSeeder::class,
+            CountrySeeder::class,
         ]);
         /* User::factory()->create([
             'name' => 'Super Admin',
@@ -24,5 +25,6 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('admin@123'),
             'type' => 'super-admin',
         ]); */
+        $this->call(OrderMasterTableSeeder::class);
     }
 }
