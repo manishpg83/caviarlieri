@@ -119,7 +119,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
             Route::middleware(['permission:manage customer types'])->group(function () {
                 Route::get('customerstype', [CustomersTypeController::class, 'index'])->name('customerstype.index');
                 Route::get('customerstype/add', [CustomersTypeController::class, 'add'])->name('customerstype.add');
-                Route::get('invoices', [InvoiceController::class, 'index'])->name('invoices.index');
+                // Route::get('invoices', [InvoiceController::class, 'index'])->name('invoices.index');
                 Route::get('debtors', [DebtorsController::class, 'index'])->name('debtors.index');
                 Route::get('consignment-list', [ConsignmentOrderController::class, 'index'])->name('consignment.index');
             });
