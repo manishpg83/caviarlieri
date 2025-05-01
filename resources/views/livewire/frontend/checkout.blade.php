@@ -7,7 +7,7 @@
     </div>
 
     <form method="post" id="checkout-form">
-        <div class="container" style="font-family: 'OpenSans';">
+        <div class="container">
             @unless (Auth::check())
                 <div id="box-auth" class="clearfix">
                     <div class="pull-left w100m">
