@@ -21,7 +21,7 @@
 </section>
 
 <section>
-    <div class="container-fluid px-0" style="background-image: url('{{ asset('frontend/images/clinical-science/Mountain-background.png') }}'); background-repeat: no-repeat; background-size:cover">
+    <div class="container-fluid px-0 clinical-bg">
         <div style="background-color: rgba(0,9,22,.8);">
             <div class="container-fluid px-md-5">
                 <div class="row" style="padding: 75px 0;">

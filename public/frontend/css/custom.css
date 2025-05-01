@@ -69,6 +69,11 @@ footer .widget_services ul li a:hover {
     background-position: top;
     margin-top: 50px;
 }
+.clinical-bg {
+    background-image: url('/frontend/images/clinical-science/Mountain-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 @media screen and (max-width: 1320px) {
     .sidbar-main-menu .nav-item {
