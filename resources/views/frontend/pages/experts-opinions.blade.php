@@ -41,8 +41,7 @@
                         style="transform: translate3d(-5140px, 0px, 0px); transition: 0.5s; width: 14135px;">
                         <div class="owl-item cloned" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/imcas-academy.jpg') }}')">
+                            <div class="expert-bg imcas-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -74,8 +73,7 @@
                         </div>
                         <div class="owl-item cloned" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/ivana-scheiz2.jpg') }}')">
+                            <div class="expert-bg ivana-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -108,8 +106,7 @@
                         </div>
                         <div class="owl-item cloned" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/dr-Michael-papacharalampous.jpg') }}')">
+                            <div class="expert-bg michael-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -143,8 +140,7 @@
                         </div>
                         <div class="owl-item" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/emmanouil-karalis-tokyo-olympics-1.jpg') }}')">
+                            <div class="expert-bg karalis-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -175,8 +171,7 @@
                         </div>
                         <div class="owl-item active" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/grand-resort-bad-ragaz-spa.jpg') }}')">
+                            <div class="expert-bg bad-ragaz-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -208,8 +203,7 @@
                         </div>
                         <div class="owl-item" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/imcas-academy.jpg') }}')">
+                            <div class="expert-bg imcas-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -241,8 +235,7 @@
                         </div>
                         <div class="owl-item" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/ivana-scheiz2.jpg') }}')">
+                            <div class="expert-bg ivana-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -275,8 +268,7 @@
                         </div>
                         <div class="owl-item" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/dr-Michael-papacharalampous.jpg') }}')">
+                            <div class="expert-bg michael-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -310,8 +302,7 @@
                         </div>
                         <div class="owl-item cloned" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/emmanouil-karalis-tokyo-olympics-1.jpg') }}')">
+                            <div class="expert-bg karalis-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -342,8 +333,7 @@
                         </div>
                         <div class="owl-item cloned" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/grand-resort-bad-ragaz-spa.jpg') }}')">
+                            <div class="expert-bg bad-ragaz-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -375,8 +365,7 @@
                         </div>
                         <div class="owl-item cloned" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/imcas-academy.jpg') }}')">
+                            <div class="expert-bg imcas-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
