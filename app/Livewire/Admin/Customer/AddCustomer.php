@@ -46,10 +46,7 @@ class AddCustomer extends Component
         'payment_term_display' => 'required|string',
         'payment_term_actual' => 'nullable|in:IMMEDIATE,7D,14D,30D',
         'billing_address' => 'required|string',
-        'billing_country' => 'required|string',
-        'shipping_address_receiver_name_1' => 'required|string',
-        'shipping_address_1' => 'required|string',
-        'shipping_country_1' => 'required|string',
+        'billing_country' => 'required|string',        
     ];
 
     public function mount()
@@ -69,7 +66,7 @@ class AddCustomer extends Component
             }
         }
     }
-
+    
     public function getBillingCountryName()
     {
         return $this->billing_country ? ($this->countries[$this->billing_country] ?? $this->billing_country) : null;
@@ -141,10 +138,21 @@ class AddCustomer extends Component
     
         return $this->oldImage;
     }
-
-    public function save()
+    public function rules()
     {
         $rules = $this->rules;
+      
+        if (!$this->sameAsBilling) {
+            $rules['shipping_address_receiver_name_1'] = 'required|string';
+            $rules['shipping_address_1'] = 'required|string';
+            $rules['shipping_country_1'] = 'required|string';
+        }
+
+        return $rules;
+    }
+    public function save()
+    {
+        $rules = $this->rules();
 
         if ($this->image && !is_string($this->image)) {
             $rules['image'] = 'required|image|max:1024|mimes:jpg,jpeg,png';
