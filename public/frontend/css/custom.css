@@ -74,6 +74,37 @@ footer .widget_services ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.imcas-bg {
+    background-image: url('/frontend/images/experts-opinions/imcas-academy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ivana-bg {
+    background-image: url('/frontend/images/experts-opinions/ivana-scheiz2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.michael-bg {
+    background-image: url('/frontend/images/experts-opinions/dr-Michael-papacharalampous.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.karalis-bg {
+    background-image: url('/frontend/images/experts-opinions/emmanouil-karalis-tokyo-olympics-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bad-ragaz-bg {
+    background-image: url('/frontend/images/experts-opinions/grand-resort-bad-ragaz-spa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 @media screen and (max-width: 1320px) {
     .sidbar-main-menu .nav-item {
