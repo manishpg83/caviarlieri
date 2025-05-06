@@ -352,7 +352,39 @@ class OrderDetails extends Component
 
         return $invoice;
     }
+    protected function generateUniqueInvoiceNumber($category = 'regular')
+    {
+        $prefix = ($category === 'shipping') ? 'SHIP-' : 'INV-';
 
+        $appName = config('invoice.invoice_variable_name');
+        $startingNumbers = config('invoice.starting_numbers');
+        $startingNumber = $startingNumbers[$appName] ?? $startingNumbers['default'];
+
+        $latestSequentialInvoice = OrderInvoice::where('invoice_number', 'like', $prefix . '%')
+            ->orderBy('id', 'desc')
+            ->first();
+
+        if ($latestSequentialInvoice) {
+            preg_match('/' . $prefix . '(\d+)/', $latestSequentialInvoice->invoice_number, $matches);
+
+            if (isset($matches[1])) {
+                $nextNumber = (int) $matches[1] + 1;
+            } else {
+                $nextNumber = $startingNumber + 1;
+            }
+        } else {
+            $nextNumber = $startingNumber + 1;
+        }
+
+        $invoiceNumber = $prefix . $nextNumber;
+
+        while (OrderInvoice::where('invoice_number', $invoiceNumber)->exists()) {
+            $nextNumber++;
+            $invoiceNumber = $prefix . $nextNumber;
+        }
+
+        return $invoiceNumber;
+    }
     public function downloadInvoice($invoiceDetailId, $order_id)
     {
         try {
