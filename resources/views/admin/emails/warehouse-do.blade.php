@@ -28,7 +28,7 @@
 
         <div>
             <p><strong>Order Date :</strong> {{ \Carbon\Carbon::parse($order->order_date)->format('F d, Y') }}</p>
-            <p><strong>Order No :</strong> #{{ $order->order_number }}</p>
+            <p><strong>Order No :</strong> #{{ $order->order_id }}</p>
         </div>
 
         <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px;">

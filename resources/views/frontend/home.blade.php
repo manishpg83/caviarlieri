@@ -67,12 +67,12 @@
                     <div class="owl-stage">
                         <div class="owl-item">
                             <div class="item mob-banner1"
-                                style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/banner1M.jpg'); background-repeat: no-repeat;">
+                                style="background-image: url('{{ asset('/frontend/images/home/banner1M.jpg') }}'); background-repeat: no-repeat;">
                                 <div class="home-banner-container">
                                     <div class="banner1-txt">
                                         <h2>ENDURING YOUTH <br>IS A DREAM NO LONGER</h2>
                                         <div class="p-2" align="center"><img
-                                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png"
+                                                src="{{ asset('/frontend/images/home/Vector.png') }}"
                                                 style="width: 25px;" alt=""></div>
                                         <p class="mt-1 mb-3 text-uppercase GothamLight">Swiss Caviar Cellular Therapy
                                             Supplement</p>
@@ -85,12 +85,12 @@
                         </div>
                         <div class="owl-item">
                             <div class="item mob-banner2"
-                                style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/banner2M.jpg'); background-repeat: no-repeat;">
+                                style="background-image: url('{{ asset('/frontend/images/home/banner2M.jpg') }}'); background-repeat: no-repeat;">
                                 <div class="home-banner-container">
                                     <div class="banner2-txt">
                                         <h2>MAKE YOUR <br>CELLS YOUNG AGAIN </h2>
                                         <div class="p-2" align="center"><img
-                                                src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png"
+                                                src="{{ asset('/frontend/images/home/Vector.png') }}"
                                                 style="width: 25px;" alt=""></div>
                                         <p class="mt-1 mb-3 text-uppercase GothamLight">Swiss Caviar Cellular Therapy
                                             Supplement</p>
@@ -107,7 +107,7 @@
                                     <video autoplay="" muted="" loop="" playsinline="" preload="metadata"
                                         class="video-slide">
                                         <source
-                                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/Video-Bg.mp4"
+                                            src="{{ asset('/frontend/images/home/Video-Bg.mp4') }}"
                                             type="video/mp4" style="width: 100%">
                                     </video>
                                 </div>
@@ -135,12 +135,12 @@
             <div class="owl-stage">
                 <div class="owl-item">
                     <div class="item mob-banner1"
-                        style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/banner1M.jpg'); background-repeat: no-repeat;">
+                        style="background-image: url('{{ asset('/frontend/images/home/banner1M.jpg') }}'); background-repeat: no-repeat;">
                         <div class="home-banner-container">
                             <div class="banner1-txt">
                                 <h2>ENDURING YOUTH <br>IS A DREAM NO LONGER</h2>
                                 <div class="p-2" align="center"><img
-                                        src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png"
+                                        src="{{ asset('/frontend/images/home/Vector.png') }}"
                                         style="width: 25px;" alt=""></div>
                                 <p class="mt-1 mb-3 text-uppercase GothamLight">Swiss Caviar Cellular Therapy Supplement
                                 </p>
@@ -153,12 +153,12 @@
                 </div>
                 <div class="owl-item">
                     <div class="item mob-banner2"
-                        style="background-image: url('https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images//home/banner2M.jpg'); background-repeat: no-repeat;">
+                        style="background-image: url('{{ asset('/frontend/images/home/banner2M.jpg') }}'); background-repeat: no-repeat;">
                         <div class="home-banner-container">
                             <div class="banner2-txt">
                                 <h2>MAKE YOUR <br>CELLS YOUNG AGAIN </h2>
                                 <div class="p-2" align="center"><img
-                                        src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/Vector.png"
+                                        src="{{ asset('/frontend/images/home/Vector.png') }}"
                                         style="width: 25px;" alt=""></div>
                                 <p class="mt-1 mb-3 text-uppercase GothamLight">Swiss Caviar Cellular Therapy Supplement
                                 </p>
@@ -174,7 +174,7 @@
                         <div class="video-wrapper">
                             <video autoplay="" muted="" loop="" playsinline="" preload="metadata"
                                 class="video-slide">
-                                <source src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/home/Video-Bg.mp4"
+                                <source src="{{ asset('/frontend/images/home/Video-Bg.mp4') }}"
                                     type="video/mp4" style="width: 100%">
                             </video>
                         </div>

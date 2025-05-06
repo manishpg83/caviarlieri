@@ -16,8 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
     <!-- STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/owl.carousel.min.css') }}" />
-    <link rel="stylesheet"
-        href="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/css/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet"
+        href="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/css/owl.theme.default.min.css"> -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/style1.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/owl.theme.default.css') }}" />
@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/globle.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/test.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/register.css') }}" />
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/select2.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/aos.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/header-footer.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/font-awesome.min.css') }}" />
@@ -48,7 +48,7 @@
     <script src="{{ asset('/frontend/js/dashboard-account.js') }}"></script>
     <script src="{{ asset('/frontend/js/jquery-3.6.3.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/sweetalert2.min.css') }}" />
 
     <!-- Favicon -->
     @livewireStyles
@@ -65,7 +65,8 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        .bg-light-1{
+
+        .bg-light-1 {
             background-color: #f5f5f5;
         }
     </style>
@@ -98,12 +99,15 @@
     @livewireScripts
     @stack('scripts')
     <script>
-        Livewire.on('alert', ({type, message}) => {
+        Livewire.on('alert', ({
+            type,
+            message
+        }) => {
             alert(message); // Or use a more sophisticated notification system
         });
     </script>
-    <script src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/js/header.js"></script>
-    <script>        
+    <script src="{{ asset('/frontend/js/header.js') }}"></script>
+    <script>
         function toggleClass1() {
             var screensize = screen.width;
             var dropmenu1 = document.getElementById("sub-menu1");
@@ -199,17 +203,18 @@
             dots: false,
             autoplay: false,
             mouseDrag: false,
-            autoheight: false,
+            autoHeight: false,
             items: 1,
             loop: true,
             margin: 60,
             nav: true,
             navText: [
-                '<a class="prev-btn" aria-hidden="true"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/common/ic_left_arrow_white.png"/></a>',
-                '<a class="next-btn" aria-hidden="true"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/images/common/ic_right_arrow_white.png"/></a>'
+                "<a class='prev-btn' aria-hidden='true'><img src='{{ asset('/frontend/images/common/ic_left_arrow_white.png') }}'/></a>",
+                "<a class='prev-btn' aria-hidden='true'><img src='{{ asset('/frontend/images/common/ic_right_arrow_white.png') }}'/></a>"
             ]
-        })
+        });
     </script>
+
     <!-- GLOBAL-JS -->
     <script src="{{ asset('/frontend/vendor/global/global.min.js') }}"></script>
     <!-- GLOBAL-JS -->
@@ -230,12 +235,10 @@
     <script src="{{ asset('/frontend/js/dz.ajax.js') }}"></script>
     <!-- AJAX -->
     <script src="{{ asset('/frontend/js/custom.js') }}"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
+    <script src="{{ asset('/frontend/js/select2.min.js') }}"></script>
     <script src="{{ asset('/frontend/js/test.js') }}"></script>
     <script src="{{ asset('/frontend/js/aos.js') }}"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script src="{{ asset('/frontend/js/jquery.form-validator.min.js') }}"></script>
     <!-- CUSTOM JS -->
 
     @yield('scripts')
@@ -493,7 +496,7 @@
             if (hash == 'aboutbtn3') {
                 setActiveButton('#aboutbtn3');
             }
-        });        
+        });
     </script>
 </body>
 

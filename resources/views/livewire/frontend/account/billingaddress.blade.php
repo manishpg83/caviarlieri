@@ -27,7 +27,7 @@
 @endpush
 <section class="col-xl-9 account-wrapper">
     <div class="row">
-        <div class="col-12 m-b30">
+        <div class="col-12 m-b20">
             <p class="m-b0">The following addresses will be used on the checkout page by default.</p>
         </div>
 
