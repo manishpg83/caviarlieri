@@ -397,12 +397,10 @@ class OrderDetails extends Component
 
             $dateFormatted = $invoiceDetail->created_at->format('d-m-Y');
             $currencySymbol = $order->currency ? $order->currency->symbol : '$';
-
             $orderInvoiceDetails = OrderInvoiceDetail::where('order_invoice_id', $invoice->id)->get();
             $customerName = preg_replace('/[^A-Za-z0-9\-]/', '_', $customer->first_name . '_' . $customer->last_name);
             $fileName = "{$customerName}-{$dateFormatted}.pdf";
-
-
+            
             $pdf = PDF::loadView('admin.order.invoicenew-pdf', [
                 'invoiceDetail' => $invoiceDetail,
                 'invoice' => $invoice,
@@ -446,10 +444,10 @@ class OrderDetails extends Component
             $currencySymbol = $order->currency ? $order->currency->symbol : '$';
 
             $orderInvoiceDetails = OrderInvoiceDetail::where('order_invoice_id', $invoice->id)->get();
-            foreach ($orderInvoiceDetails as $detail) {
-                $detail->unit_price = 5;
-                $detail->total = $detail->quantity * 5;
-            }
+            // foreach ($orderInvoiceDetails as $detail) {
+            //     $detail->unit_price = 5;
+            //     $detail->total = $detail->quantity * 5;
+            // }
             $subtotal = $orderInvoiceDetails->sum('total');
             $freight = $invoice->freight;
             $tax = $invoice->tax;
@@ -457,19 +455,9 @@ class OrderDetails extends Component
             $invoice->subtotal = $subtotal;
             $invoice->total = $total;
 
-            Log::info("Calculated invoice amounts", [
-                'subtotal' => $subtotal,
-                'freight' => $freight,
-                'tax' => $tax,
-                'total' => $total
-            ]);
-
             $dateFormatted = $invoice->created_at->format('d-m-Y');
             $customerName = preg_replace('/[^A-Za-z0-9\-]/', '_', $customer->first_name . '_' . $customer->last_name);
             $fileName = "{$customerName}-Shipping-{$dateFormatted}.pdf";
-
-
-            Log::info("Generating PDF", ['fileName' => $fileName]);
 
             $pdf = PDF::loadView('admin.order.shippinginvoice-pdf', [
                 'invoiceDetail' => $invoiceDetail,
@@ -479,8 +467,6 @@ class OrderDetails extends Component
                 'orderInvoiceDetails' => $orderInvoiceDetails,
                 'currencySymbol' => $currencySymbol,
             ]);
-
-            Log::info("PDF generated successfully", ['fileName' => $fileName]);
 
             return response()->streamDownload(function () use ($pdf) {
                 echo $pdf->output();
