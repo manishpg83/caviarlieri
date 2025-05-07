@@ -12,7 +12,7 @@
                         <p>Buy Caviarlieri from the following web sites if you reside in</p>
                         <a style="width: 100%;" href="https://caviarlieriamerica.com/shop/" target="_blank">
                             <div class="flag">
-                                <img src="https://store.celergenswiss.com/images/asset-1.png" style="height: 60px">
+                                <img src="{{ asset('frontend/images/asset-1.png') }}" style="height: 60px">
                                 <div class="myText" style="margin-top: -34px;"><strong>UNITED STATES CUSTOMERS</strong>
                                 </div>
 
