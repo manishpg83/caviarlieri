@@ -16,8 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
     <!-- STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/owl.carousel.min.css') }}" />
-    <!-- <link rel="stylesheet"
-        href="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/celergenswiss/css/owl.theme.default.min.css"> -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/style1.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/owl.theme.default.css') }}" />
@@ -47,7 +45,7 @@
     <script src="{{ asset('/frontend/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('/frontend/js/dashboard-account.js') }}"></script>
     <script src="{{ asset('/frontend/js/jquery-3.6.3.min.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="{{ asset('/frontend/js/sweetalert2@11') }}"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/css/sweetalert2.min.css') }}" />
 
     <!-- Favicon -->

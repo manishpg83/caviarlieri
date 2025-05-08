@@ -104,6 +104,49 @@ footer .widget_services ul li a:hover {
     background-repeat: no-repeat;
     background-position: center;
 }
+.brigitte-bg {
+    background-image: url('/frontend/images/experts-opinions/Brigitte-Bollinger1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ghislaine-bg {
+    background-image: url('/frontend/images/experts-opinions/Ghislaine1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ivana1-bg {
+    background-image: url('/frontend/images/experts-opinions/ivana1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.maxmillan-bg {
+    background-image: url('/frontend/images/experts-opinions/maxmillan.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.michael1-bg {
+    background-image: url('/frontend/images/experts-opinions/michael1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.caviarlieri-lunch-bg {
+    background-image: url('/frontend/images/experts-opinions/caviarlieri_lunch-scaled.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.screen-shot1-bg {
+    background-image: url('/frontend/images/experts-opinions/screen-shot1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 
 @media screen and (max-width: 1320px) {
