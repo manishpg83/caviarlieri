@@ -108,10 +108,12 @@ class OrderDetails extends Component
             $this->order->save();
 
             notyf()->success('Order details updated successfully.');
+            
+            $adminEmail = env('ADMIN_EMAIL', 'developer@predsolutions.com');
 
             if ($oldStatus != $this->orderStatus && $this->order->customer && $this->order->customer->email) {
                 try {
-                    Mail::to($this->order->customer->email)
+                    Mail::to($adminEmail)
                         ->send(new OrderStatusChanged($this->order, $oldStatus, $this->orderStatus));
                     notyf()->success('Notification email sent.');
                 } catch (\Exception $e) {
