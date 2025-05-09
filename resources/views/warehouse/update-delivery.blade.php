@@ -110,11 +110,15 @@
                                     </div> --}}
                                     <div class="col-md-6 mb-2">
                                         <label class="form-label">Tracking Number:</label>
-                                        <input type="text" class="form-control form-control-sm" name="tracking_number" value="{{ $deliveryOrder->tracking_number }}">
+                                        <input type="text" class="form-control form-control-sm" name="tracking_number" 
+                                               value="{{ $deliveryOrder->tracking_number }}" required>
+                                        <div class="invalid-feedback">Please provide a tracking number</div>
                                     </div>
                                     <div class="col-md-12 mb-2">
                                         <label class="form-label">Tracking URL:</label>
-                                        <input type="text" class="form-control form-control-sm" name="tracking_url" value="{{ $deliveryOrder->tracking_url }}">
+                                        <input type="url" class="form-control form-control-sm" name="tracking_url" 
+                                               value="{{ $deliveryOrder->tracking_url }}" required>
+                                        <div class="invalid-feedback">Please provide a valid tracking URL</div>
                                     </div>
                                 </div>
                                 <div class="d-grid mt-2">
@@ -130,5 +134,35 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('trackingForm').addEventListener('submit', function(event) {
+        const form = event.target;
+        const trackingNumber = form.elements['tracking_number'].value.trim();
+        const trackingUrl = form.elements['tracking_url'].value.trim();
+        
+        if (!trackingNumber || !trackingUrl) {
+            event.preventDefault();
+            event.stopPropagation();
+            
+            form.classList.add('was-validated');
+            
+            return false;
+        }
+        
+        try {
+            if (trackingUrl) {
+                new URL(trackingUrl);
+            }
+        } catch (e) {
+            event.preventDefault();
+            const urlInput = form.elements['tracking_url'];
+            urlInput.classList.add('is-invalid');
+            urlInput.nextElementSibling.textContent = 'Please enter a valid URL (e.g., https://example.com)';
+            return false;
+        }
+        
+        return true;
+    });
+    </script>
 </body>
 </html>
