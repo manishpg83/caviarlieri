@@ -6,7 +6,7 @@
                <div class="col-md-12">
                    <div class="widget widget_about me-2 text-center">
                        <div class="footer-logo logo-white">
-                           <a href="index.html"><img src="{{ asset('/frontend/images/caviarlieri-logo-white1.png') }}" alt=""></a> 
+                           <a href="index.html"><img src="{{ asset('/frontend/images/caviarlieri-logo-white1.png') }}" alt=""></a>
                        </div>
                    </div>
                </div>
@@ -16,7 +16,7 @@
                            <li><a href="#">Swiss Cell Therapy</a></li>
                            <li><a href="#">Benefits</a></li>
                            <li><a href="#">Luxury of Caviar</a></li>
-                           <li><a href="#">Contact Us</a></li>
+                           <li><a href="{{ route('contact') }}">Contact Us</a></li>
                        </ul>
                        <ul class="nav-inline">
                            <li><a href="https://www.facebook.com/" target="_blank" class="site-button-link facebook hover"><i class="fab fa-facebook-f"></i></a></li>
@@ -30,17 +30,17 @@
        </div>
    </div>
    <!-- Footer Top End -->
-   
+
    <!-- Footer Bottom -->
    <div class="footer-bottom">
        <div class="container">
            <div class="row fb-inner wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-               <div class="col-md-12 text-center"> 
+               <div class="col-md-12 text-center">
                    <p class="copyright-text" style="font-size: 15px !important;">© <span class="current-year">2025</span> Caviarlieri | All Rights Reserved.</p>
                </div>
            </div>
        </div>
    </div>
    <!-- Footer Bottom End -->
-   
+
 </footer>
