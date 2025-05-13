@@ -10,7 +10,7 @@
     <div
         style="max-width: 600px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
         <div class="logo" style="text-align: center; margin-bottom: 30px;">
-            <img src="{{ asset('/admin/assets/img/caviarlieri-logo.png') }}" alt="Celergen Logo"
+            <img src="{{ asset('/admin/assets/img/caviarlieri-logo.png') }}" alt="Caviarlieri Logo"
                 style="max-height: 60px; width: auto;">
         </div>
         <h2 style="color: #4CAF50; text-align: center;">Payment Update</h2>
