@@ -71,6 +71,7 @@ Route::get('/key-ingredients', [HomeController::class, 'keyingredients'])->name(
 Route::get('/luxury-of-caviar', [HomeController::class, 'luxuryofcaviar'])->name('luxuryofcaviar');
 Route::get('/Swiss-Caviarlieri-Beauty', [HomeController::class, 'swisscaviarlieribeauty'])->name('swisscaviarlieribeauty');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::get('/privacy-policy', [HomeController::class, 'privacypolicy'])->name('privacypolicy');
 
 include __DIR__.'/admin.php';
 include __DIR__.'/vendor.php';
