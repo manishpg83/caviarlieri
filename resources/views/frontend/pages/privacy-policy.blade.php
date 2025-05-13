@@ -5,7 +5,7 @@
 <section>
     <div class="container-fluid py-5 bg-opacity-container bg-darkblue">
         <div class="title-top-margin position-relative text-center" style="z-index: 500;">
-            <h2 class="h2 GothamLight" style="color: #cebc92">Privacy Policy</h2>
+            <h2 class="h2 GothamLight" style="color: #cebc92">PRIVACY POLICY</h2>
         </div>
     </div>
 </section>
