@@ -13,9 +13,9 @@
                <div class="col-md-12">
                    <div class="widget widget_services text-center">
                        <ul class="nav-inline mb-3 text">
-                           <li><a href="#">Swiss Cell Therapy</a></li>
-                           <li><a href="#">Benefits</a></li>
-                           <li><a href="#">Luxury of Caviar</a></li>
+                           <li><a href="{{ route('swisscellulartherapy') }}">Swiss Cell Therapy</a></li>
+                           <li><a href="{{ route('outstandingbenefits') }}">Benefits</a></li>
+                           <li><a href="{{ route('luxuryofcaviar') }}">Luxury of Caviar</a></li>
                            <li><a href="{{ route('contact') }}">Contact Us</a></li>
                        </ul>
                        <ul class="nav-inline">
