@@ -120,7 +120,7 @@
                         </div>
                         <div class="text">
                             <div class="ext">
-                                When you click JOIN SWISS CAVIARLIERI you are agreeing to our <a href="{{ route('privacypolicy') }}" title="">Privacy Policy</a>
+                                When you click JOIN SWISS CAVIARLIERI you are agreeing to our <a href="" title="">Privacy Policy</a>
                             </div>
                         </div>
                     </div>
