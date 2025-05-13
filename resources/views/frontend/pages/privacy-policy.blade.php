@@ -2,13 +2,20 @@
 @section('title', 'Home | Swiss Caviarlieri')
 @section('header', 'Home | Swiss Caviarlieri')
 @section('content')
-<section class="margin-top">
+<section>
+    <div class="container-fluid py-5 bg-opacity-container bg-darkblue">
+        <div class="title-top-margin position-relative text-center" style="z-index: 500;">
+            <h2 class="h2 GothamLight" style="color: #cebc92">Privacy Policy</h2>
+        </div>
+    </div>
+</section>
+<!--<section class="margin-top">
         <div class="container-fluid">
             <div class="container padding-x">
                 <div class="pb-4 pt-2">
                     <h1 class="section-heading text-darkgrey strg">Privacy Policy</h1>
                 </div>
-                <!--<p class="text-grey pb-4 txt-justify pb-lg-4 pb-3">
+                <p class="text-grey pb-4 txt-justify pb-lg-4 pb-3">
                     Celergen SA is committed to your privacy. We do not collect personally identifiable information about you when you 
                     visit our site, unless you choose to provide such information to us.<br>
                     Providing such information is strictly voluntary. This policy is your guide to how the Celergen SA will handle 
@@ -48,7 +55,7 @@
                     If you sign up for one of our email lists, we’ll only send you the kinds of information you’ve requested. We will not 
                     share your name or email address with any outside parties.
                 </p>-->
-            </div>
+            <!--</div>
         </div>
-    </section>
+    </section>-->
 @endsection
