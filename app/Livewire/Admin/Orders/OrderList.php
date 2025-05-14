@@ -35,6 +35,7 @@ class OrderList extends Component
     public $paymentModeFilter = '';
     public $orderTypeFilter = '';
     public $workflow_type = OrderWorkflowType::STANDARD->value;
+    public $showCancelled = false;
 
     public $perpagerecords = [
         10 => '10',
@@ -291,11 +292,16 @@ class OrderList extends Component
         $this->resetPage();
     }
 
+    public function updatingShowCancelled()
+    {
+        $this->resetPage();
+    }
+
     public function render()
     {
         $currentYearStart = now()->startOfYear()->format('Y-m-d');
         $currentYearEnd = now()->endOfYear()->format('Y-m-d');
-
+    
         $orders = OrderMaster::with(['customer', 'orderDetails.product', 'entity'])
             ->when($this->search, function ($query) {
                 $query->where(function ($q) {
@@ -327,6 +333,14 @@ class OrderList extends Component
             ->when($this->statusFilter !== '', function ($query) {
                 $query->where('order_status', $this->statusFilter);
             })
+            ->when($this->showCancelled == 1, function ($query) {
+                // When showCancelled is true (1), show ONLY cancelled orders
+                $query->where('order_status', 'Cancelled');
+            })
+            ->when($this->showCancelled == 0, function ($query) {
+                // When showCancelled is false (0), exclude cancelled orders
+                $query->where('order_status', '!=', 'Cancelled');
+            })
             ->when($this->paymentModeFilter !== '', function ($query) {
                 $query->where('payment_mode', $this->paymentModeFilter);
             })
@@ -335,12 +349,12 @@ class OrderList extends Component
             })
             ->orderBy($this->sortField, $this->sortDirection)
             ->paginate($this->perPage);
-
+    
         $this->orderStatus = [];
         foreach ($orders as $order) {
             $this->orderStatus[$order->order_id] = $order->order_status;
         }
-
+    
         return view('livewire.admin.orders.order-list', [
             'orders' => $orders,
             'perpagerecords' => $this->perpagerecords,
