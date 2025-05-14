@@ -189,7 +189,7 @@
                         </div>
 
 
-                        <a href="https://celergenswiss.com/order-here">
+                        <a href="{{ route('cart') }}">
                             <div class="myText-left"><strong>CONTINUE SHOPPING</strong></div>
                         </a>
                     </div>

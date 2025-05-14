@@ -8,8 +8,8 @@
                 </a>
             </div>
             <!--main logo & cart below 768-->
-            <div class="d-xl-none d-block main-logo"><a href="home.php"><img src="{{ asset('/frontend/images/logo_main.png') }}" alt=""></a></div>
-            <div class="d-xl-none d-block"><a href="https://store.swisscaviarlieri.com/" class="cart-icon"><img src="{{ asset('/frontend/images/cart-icon.png') }}" alt=""></a></div>
+            <div class="d-xl-none d-block main-logo"><a href="{{ route('home') }}"><img src="{{ asset('/frontend/images/logo_main.png') }}" alt=""></a></div>
+            <div class="d-xl-none d-block"><a href="{{ route('cart') }}" class="cart-icon"><img src="{{ asset('/frontend/images/cart-icon.png') }}" alt=""></a></div>
             <!--main logo & cart below 768-->
             <div class="px-3 collapse navbar-collapse px-xl-0 " id="navbarText">
                 <ul class="px-4 mb-2 navbar-nav mb-xl-0 text-uppercase">

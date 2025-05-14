@@ -576,7 +576,7 @@ class Checkout extends Component
         }
 
         return $invoiceNumber;
-    }S
+    }
 
     private function redirectToPaypal($orderId, $orderNumber)
     {
