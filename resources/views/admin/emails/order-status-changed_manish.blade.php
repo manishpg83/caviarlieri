@@ -31,7 +31,6 @@
             <li style="margin-bottom: 8px;"><strong>Payment Mode:</strong> {{ $order->payment_mode }}</li>
         </ul>
 
-        <p style="font-size: 16px;">Thank you for your business!</p>
 
         <p style="font-size: 16px; color: #666;">Best regards,<br><strong>Swiss Caviarlieri</strong></p>
     </div>
