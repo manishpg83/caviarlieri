@@ -21,14 +21,14 @@
             <p>Your order details are attached below.</p>
         </div>
 
-        <div class="address-section" style="margin-bottom: 25px;">
-            <div class="address-block" style="width: 100%; margin-bottom: 15px;">
+        <div class="address-section" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 25px;">
+            <div class="address-block" style="width: 48%; min-width: 250px; margin-bottom: 15px;">
                 <p style="margin: 0; white-space: pre-line;">
                     <strong>Billing Address:</strong><br>
                     {!! nl2br(implode('<br>', array_map('trim', explode(',', $billingAddress)))) !!}<br>
                 </p>                
             </div>
-            <div class="address-block" style="width: 100%;">
+            <div class="address-block" style="width: 48%; min-width: 250px;">
                 <p style="margin: 0; white-space: pre-line;">
                     <strong>Shipping Address:</strong><br>
                     {!! nl2br(implode('<br>', array_map('trim', explode(',', $shippingAddress)))) !!}<br>
