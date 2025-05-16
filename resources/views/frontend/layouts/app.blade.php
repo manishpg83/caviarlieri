@@ -259,17 +259,18 @@
         ];
 
         function SwitchAddress(ID) {
-            var CurControl = $('#ship_address');
+            var shippingSection = $('#ship_address');
             if (ID.checked) {
-                CurControl.hide();
+                shippingSection.hide();
             } else {
-                CurControl.show();
+                shippingSection.show();
             }
         }
 
         $(document).ready(function() {
             var checkbox = $('#add_same')[0];
-            SwitchAddress(checkbox);
+            if (checkbox != undefined) {}
+
         });
 
         function ValidateFormInputs() {
