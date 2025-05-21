@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -17,6 +18,8 @@
         <div class="greeting" style="margin-bottom: 20px; line-height: 1.6;">
             <p>Dear Mr / Ms {{ $deliveryOrder->orderMaster->customer->first_name }},</p>
 
+            <p>Many thanks for your recent purchase of Celergen; which as you know is the Only Swiss Marine Cell Therapy Supplement in the world. We trust that you are benefiting from the transformative results of Celergen.</p>
+
             @if ($deliveryOrder->status == 'Shipped')
                 <p>Your product has been shipped, and the delivery tracking number is enclosed.</p>
             @elseif ($deliveryOrder->status == 'Delivered')
@@ -28,13 +31,13 @@
         </div>
 
         <div style="font-size: 14px; margin-bottom: 10px;">
-            <p><strong>Order Date :</strong> {{ $deliveryOrder->created_at->format('F d, Y') }}</p>
-            <p><strong>Order No :</strong> #{{ $deliveryOrder->orderMaster->order_id }}</p>
-            <p><strong>Invoice No :</strong> #{{ $deliveryOrder->orderInvoice->invoice_number ?? '-' }}</p>
-            <p><strong>Tracking Number :</strong> {{ $deliveryOrder->tracking_number }}</p>
-            <p><strong>Tracking Url :</strong> <a href="{{ $deliveryOrder->tracking_url }}" target="_blank">{{ $deliveryOrder->tracking_url }}</a></p>
+            <strong>Order Date:</strong> {{ $deliveryOrder->created_at->format('F d, Y') }}<br>
+            <strong>Order No:</strong> {{ $deliveryOrder->orderMaster->order_id }}<br>
+            <strong>Invoice No:</strong> {{ $deliveryOrder->orderInvoice->invoice_number ?? '-' }}<br>
+            <strong>Tracking Number:</strong> {{ $deliveryOrder->tracking_number }}<br>
+            <strong>Tracking URL:</strong> <a href="{{ $deliveryOrder->tracking_url }}" target="_blank" style="color: #222; word-break: break-all;">{{ $deliveryOrder->tracking_url }}</a>
         </div>
-
+        
         <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px;">
             <thead>
                 <tr>
@@ -81,3 +84,4 @@
 </body>
 
 </html>
+
