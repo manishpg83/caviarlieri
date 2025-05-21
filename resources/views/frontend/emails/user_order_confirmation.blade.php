@@ -95,9 +95,18 @@
 
         <div class="signature" style="margin-top: 30px; font-weight: bold;">
             Yours sincerely,<br>
-            <strong>Karen Koenig</strong><br>
+            <strong>Victoria Keller</strong><br>
             <em>SwissCaviarlieri Switzerland</em><br>
-            Customer Experience Manager
+            Customer Experience Manager<br>
+            <table style="font-weight: bold;">
+                <tr>
+                    <td style="vertical-align: top;">Email:</td>
+                    <td>
+                        <a href="mailto:info@swisscaviarlieri.com">info@swisscaviarlieri.com</a><br>
+                        <a href="https://www.swisscaviarlieri.com" target="_blank">www.swisscaviarlieri.com</a>
+                    </td>
+                </tr>
+            </table>
         </div>
 
         <div style="margin-top: 30px; text-align: center; width: 100%;">

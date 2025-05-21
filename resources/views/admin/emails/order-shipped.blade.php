@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -18,15 +17,13 @@
         <div class="greeting" style="margin-bottom: 20px; line-height: 1.6;">
             <p>Dear Mr / Ms {{ $deliveryOrder->orderMaster->customer->first_name }},</p>
 
-            <p>Many thanks for your recent purchase of SwissCaviarlieri; which as you know is the Only Swiss Marine Cell Therapy Supplement in the world. We trust that you are benefiting from the transformative results of SwissCaviarlieri.</p>
-
             @if ($deliveryOrder->status == 'Shipped')
-                <p>Your product has been shipped, and the delivery tracking number is enclosed.</p>
+            <p>Your product has been shipped, and the delivery tracking number is enclosed.</p>
             @elseif ($deliveryOrder->status == 'Delivered')
-                <p>Your order has been successfully delivered. We hope you enjoy your purchase!</p>
+            <p>Your order has been successfully delivered. We hope you enjoy your purchase!</p>
             @elseif ($deliveryOrder->status == 'Cancelled')
-                <p>We regret to inform you that your order has been cancelled. Please contact support if you have any
-                    questions.</p>
+            <p>We regret to inform you that your order has been cancelled. Please contact support if you have any
+                questions.</p>
             @endif
         </div>
 
@@ -37,7 +34,7 @@
             <strong>Tracking Number:</strong> {{ $deliveryOrder->tracking_number }}<br>
             <strong>Tracking URL:</strong> <a href="{{ $deliveryOrder->tracking_url }}" target="_blank" style="color: #222; word-break: break-all;">{{ $deliveryOrder->tracking_url }}</a>
         </div>
-        
+
         <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px;">
             <thead>
                 <tr>
@@ -51,12 +48,14 @@
             </thead>
             <tbody>
                 @foreach ($deliveryOrder->details as $detail)
-                    <tr>
-                        <td style="padding: 12px; text-align: left; border-bottom: 1px solid #eee;">
-                            {{ $detail->product->product_name }}</td>
-                        <td style="padding: 12px; text-align: right; border-bottom: 1px solid #eee;">
-                            {{ $detail->quantity }}</td>
-                    </tr>
+                <tr>
+                    <td style="padding: 12px; text-align: left; border-bottom: 1px solid #eee;">
+                        {{ $detail->product->product_name }}
+                    </td>
+                    <td style="padding: 12px; text-align: right; border-bottom: 1px solid #eee;">
+                        {{ $detail->quantity }}
+                    </td>
+                </tr>
                 @endforeach
             </tbody>
         </table>
@@ -71,9 +70,18 @@
 
         <div class="signature" style="margin-top: 30px; font-weight: bold;">
             Yours sincerely,<br>
-            <strong>Karen Koenig</strong><br>
+            <strong>Victoria Keller</strong><br>
             <em>SwissCaviarlieri Switzerland</em><br>
-            Customer Experience Manager
+            Customer Experience Manager<br>
+            <table style="font-weight: bold;">
+                <tr>
+                    <td style="vertical-align: top;">Email:</td>
+                    <td>
+                        <a href="mailto:info@swisscaviarlieri.com">info@swisscaviarlieri.com</a><br>
+                        <a href="https://www.swisscaviarlieri.com" target="_blank">www.swisscaviarlieri.com</a>
+                    </td>
+                </tr>
+            </table>
         </div>
 
         <div style="margin-top: 30px; text-align: center; width: 100%;">
@@ -84,4 +92,3 @@
 </body>
 
 </html>
-
