@@ -48,11 +48,11 @@
 
         <div class="signature" style="margin-top: 30px; font-weight: bold;">
             Yours sincerely,<br>
-            Caviarlieri Team
+            SwissCaviarlieri Team
         </div>
 
         <div style="margin-top: 30px; text-align: center; width: 100%;">
-            <img src="{{ asset('frontend/images/email_banner.jpeg') }}" alt="Caviarlieri Banner"
+            <img src="{{ asset('frontend/images/email_banner.jpeg') }}" alt="SwissCaviarlieri Banner"
                 style="max-width: 100%; width: 100%; height: auto; display: block;">
         </div>
     </div>

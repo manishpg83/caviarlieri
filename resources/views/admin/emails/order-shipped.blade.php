@@ -18,7 +18,7 @@
         <div class="greeting" style="margin-bottom: 20px; line-height: 1.6;">
             <p>Dear Mr / Ms {{ $deliveryOrder->orderMaster->customer->first_name }},</p>
 
-            <p>Many thanks for your recent purchase of Celergen; which as you know is the Only Swiss Marine Cell Therapy Supplement in the world. We trust that you are benefiting from the transformative results of Celergen.</p>
+            <p>Many thanks for your recent purchase of SwissCaviarlieri; which as you know is the Only Swiss Marine Cell Therapy Supplement in the world. We trust that you are benefiting from the transformative results of SwissCaviarlieri.</p>
 
             @if ($deliveryOrder->status == 'Shipped')
                 <p>Your product has been shipped, and the delivery tracking number is enclosed.</p>
@@ -72,12 +72,12 @@
         <div class="signature" style="margin-top: 30px; font-weight: bold;">
             Yours sincerely,<br>
             <strong>Karen Koenig</strong><br>
-            <em>Caviarlieri Switzerland</em><br>
+            <em>SwissCaviarlieri Switzerland</em><br>
             Customer Experience Manager
         </div>
 
         <div style="margin-top: 30px; text-align: center; width: 100%;">
-            <img src="{{ asset('frontend/images/email_banner.jpeg') }}" alt="Caviarlieri Banner"
+            <img src="{{ asset('frontend/images/email_banner.jpeg') }}" alt="SwissCaviarlieri Banner"
                 style="max-width: 100%; width: 100%; height: auto; display: block;">
         </div>
     </div>

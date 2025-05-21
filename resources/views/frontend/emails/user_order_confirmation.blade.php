@@ -44,7 +44,7 @@
 
         <div style="font-size: 14px; margin-bottom: 10px;">
             <strong>Order Date:</strong> {{ date('F d, Y') }}<br>
-            <strong>Order No:</strong> #{{ $orderNumber }}
+            <strong>Order No:</strong> {{ $orderNumber }}
         </div>
 
         <div style="overflow-x: auto; margin-bottom: 25px;">
@@ -96,12 +96,12 @@
         <div class="signature" style="margin-top: 30px; font-weight: bold;">
             Yours sincerely,<br>
             <strong>Karen Koenig</strong><br>
-            <em>Caviarlieri Switzerland</em><br>
+            <em>SwissCaviarlieri Switzerland</em><br>
             Customer Experience Manager
         </div>
 
         <div style="margin-top: 30px; text-align: center; width: 100%;">
-            <img src="{{ asset('frontend/images/email_banner.jpeg') }}" alt="Caviarlieri Banner"
+            <img src="{{ asset('frontend/images/email_banner.jpeg') }}" alt="SwissCaviarlieri Banner"
                 style="max-width: 100%; width: 100%; height: auto; display: block;">
         </div>
     </div>
