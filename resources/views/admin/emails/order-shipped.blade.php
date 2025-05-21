@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Order Update #{{ $deliveryOrder->id }}</title>
+    <title>Order Update {{ $deliveryOrder->id }}</title>
 </head>
 
 <body
-    style="font-family: Arial, sans-serif; font-size: 14px; color: #333; margin: 0; padding: 40px; background-color: #fff; line-height: 1.6;">
+    style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #222; margin: 0; padding: 20px; background-color: #fff; line-height: 1.6;">
     <div class="container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
         <div class="logo" style="text-align: center; margin-bottom: 30px;">
             <img src="{{ asset('admin/assets/img/caviarlieri-logo.png') }}"
                 alt="Caviarlieri Logo" style="max-height: 60px; width: auto;">
         </div>
 
-        <div class="greeting" style="margin-bottom: 30px; line-height: 1.6;">
+        <div class="greeting" style="margin-bottom: 20px; line-height: 1.6;">
             <p>Dear Mr / Ms {{ $deliveryOrder->orderMaster->customer->first_name }},</p>
 
             @if ($deliveryOrder->status == 'Shipped')
@@ -27,7 +27,7 @@
             @endif
         </div>
 
-        <div>
+        <div style="font-size: 14px; margin-bottom: 10px;">
             <p><strong>Order Date :</strong> {{ $deliveryOrder->created_at->format('F d, Y') }}</p>
             <p><strong>Order No :</strong> #{{ $deliveryOrder->orderMaster->order_id }}</p>
             <p><strong>Invoice No :</strong> #{{ $deliveryOrder->orderInvoice->invoice_number ?? '-' }}</p>
@@ -39,10 +39,10 @@
             <thead>
                 <tr>
                     <th
-                        style="padding: 12px; text-align: left; border-bottom: 1px solid #eee; background-color: #f8f9fa; font-weight: bold; color: #333;">
+                        style="padding: 12px; text-align: left; border-bottom: 1px solid #eee; background-color: #e2e2e2; font-weight: bold; color: #333;">
                         Item Name</th>
                     <th
-                        style="padding: 12px; text-align: right; border-bottom: 1px solid #eee; background-color: #f8f9fa; font-weight: bold; color: #333;">
+                        style="padding: 12px; text-align: right; border-bottom: 1px solid #eee; background-color: #e2e2e2; font-weight: bold; color: #333;">
                         Total Quantity</th>
                 </tr>
             </thead>
@@ -58,10 +58,24 @@
             </tbody>
         </table>
 
-        <div class="footer"
-            style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; color: #666;">
-            <p>If you have any queries, please feel free to contact us at <a href="mailto:marketing@swisscaviarlieri.com"
-                    style="color: #007bff; text-decoration: none;">marketing@swisscaviarlieri.com</a></p>
+        <div class="footer" style="margin-top: 25px; text-align: left; font-size: 0.9em; color: #666;">
+            <p>Please be informed that delivery of your package via courier service will take approximately 3 to 5 working days.</p>
+            <p>If you have any queries, please feel free to contact us at.
+                <a href="mailto:marketing@swisscaviarlieri.com"
+                    style="color: #666; word-break: break-all;">marketing@swisscaviarlieri.com</a>
+            </p>
+        </div>
+
+        <div class="signature" style="margin-top: 30px; font-weight: bold;">
+            Yours sincerely,<br>
+            <strong>Karen Koenig</strong><br>
+            <em>Caviarlieri Switzerland</em><br>
+            Customer Experience Manager
+        </div>
+
+        <div style="margin-top: 30px; text-align: center; width: 100%;">
+            <img src="{{ asset('frontend/images/email_banner.jpeg') }}" alt="Caviarlieri Banner"
+                style="max-width: 100%; width: 100%; height: auto; display: block;">
         </div>
     </div>
 </body>

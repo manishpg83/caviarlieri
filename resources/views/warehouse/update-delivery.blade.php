@@ -134,35 +134,76 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    document.getElementById('trackingForm').addEventListener('submit', function(event) {
-        const form = event.target;
-        const trackingNumber = form.elements['tracking_number'].value.trim();
-        const trackingUrl = form.elements['tracking_url'].value.trim();
-        
-        if (!trackingNumber || !trackingUrl) {
-            event.preventDefault();
-            event.stopPropagation();
-            
-            form.classList.add('was-validated');
-            
-            return false;
-        }
-        
-        try {
-            if (trackingUrl) {
-                new URL(trackingUrl);
+    <script>
+        document.getElementById('trackingForm').addEventListener('submit', function(event) {
+            const form = event.target;
+            const trackingNumber = form.elements['tracking_number'].value.trim();
+            const trackingUrl = form.elements['tracking_url'].value.trim();
+
+            if (!trackingNumber || !trackingUrl) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                form.classList.add('was-validated');
+
+                return false;
             }
-        } catch (e) {
-            event.preventDefault();
-            const urlInput = form.elements['tracking_url'];
-            urlInput.classList.add('is-invalid');
-            urlInput.nextElementSibling.textContent = 'Please enter a valid URL (e.g., https://example.com)';
-            return false;
-        }
-        
-        return true;
-    });
+
+            try {
+                if (trackingUrl) {
+                    new URL(trackingUrl);
+                }
+            } catch (e) {
+                event.preventDefault();
+                const urlInput = form.elements['tracking_url'];
+                urlInput.classList.add('is-invalid');
+                urlInput.nextElementSibling.textContent = 'Please enter a valid URL (e.g., https://example.com)';
+                return false;
+            }
+
+            return true;
+        });
+    </script>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            const form = event.target;
+            const trackingNumber = form.elements['tracking_number'].value.trim();
+            let trackingUrl = form.elements['tracking_url'].value.trim();
+    
+            if (!trackingNumber || !trackingUrl) {
+                event.preventDefault();
+                event.stopPropagation();
+    
+                form.classList.add('was-validated');
+                return false;
+            }
+    
+            if (trackingUrl && !trackingUrl.match(/^https?:\/\//i)) {
+                trackingUrl = 'http://' + trackingUrl;
+                form.elements['tracking_url'].value = trackingUrl;
+            }
+    
+            try {
+                new URL(trackingUrl);
+                const urlInput = form.elements['tracking_url'];
+                urlInput.classList.remove('is-invalid');
+            } catch (e) {
+                event.preventDefault();
+                const urlInput = form.elements['tracking_url'];
+                urlInput.classList.add('is-invalid');
+                urlInput.nextElementSibling.textContent = 'Please enter a valid URL (e.g., amazon.in or https://amazon.in)';
+                return false;
+            }
+    
+            return true;
+        });
+    
+        document.querySelector('input[name="tracking_url"]').addEventListener('blur', function() {
+            let url = this.value.trim();
+            if (url && !url.match(/^https?:\/\//i)) {
+                this.value = 'http://' + url;
+            }
+        });
     </script>
 </body>
 </html>
