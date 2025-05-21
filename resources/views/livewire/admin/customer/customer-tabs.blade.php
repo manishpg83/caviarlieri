@@ -218,13 +218,6 @@
                                 <tr>
                                     <td class="text-center">{{ $invoice->serial }}</td>
                                     <td>
-                                        @if ($invoice->invoice_date)
-                                            {{ \Carbon\Carbon::parse($invoice->invoice_date)->format('M d, Y') }}
-                                        @else
-                                            <span class="text-muted">N/A</span>
-                                        @endif
-                                    </td>
-                                    <td>
                                         <div class="d-flex align-items-center">
                                             <i class="fas fa-file-pdf text-danger me-2 fs-5"></i>
                                             <div>
@@ -265,7 +258,7 @@
                                 </tr>
                             @empty
                                 <tr>
-                                    <td colspan="4" class="py-4 text-center">
+                                    <td colspan="3" class="py-4 text-center">
                                         <div class="text-muted">
                                             <i class="mb-3 fas fa-file-alt fa-2x"></i>
                                             <p class="mb-0">No invoices found</p>
