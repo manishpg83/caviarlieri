@@ -67,8 +67,8 @@
                     style="color: #666; word-break: break-all;">marketing@swisscaviarlieri.com</a>
             </p>
         </div>
-        <div class="logo" style="text-align: center; margin-bottom: 30px;">
-            <img src="{{ asset('admin/assets/img/swisscaviarlieri-logo.png') }}"
+        <div class="logo" style="text-align: left; margin-bottom: 30px;">
+            <img src="{{ asset('admin/assets/img/swisscaviarlieri-logo.jpeg') }}"
                 alt="swissCaviarlieri Logo" style="max-height: 60px; width: auto;">
         </div>
         <div class="signature" style="margin-top: 30px; font-weight: bold; font-family: georgia, serif; width: fit-content;">
