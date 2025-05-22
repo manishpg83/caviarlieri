@@ -7,16 +7,17 @@
     <title>Order Confirmation</title>
 </head>
 
-<body style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #222; margin: 0; padding: 20px; background-color: #fff; line-height: 1.6;">
+<body
+    style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #222; margin: 0; padding: 20px; background-color: #fff; line-height: 1.6;">
     <div class="container" style="max-width: 800px; margin: 0 auto; padding: 15px;">
 
         <div style="text-align: center; margin-bottom: 30px;">
-            <img src="{{ asset('admin/assets/img/caviarlieri-logo.png') }}"
-                alt="Caviarlieri Logo" style="display: block; margin: 0 auto; max-width: 200px; width: 80%;">
+            <img src="{{ asset('admin/assets/img/caviarlieri-logo.png') }}" alt="Caviarlieri Logo"
+                style="display: block; margin: 0 auto; max-width: 200px; width: 80%;">
         </div>
 
         <div class="header" style="text-align: left; font-size: 14px; line-height: 1.8;">
-        <span>Dear {{ $user->first_name }} {{ $user->last_name }},</span><br>
+            <span>Dear {{ $user->first_name }} {{ $user->last_name }},</span><br>
             <span style="display: inline-block; margin-top: 6px;">
                 Thank you for your payment.<br>
                 Your order details are attached below.
@@ -39,7 +40,7 @@
                     {!! implode('<br>', array_filter(array_map('trim', explode(',', $shippingAddress)))) !!}
                     {{ $shippingCompany }}
                 </div>
-            </div>            
+            </div>
         </div>
 
         <div style="font-size: 14px; margin-bottom: 10px;">
@@ -48,12 +49,18 @@
         </div>
 
         <div style="overflow-x: auto; margin-bottom: 25px;">
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px;">
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px;">
                 <thead>
                     <tr>
-                        <th style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: left; border-bottom: 1px solid #eee; background-color: #e2e2e2; font-weight: bold; color: #333;">Item Name</th>
-                        <th style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: center; border-bottom: 1px solid #eee; background-color: #e2e2e2; font-weight: bold; color: #333;">Qty</th>
-                        <th style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee; background-color: #e2e2e2; font-weight: bold; color: #333;">Price (USD)</th>
+                        <th
+                            style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: left; border-bottom: 1px solid #eee; background-color: #e2e2e2; font-weight: bold; color: #333;">
+                            Item Name</th>
+                        <th
+                            style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: center; border-bottom: 1px solid #eee; background-color: #e2e2e2; font-weight: bold; color: #333;">
+                            Qty</th>
+                        <th
+                            style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee; background-color: #e2e2e2; font-weight: bold; color: #333;">
+                            Price (USD)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -62,26 +69,45 @@
                         $orderMaster = \App\Models\OrderMaster::where('order_id', $orderId)->first();
                     @endphp
                     @foreach ($orderDetails as $detail)
-                    <tr>
-                        <td style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: left; border-bottom: 1px solid #eee;">{{ $detail->product->product_name ?? 'Unnamed Product' }}</td>
-                        <td style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: center; border-bottom: 1px solid #eee;">{{ $detail->quantity }}</td>
-                        <td style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee;">${{ number_format($detail->unit_price, 2) }}</td>
-                    </tr>
+                        <tr>
+                            <td
+                                style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: left; border-bottom: 1px solid #eee;">
+                                {{ $detail->product->product_name ?? 'Unnamed Product' }}</td>
+                            <td
+                                style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: center; border-bottom: 1px solid #eee;">
+                                {{ $detail->quantity }}</td>
+                            <td
+                                style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee;">
+                                ${{ number_format($detail->unit_price, 2) }}</td>
+                        </tr>
                     @endforeach
                     <tr>
                         <td style="font-family: Helvetica, Arial, sans-serif; padding: 12px; border-bottom: none;"></td>
-                        <td style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee;"><strong>Sub Total</strong></td>
-                        <td style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee;">${{ number_format($orderMaster->subtotal, 2) }}</td>
+                        <td
+                            style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee;">
+                            <strong>Sub Total</strong></td>
+                        <td
+                            style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee;">
+                            ${{ number_format($orderMaster->subtotal, 2) }}</td>
                     </tr>
                     <tr>
                         <td style="font-family: Helvetica, Arial, sans-serif; padding: 12px; border-bottom: none;"></td>
-                        <td style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee;"><strong>Freight</strong></td>
-                        <td style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee;">{{ $orderMaster->freight == 0 ? 'Free' : '$' . number_format($orderMaster->freight, 2) }}</td>
+                        <td
+                            style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee;">
+                            <strong>Freight</strong></td>
+                        <td
+                            style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee;">
+                            {{ $orderMaster->freight == 0 ? 'Free' : '$' . number_format($orderMaster->freight, 2) }}
+                        </td>
                     </tr>
                     <tr>
                         <td style="font-family: Helvetica, Arial, sans-serif; padding: 12px; border-bottom: none;"></td>
-                        <td style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee;"><strong>Net Total</strong></td>
-                        <td style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee; font-weight: bold; font-size: 16px;">${{ number_format($orderMaster->total, 2) }}</td>
+                        <td
+                            style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee;">
+                            <strong>Net Total</strong></td>
+                        <td
+                            style="font-family: Helvetica, Arial, sans-serif; padding: 12px; text-align: right; border-bottom: 1px solid #eee; font-weight: bold; font-size: 16px;">
+                            ${{ number_format($orderMaster->total, 2) }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -89,25 +115,27 @@
 
         <div class="footer" style="margin-top: 25px; text-align: left; font-size: 0.9em; color: #666;">
             <p>If you have any queries, please feel free to contact us at
-                <a href="mailto:marketing@swisscaviarlieri.com" style="color: #666; word-break: break-all;">marketing@swisscaviarlieri.com</a>
+                <a href="mailto:marketing@swisscaviarlieri.com"
+                    style="color: #666; word-break: break-all;">marketing@swisscaviarlieri.com</a>.
             </p>
         </div>
 
-        <div class="signature" style="margin-top: 30px; font-weight: bold;">
-            Yours sincerely,<br>
-            <strong>Victoria Keller</strong><br>
-            <em>SwissCaviarlieri Switzerland</em><br>
-            Customer Experience Manager<br>
-            <table style="font-weight: bold;">
-                <tr>
-                    <td style="vertical-align: top;">Email:</td>
-                    <td>
-                        <a href="mailto:info@swisscaviarlieri.com">info@swisscaviarlieri.com</a><br>
-                        <a href="https://www.swisscaviarlieri.com" target="_blank">www.swisscaviarlieri.com</a>
-                    </td>
-                </tr>
-            </table>
+        <div class="signature" style="margin-top: 30px; font-family: georgia, serif; width: fit-content;">
+            <div style="text-align: left; margin-bottom: 20px;">
+                <img src="{{ asset('admin/assets/img/swisscaviarlieri-logo.jpeg') }}" alt="SwissCaviarlieri Logo"
+                    style="max-height: 80px; width: auto;">
+            </div>
+
+            <div style="text-align: left;">
+                Yours sincerely,<br>
+                Victoria Keller<br>
+                Customer Experience Manager<br>
+                Email: <a href="mailto:info@swisscaviarlieri.com" style="color: #666;">info@swisscaviarlieri.com</a><br>
+                <a href="https://www.swisscaviarlieri.com" target="_blank"
+                    style="color: #666;">www.swisscaviarlieri.com</a>
+            </div>
         </div>
+
 
         <div style="margin-top: 30px; text-align: center; width: 100%;">
             <img src="{{ asset('frontend/images/email_banner.jpeg') }}" alt="SwissCaviarlieri Banner"

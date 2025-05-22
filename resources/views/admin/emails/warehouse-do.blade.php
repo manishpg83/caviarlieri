@@ -78,7 +78,7 @@
             <a href="{{ $updateLink }}" class="link" style="font-family: Helvetica, Arial, sans-serif;">Click here to update delivery status</a>
         </p>
         <div class="footer" style="font-family: Helvetica, Arial, sans-serif; text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; color: #666;">
-            <p style="font-family: Helvetica, Arial, sans-serif;">If you have any queries, please feel free to contact us at. <a href="mailto:marketing@swisscaviarlieri.com" style="font-family: Helvetica, Arial, sans-serif; color: #007bff; text-decoration: none;">marketing@swisscaviarlieri.com</a></p>
+            <p style="font-family: Helvetica, Arial, sans-serif;">If you have any queries, please feel free to contact us at. <a href="mailto:marketing@swisscaviarlieri.com" style="font-family: Helvetica, Arial, sans-serif; color: #007bff; text-decoration: none;">marketing@swisscaviarlieri.com</a>.</p>
         </div>
 
         <div style="margin-top: 30px; text-align: center; width: 100%;">
