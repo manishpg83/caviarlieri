@@ -64,9 +64,9 @@
         <div class="footer" style="margin-top: 25px; text-align: left; font-size: 0.9em; color: #666;">
             <p>Please be informed that delivery of your package via courier service will take approximately 3 to 5
                 working days.</p>
-            <p>If you have any queries, please feel free to contact us at.
+            <p>If you have any queries, please feel free to contact us at
                 <a href="mailto:marketing@swisscaviarlieri.com"
-                    style="color: #666; word-break: break-all;">marketing@swisscaviarlieri.com</a>
+                    style="color: #666; word-break: break-all;">marketing@swisscaviarlieri.com</a>.
             </p>
         </div>
         <div class="signature" style="margin-top: 30px; font-family: georgia, serif; width: fit-content;">
