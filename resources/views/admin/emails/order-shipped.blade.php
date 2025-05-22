@@ -70,7 +70,7 @@
             </p>
         </div>
         <div class="signature" style="margin-top: 30px; font-family: georgia, serif; width: fit-content;">
-            <div style="text-align: center; margin-bottom: 20px;">
+            <div style="text-align: left; margin-bottom: 20px;">
                 <img src="{{ asset('admin/assets/img/swisscaviarlieri-logo.jpeg') }}" alt="SwissCaviarlieri Logo"
                     style="max-height: 80px; width: auto;">
             </div>
