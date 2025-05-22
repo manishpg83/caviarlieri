@@ -69,9 +69,9 @@
         </div>
         <div class="logo" style="text-align: left; margin-bottom: 30px;">
             <img src="{{ asset('admin/assets/img/swisscaviarlieri-logo.jpeg') }}"
-                alt="swissCaviarlieri Logo" style="max-height: 60px; width: auto;">
+                alt="swissCaviarlieri Logo" style="max-height: 100px; width: auto;">
         </div>
-        <div class="signature" style="margin-top: 30px; font-weight: bold; font-family: georgia, serif; width: fit-content;">
+        <div class="signature" style="margin-top: 30px; font-family: georgia, serif; width: fit-content;">
             <div style="text-align: center;">
                 Yours sincerely,<br>
                 <strong>Victoria Keller</strong><br>
