@@ -77,7 +77,7 @@
 
             <div style="text-align: left;">
                 Yours sincerely,<br>
-                <strong>Victoria Keller</strong><br>
+                Victoria Keller<br>
                 Customer Experience Manager<br>
                 Email: <a href="mailto:info@swisscaviarlieri.com" style="color: #666;">info@swisscaviarlieri.com</a><br>
                 <a href="https://www.swisscaviarlieri.com" target="_blank"
