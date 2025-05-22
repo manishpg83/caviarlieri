@@ -36,7 +36,7 @@ class CustomerContact extends Component
             $this->validate();
             
             $name = $this->first_name . " " . $this->last_name;
-            Mail::to('shubhamsojitra001@gmail.com')->send(
+            Mail::to('info@swisscaviarlieri.com')->send(
                 new CustomerContactMail(
                     $this->userMessage, 
                     $name, 
