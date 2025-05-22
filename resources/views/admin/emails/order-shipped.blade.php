@@ -71,15 +71,13 @@
         </div>
         <div class="signature" style="margin-top: 30px; font-family: georgia, serif; width: fit-content;">
             <div style="text-align: center; margin-bottom: 20px;">
-                <img src="{{ asset('admin/assets/img/swisscaviarlieri-logo.png') }}" alt="SwissCaviarlieri Logo"
+                <img src="{{ asset('admin/assets/img/swisscaviarlieri-logo.jpeg') }}" alt="SwissCaviarlieri Logo"
                     style="max-height: 80px; width: auto;">
             </div>
 
             <div style="text-align: left;">
-                <div style="text-align: center;">
-                    Yours sincerely,<br>
-                    <strong>Victoria Keller</strong><br>
-                </div>
+                Yours sincerely,<br>
+                <strong>Victoria Keller</strong><br>
                 Customer Experience Manager<br>
                 Email: <a href="mailto:info@swisscaviarlieri.com" style="color: #666;">info@swisscaviarlieri.com</a><br>
                 <a href="https://www.swisscaviarlieri.com" target="_blank"
