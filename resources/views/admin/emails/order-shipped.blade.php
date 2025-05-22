@@ -67,21 +67,29 @@
                     style="color: #666; word-break: break-all;">marketing@swisscaviarlieri.com</a>
             </p>
         </div>
+        <div class="logo" style="text-align: center; margin-bottom: 30px;">
+            <img src="{{ asset('admin/assets/img/swisscaviarlieri-logo.png') }}"
+                alt="swissCaviarlieri Logo" style="max-height: 60px; width: auto;">
+        </div>
+        <div class="signature" style="margin-top: 30px; font-weight: bold; font-family: georgia, serif; width: fit-content;">
+            <div style="text-align: center;">
+                Yours sincerely,<br>
+                <strong>Victoria Keller</strong><br>
+            </div>
 
-        <div class="signature" style="margin-top: 30px; font-weight: bold;">
-            Yours sincerely,<br>
-            <strong>Victoria Keller</strong><br>
-            <em>SwissCaviarlieri Switzerland</em><br>
-            Customer Experience Manager<br>
-            <table style="font-weight: bold;">
-                <tr>
-                    <td style="vertical-align: top;">Email:</td>
-                    <td>
-                        <a href="mailto:info@swisscaviarlieri.com">info@swisscaviarlieri.com</a><br>
-                        <a href="https://www.swisscaviarlieri.com" target="_blank">www.swisscaviarlieri.com</a>
-                    </td>
-                </tr>
-            </table>
+            <div style="text-align: left;">
+                <em>SwissCaviarlieri Switzerland</em><br>
+                Customer Experience Manager<br>
+                <table style="font-weight: bold;">
+                    <tr>
+                        <td style="vertical-align: top;">Email:</td>
+                        <td>
+                            <a href="mailto:info@swisscaviarlieri.com">info@swisscaviarlieri.com</a><br>
+                            <a href="https://www.swisscaviarlieri.com" target="_blank">www.swisscaviarlieri.com</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <div style="margin-top: 30px; text-align: center; width: 100%;">
