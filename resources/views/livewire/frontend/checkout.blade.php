@@ -32,10 +32,10 @@
                     <div class="row form-item-ck">
                         @unless (Auth::check())
                             <div class="col-xs-12 mt-4" style="padding-left:10px;">
-                                <div class="alert alert-info"
-                                    style="background-color: #e6f7ff; color: #005580; border-left: 4px solid #0099cc; padding: 10px;">
-                                    <strong>Note:</strong> You are continuing as a guest. Please ensure all billing details
-                                    are accurate.
+                                <div class="alert"
+                                    style="background-color: #86754f; color: #ffffff; border-left: 4px solid #ffffff; padding: 5px;">
+                                     Continue as Guest.
+                                        Please enter the information below
                                 </div>
                             </div>
                         @endunless
