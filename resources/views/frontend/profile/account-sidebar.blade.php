@@ -20,12 +20,12 @@
                 </span>
             </div>
             <div class="account-nav">
-                <div class="nav-title bg-light">DASHBOARD</div>
+                <div class="nav-title" style="background-color: #e8e5e6;">DASHBOARD</div>
                 <ul>
                     <li><a href="{{ route('myaccount') }}">Dashboard</a></li>
                     <li><a href="{{ route('myorders') }}">Orders</a></li>
                 </ul>
-                <div class="nav-title bg-light">ACCOUNT SETTINGS</div>
+                <div class="nav-title" style="background-color: #e8e5e6;">ACCOUNT SETTINGS</div>
                 <ul class="account-info-list">
                     <li><a href="{{ route('myprofile') }}">Profile</a></li>
                     <li><a href="{{ route('billingaddress') }}">Billing Address</a></li>

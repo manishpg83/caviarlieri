@@ -5,7 +5,7 @@
         <tbody>
             @foreach($products as $product)
             @if(isset($cartItems[$product->product_code]) && $cartItems[$product->product_code]['quantity'] > 0)
-            <tr style="color:#0a1f3a;text-transform:uppercase;font-family: 'AdelleSansW01-Regular';">
+            <tr style="color:#0a1f3a;text-transform:uppercase;">
                 <td colspan="2">
                     {{ $product->product_name }}
                 </td>

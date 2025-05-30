@@ -47,9 +47,6 @@ class AddCustomer extends Component
         'payment_term_actual' => 'nullable|in:IMMEDIATE,7D,14D,30D',
         'billing_address' => 'required|string',
         'billing_country' => 'required|string',
-        'shipping_address_receiver_name_1' => 'required|string',
-        'shipping_address_1' => 'required|string',
-        'shipping_country_1' => 'required|string',
     ];
 
     public function mount()
@@ -132,20 +129,31 @@ class AddCustomer extends Component
             if ($this->oldImage) {
                 Storage::disk('public')->delete($this->oldImage);
             }
-    
+
             // Store in storage/app/public/customers
             $imageName = time().'_'.$this->image->getClientOriginalName();
             $imagePath = $this->image->storeAs('customers', $imageName, 'public');
-            
+
             return $imagePath; // This will return 'customers/filename.jpg'
         }
-    
+
         return $this->oldImage;
     }
-
-    public function save()
+    public function rules()
     {
         $rules = $this->rules;
+
+        if (!$this->sameAsBilling) {
+            $rules['shipping_address_receiver_name_1'] = 'required|string';
+            $rules['shipping_address_1'] = 'required|string';
+            $rules['shipping_country_1'] = 'required|string';
+        }
+
+        return $rules;
+    }
+    public function save()
+    {
+        $rules = $this->rules();
 
         if ($this->image && !is_string($this->image)) {
             $rules['image'] = 'required|image|max:1024|mimes:jpg,jpeg,png';
@@ -158,15 +166,15 @@ class AddCustomer extends Component
         if ($this->isEditing) {
             $customer = Customer::findOrFail($this->customer_id);
             $customer->update($data);
-            Log::info('Customer updated successfully.', ['customer_id' => $this->customer_id, 'updated_data' => $data]);
             notyf()->success('Customer updated successfully.');
+
+            $this->fillCustomerData($customer);
         } else {
             $customer = Customer::create($data);
-            Log::info('New customer created successfully.', ['customer_id' => $customer->id, 'data' => $data]);
             notyf()->success('Customer created successfully.');
-        }
 
-        return redirect()->route('admin.customer.index');
+            return redirect()->route('admin.customer.index');
+        }
     }
 
     public function updatedImage()

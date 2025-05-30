@@ -23,7 +23,7 @@
     font-size: 7pt;
     padding: 3px 0;
     min-width: auto;
-    font-family: 'AdelleSansW01-Regular';
+    font-family: Lufga, sans-serif;
 }
 body .text-lightgold {
     color: #cebc92;
@@ -39,23 +39,116 @@ section.bgclr-black .heading2 {
     background: #D3D3D3;
 }
 .footer .btn {
-    font-family: 'AdelleSansW01-Regular';
+    font-family: Lufga, sans-serif;
 }
 .footer p {
     font-size: 16px;
-    font-family: 'AdelleSansW01-Regular';
+    font-family: Lufga, sans-serif;
 }
 .footer h5 {
     font-size: 20px;
-    font-family: 'AdelleSansW01-Regular';
+    font-family: Lufga, sans-serif;
 }
 .footer-bottom p {
-    font-family: 'AdelleSansW01-Light', sans-serif;
+    font-family: Lufga, sans-serif;
 }
 .footer-bottom p,
 .footer-bottom a {
     color: #ffffff;
 }
+.account-sidebar .account-nav ul li a {
+    font-size: 15px;
+}
+footer .widget_services ul li a:hover {
+    color: #ffffff;
+}
+.custom-footer {
+    background-color: #333;
+    background-image: url('/frontend/images/mountain-footer.jpg') !important;
+    background-size: cover;
+    background-position: top;
+    margin-top: 50px;
+}
+.clinical-bg {
+    background-image: url('/frontend/images/clinical-science/Mountain-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imcas-bg {
+    background-image: url('/frontend/images/experts-opinions/imcas-academy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ivana-bg {
+    background-image: url('/frontend/images/experts-opinions/ivana-scheiz2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.michael-bg {
+    background-image: url('/frontend/images/experts-opinions/dr-Michael-papacharalampous.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.karalis-bg {
+    background-image: url('/frontend/images/experts-opinions/emmanouil-karalis-tokyo-olympics-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bad-ragaz-bg {
+    background-image: url('/frontend/images/experts-opinions/grand-resort-bad-ragaz-spa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.brigitte-bg {
+    background-image: url('/frontend/images/experts-opinions/Brigitte-Bollinger1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ghislaine-bg {
+    background-image: url('/frontend/images/experts-opinions/Ghislaine1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ivana1-bg {
+    background-image: url('/frontend/images/experts-opinions/ivana1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.maxmillan-bg {
+    background-image: url('/frontend/images/experts-opinions/maxmillan.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.michael1-bg {
+    background-image: url('/frontend/images/experts-opinions/michael1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.caviarlieri-lunch-bg {
+    background-image: url('/frontend/images/experts-opinions/caviarlieri_lunch-scaled.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.screen-shot1-bg {
+    background-image: url('/frontend/images/experts-opinions/screen-shot1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
 @media screen and (max-width: 1320px) {
     .sidbar-main-menu .nav-item {
         margin-inline: 4px !important;
@@ -973,7 +1066,7 @@ hr.hr-content {
 
 .title2
 {
-    font-family: 'AdelleSansW01-Regular' !important;
+    font-family: Lufga, sans-serif !important;
     text-transform: uppercase;
     font-weight: bold;
     color: #0a1f3a;
@@ -1022,7 +1115,7 @@ hr.hr-content {
     width: 100%;
     font-size: 14px;
     color: #858585;
-    font-family: 'AdelleSansW01-Regular' !important;
+    font-family: Lufga, sans-serif !important;
     font-weight: normal;
 }
 
@@ -1268,7 +1361,7 @@ div#backpage a.myButton{
     font-size:14px;
     border:none;
     color: #858585;
-    font-family: 'AdelleSansW01-Regular' !important;
+    font-family: Lufga, sans-serif !important;
 }
 
 .noborder-summary

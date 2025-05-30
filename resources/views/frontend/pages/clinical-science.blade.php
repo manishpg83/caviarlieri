@@ -21,7 +21,7 @@
 </section>
 
 <section>
-    <div class="container-fluid px-0" style="background-image: url('{{ asset('frontend/images/clinical-science/Mountain-background.png') }}'); background-repeat: no-repeat; background-size:cover">
+    <div class="container-fluid px-0 clinical-bg">
         <div style="background-color: rgba(0,9,22,.8);">
             <div class="container-fluid px-md-5">
                 <div class="row" style="padding: 75px 0;">
@@ -131,13 +131,13 @@
                 <p class="GothamBook">GLOBAL ACCREDITATIONS AND CERTIFICATIONS</p>
                 <div class="col-lg-10">
                     <div class="row mb-3">
-                        <div class="col-3 p-2 p-md-4"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/discover/swisspub01.png" width="100%" alt="" /></div>
-                        <div class="col-3 p-2 p-md-4"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/discover/GMP.png" width="100%" alt="" /></div>
-                        <div class="col-3 p-2 p-md-4"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/discover/swisscert.png" width="100%" alt="" /></div>
-                        <div class="col-3 p-2 p-md-4"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/discover/swissatt.png" width="100%" alt="" /></div>
-                        <div class="col-3 p-2 p-md-4"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/discover/productcommit.png" width="100%" alt="" /></div>
-                        <div class="col-3 p-2 p-md-4"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/discover/brc.png" width="100%" alt="" /></div>
-                        <div class="col-3 p-2 p-md-4"><img src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/discover/swisspub.png" width="100%" alt="" /></div>
+                        <div class="col-3 p-2 p-md-4"><img src="{{ asset('frontend/images/clinical-science/swisspub01.png') }}" width="100%" alt="" /></div>
+                        <div class="col-3 p-2 p-md-4"><img src="{{ asset('frontend/images/clinical-science/GMP.png') }}" width="100%" alt="" /></div>
+                        <div class="col-3 p-2 p-md-4"><img src="{{ asset('frontend/images/clinical-science/swisscert.png') }}" width="100%" alt="" /></div>
+                        <div class="col-3 p-2 p-md-4"><img src="{{ asset('frontend/images/clinical-science/swissatt.png') }}" width="100%" alt="" /></div>
+                        <div class="col-3 p-2 p-md-4"><img src="{{ asset('frontend/images/clinical-science/productcommit.png') }}" width="100%" alt="" /></div>
+                        <div class="col-3 p-2 p-md-4"><img src="{{ asset('frontend/images/clinical-science/brc.png') }}" width="100%" alt="" /></div>
+                        <div class="col-3 p-2 p-md-4"><img src="{{ asset('frontend/images/clinical-science/swisspub.png') }}" width="100%" alt="" /></div>
                     </div>
                 </div>
                 <ol class="text-grey3">

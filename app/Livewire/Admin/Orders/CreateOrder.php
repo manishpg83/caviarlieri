@@ -108,7 +108,7 @@ class CreateOrder extends Component
 
     public function mount()
     {
-        $this->customers = Customer::all();
+        $this->customers = Customer::orderBy('first_name')->get();
         $this->entities = Entity::active()->get();
         $this->products = Product::all();
         $this->created_by = Auth::id();
@@ -527,15 +527,9 @@ class CreateOrder extends Component
     {
         $prefix = ($category === 'shipping') ? 'SHIP-' : 'INV-';
 
-        $appName = env('APP_NAME');
-
-        if ($appName === 'Caviarlieri') {
-            $startingNumber = 17000;
-        } elseif ($appName === 'Caviarlieri') {
-            $startingNumber = 13000;
-        } else {
-            $startingNumber = 10000;
-        }
+        $appName = config('invoice.invoice_variable_name');
+        $startingNumbers = config('invoice.starting_numbers');
+        $startingNumber = $startingNumbers[$appName] ?? $startingNumbers['default'];
 
         $latestSequentialInvoice = OrderInvoice::where('invoice_number', 'like', $prefix . '[0-9][0-9][0-9][0-9][0-9]')
             ->orderBy('id', 'desc')

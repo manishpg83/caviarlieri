@@ -9,14 +9,14 @@
         </a>
 
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
-            <i class="ti menu-toggle-icon d-none d-xl-block align-middle"></i>
-            <i class="ti ti-x d-block d-xl-none ti-md align-middle"></i>
+            <i class="align-middle ti menu-toggle-icon d-none d-xl-block"></i>
+            <i class="align-middle ti ti-x d-block d-xl-none ti-md"></i>
         </a>
     </div>
 
     <div class="menu-inner-shadow"></div>
 
-    <ul class="menu-inner py-1">
+    <ul class="py-1 menu-inner">
         <li class="menu-header small">
             <span class="menu-header-text" data-i18n="ADMIN DASHBOARD"> ADMIN DASHBOARD</span>
         </li>
@@ -232,7 +232,7 @@
         <!-- Customers End-->
 
         <!-- Invoice Management -->
-        <li class="menu-item {{ request()->routeIs('admin.invoices.*') ? 'active open' : '' }}">
+        {{-- <li class="menu-item {{ request()->routeIs('admin.invoices.*') ? 'active open' : '' }}">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-file-dollar"></i>
                 <div data-i18n="Invoice Management">Invoice Management</div>
@@ -254,7 +254,7 @@
                     </a>
                 </li> -->
             </ul>
-        </li>
+        </li> --}}
         <!-- Invoice Management End-->
 
         <!-- Product Management -->

@@ -77,7 +77,7 @@
 
                     <div class="col-lg-6 col-md-6 px-md-4 d-none d-md-block">
                         <img class="animate-img"
-                            src="https://cdn2-bread6hkcwg3dyar.z01.azurefd.net/assets/images/luxury/box-on-the-water.jpg"
+                            src="{{ asset('frontend/images/luxury-of-caviar/box-on-the-water.jpg') }}"
                             width="100%" alt="" />
                     </div>
                 </div>

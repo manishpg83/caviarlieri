@@ -214,7 +214,7 @@
     </div>
     <div>
         <div class="company-address" style="width: 50%; float: left;">{{ $order->entity->address }}</div>
-        <div style="width: 50%; float: right; text-align: right;"><strong>Order #:</strong> {{ $order->order_number }}</div>
+        <div style="width: 50%; float: right; text-align: right;"><strong>Order #:</strong> {{ $order->order_id }}</div>
         <div style="clear: both;"></div>
     </div>
 
@@ -264,7 +264,7 @@
         </thead>
         <tbody>
             @php
-                $totalRows = 18;
+                $totalRows = 16;
                 $productCount = count($orderInvoiceDetails);
                 $blankRows = max($totalRows - $productCount, 0);
             @endphp

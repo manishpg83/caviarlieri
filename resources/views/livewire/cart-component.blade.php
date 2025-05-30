@@ -6,21 +6,14 @@
     </div>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="container" style="margin-bottom: 50px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p>Buy Caviarlieri from the following web sites if you reside in</p>
-                        <a style="width: 100%;" href="https://caviarlieriamerica.com/shop/" target="_blank">
-                            <div class="flag">
-                                <img src="https://store.celergenswiss.com/images/asset-1.png" style="height: 60px">
-                                <div class="myText" style="margin-top: -34px;"><strong>UNITED STATES CUSTOMERS</strong>
-                                </div>
-
-                            </div>
-                        </a>
-                    </div>
+            <!-- International customers text with minimal margin -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p style="color: #333333; margin-bottom: 0;">International customers please order below:</p>
                 </div>
             </div>
+
+            <!-- Cart items and order summary -->
             <div class="row cart-row">
                 <div class="col-lg-8 col-md-8 col-xs-12">
                     <div class="myBox-left">
@@ -30,14 +23,12 @@
                                     <tbody>
                                         <tr>
                                             @php
-                                                // Use the actual product image or fall back to default image if not set
                                                 $image = $product->product_img
                                                     ? asset('/' . $product->product_img)
                                                     : asset('frontend/images/download.png');
                                             @endphp
 
                                             <td rowspan="2" class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                                <!-- Dynamic product image -->
                                                 <img class="imgPrdctN" src="{{ $image }}"
                                                     alt="{{ $product->product_name }}"
                                                     style="max-width:150px; width:100px;">
@@ -90,9 +81,7 @@
                                 </table>
                             @endif
                         @endforeach
-
                     </div>
-
                 </div>
 
                 <div class="col-xs-12 col-md-4 col-lg-4">
@@ -100,11 +89,25 @@
                 </div>
             </div>
 
+            <!-- Moved US customers section to bottom -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p style="margin-bottom: 5px;">For US and UK customers please click below:</p>
+                        <a style="width: 100%;" href="https://caviarlieriamerica.com/shop/" target="_blank">
+                            <div class="flag">
+                                <img src="{{ asset('frontend/images/asset-1.png') }}" style="height: 60px">
+                                <div class="myText" style="margin-top: -34px;"><strong>UNITED STATES CUSTOMERS</strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <div class="row visible-xs">
                 <div class="">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
                     </div>
                 </div>
             </div>
