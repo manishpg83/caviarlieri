@@ -3,9 +3,9 @@
 /* CSS Document */
 
 .banner {
-    background: url("../images/bg_02.jpg") center center no-repeat;
     background-size: cover;
-    height: 340px;
+    background: #e7eaec;
+    height: 200px;
     width: 100%;
     text-align: center;
     font-family: 'Calluna-Light' !important;
@@ -21,7 +21,7 @@
 .form-bg {
     margin-bottom: 50px;
     background: #e7eaec;
-    font-family: 'AdelleSansW01-Regular' !important;
+    font-family: Lufga, sans-serif !important;
 }
 
 .header-form {
@@ -102,7 +102,7 @@
     outline: none;
     margin-bottom: 0px;
     width: 100%;
-    font-family: 'AdelleSansW01-Regular' !important;
+    font-family: Lufga, sans-serif !important;
     font-style: normal;
 }
 

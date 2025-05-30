@@ -19,10 +19,13 @@
 
         <div class="col-md-6">
             <label class="form-label">Amount</label>
-            <input type="number" wire:model="amount" class="form-control" step="0.01">
+            <input type="number" wire:model="amount" class="form-control" step="0.01" 
+                   max="{{ $pendingAmount }}" 
+                   oninput="validateAmount(this)">
             @error('amount')
                 <div class="text-danger small">{{ $message }}</div>
             @enderror
+            <small class="text-muted">Maximum allowed: {{ $currencySymbol }}{{ number_format($pendingAmount, 2) }}</small>
         </div>
 
 
@@ -102,6 +105,12 @@
             </tbody>
         </table>
     </div>
+    <!-- Pending Amount -->
+    <div class="text-end mt-3">
+        <p><strong>Total Paid:</strong> {{ $currencySymbol }}{{ number_format($totalPaid, 2) }}</p>
+        <p class="text-danger"><strong>Pending Amount:</strong>
+            {{ $currencySymbol }}{{ number_format($pendingAmount, 2) }}</p>
+    </div>
     <!-- Payment Edit Modal -->
     <!-- Payment Edit Modal -->
     <div class="modal fade" id="editPaymentModal" wire:ignore.self tabindex="-1"
@@ -178,4 +187,18 @@
             });
         });
     </script>
+    <script>
+        function validateAmount(input) {
+            const maxAmount = {{ $pendingAmount }};
+            const currentValue = parseFloat(input.value);
+            
+            if (currentValue > maxAmount) {
+                input.setCustomValidity(`Amount cannot exceed ${maxAmount}`);
+                input.style.borderColor = 'red';
+            } else {
+                input.setCustomValidity('');
+                input.style.borderColor = '';
+            }
+        }
+        </script>
 </div>

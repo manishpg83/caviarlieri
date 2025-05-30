@@ -62,7 +62,14 @@ class Checkout extends Component
 
     public function mount()
     {
+
+        if (Auth::check() && Auth::user()->type === 'super-admin') {
+            notyf()->error('Please logout. You are not able to place a order. You are login as a super admin.');
+            return redirect()->route('home');
+        }
+
         $this->user = Auth::user();
+        $this->useBillingAddress = false;
         $this->loadBillingAddress();
         $this->loadShippingAddresses();
         $this->updateCart();
@@ -116,8 +123,10 @@ class Checkout extends Component
                 )
                 ->first();
 
-            $this->shippingAddresses = [
-                [
+            $this->shippingAddresses = [];
+
+            if ($customer && !empty($customer->shipping_address_1)) {
+                $this->shippingAddresses[] = [
                     'address' => $customer->shipping_address_1,
                     'receiver_name' => $customer->shipping_address_receiver_name_1,
                     'receiver_name2' => $customer->shipping_address_receiver_lname_1,
@@ -129,11 +138,14 @@ class Checkout extends Component
                     'shipping_company_name' => $customer->shipping_company_name_1,
                     'country' => $customer->shipping_country_1,
                     'postal_code' => $customer->shipping_postal_code_1,
-                ],
-                [
+                ];
+            }
+
+            if ($customer && !empty($customer->shipping_address_2)) {
+                $this->shippingAddresses[] = [
+                    'address' => $customer->shipping_address_2,
                     'receiver_name' => $customer->shipping_address_receiver_name_2,
                     'receiver_name2' => $customer->shipping_address_receiver_lname_2,
-                    'address' => $customer->shipping_address_2,
                     'address_2' => $customer->shipping_address_2_1,
                     'city' => $customer->shipping_city_2,
                     'state' => $customer->shipping_state_2,
@@ -142,11 +154,14 @@ class Checkout extends Component
                     'shipping_company_name' => $customer->shipping_company_name_2,
                     'country' => $customer->shipping_country_2,
                     'postal_code' => $customer->shipping_postal_code_2,
-                ],
-                [
+                ];
+            }
+
+            if ($customer && !empty($customer->shipping_address_3)) {
+                $this->shippingAddresses[] = [
+                    'address' => $customer->shipping_address_3,
                     'receiver_name' => $customer->shipping_address_receiver_name_3,
                     'receiver_name2' => $customer->shipping_address_receiver_lname_3,
-                    'address' => $customer->shipping_address_3,
                     'address_2' => $customer->shipping_address_3_1,
                     'city' => $customer->shipping_city_3,
                     'state' => $customer->shipping_state_3,
@@ -155,8 +170,8 @@ class Checkout extends Component
                     'shipping_company_name' => $customer->shipping_company_name_3,
                     'country' => $customer->shipping_country_3,
                     'postal_code' => $customer->shipping_postal_code_3,
-                ]
-            ];
+                ];
+            }
         }
     }
 
@@ -247,6 +262,12 @@ class Checkout extends Component
 
     public function processOrder()
     {
+
+        if (Auth::check() && Auth::user()->type === 'super-admin') {
+            notyf()->error('Please logout. You are not able to place a order. You are login as a super admin.');
+            return false;
+        }
+
         $this->validate([
             'billing_fname' => 'required',
             'billing_lname' => 'required',
@@ -356,7 +377,7 @@ class Checkout extends Component
                     'billing_country' => $this->billing_country,
                     'billing_postal_code' => $this->billing_postal_code,
                 ]);
-                $addressIndex = 3; // Default to address 3 for guests/new users
+                $addressIndex = 3;
 
                 if (Auth::check() && $this->selectedShippingAddress) {
                     $selectedAddress = collect($this->shippingAddresses)->firstWhere('address', $this->selectedShippingAddress);
@@ -384,8 +405,8 @@ class Checkout extends Component
             $orderNumber = OrderMaster::generateOrderNumber();
 
             $shippingAddress = $this->useBillingAddress
-                ? ($this->billing_address ?? 'N/A')
-                : ($this->shipping_address1 ?? 'N/A');
+            ? "{$this->billing_address}, {$this->billing_city}, {$this->billing_state}, {$this->billing_postal_code}, {$this->billing_country}"
+            : "{$this->shipping_address1}, {$this->shipping_city}, {$this->shipping_state}, {$this->shipping_zip}, {$this->shipping_country}";
 
             $orderId = DB::table('order_master')->insertGetId([
                 'order_number' => $orderNumber,
@@ -538,10 +559,35 @@ class Checkout extends Component
 
     protected function generateUniqueInvoiceNumber($category = 'regular')
     {
-        do {
-            $prefix = ($category === 'shipping') ? 'SHIP-' : 'INV-';
-            $invoiceNumber = $prefix . now()->format('Ymd') . '-' . Str::random(4);
-        } while (OrderInvoice::where('invoice_number', $invoiceNumber)->exists());
+        $prefix = ($category === 'shipping') ? 'SHIP-' : 'INV-';
+
+        $appName = config('invoice.invoice_variable_name');
+        $startingNumbers = config('invoice.starting_numbers');
+        $startingNumber = $startingNumbers[$appName] ?? $startingNumbers['default'];
+
+        $latestSequentialInvoice = OrderInvoice::where('invoice_number', 'like', $prefix . '%')
+            ->orderBy('id', 'desc')
+            ->first();
+
+        if ($latestSequentialInvoice) {
+            preg_match('/' . $prefix . '(\d+)/', $latestSequentialInvoice->invoice_number, $matches);
+
+            if (isset($matches[1])) {
+                $nextNumber = (int) $matches[1] + 1;
+            } else {
+                $nextNumber = $startingNumber + 1;
+            }
+        } else {
+            $nextNumber = $startingNumber + 1;
+        }
+
+        $invoiceNumber = $prefix . $nextNumber;
+
+        while (OrderInvoice::where('invoice_number', $invoiceNumber)->exists()) {
+            $nextNumber++;
+            $invoiceNumber = $prefix . $nextNumber;
+        }
+
         return $invoiceNumber;
     }
 

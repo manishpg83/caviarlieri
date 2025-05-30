@@ -14,31 +14,47 @@ class ManagePayment extends Component
     public $order;
     public $editedPaymentId, $editedAmount, $editedPaymentDate, $editedPaymentMethod;
     public $editedStatus, $editedBankCharge, $editedPaymentDetails;
-
+    public $payments = [], $totalPaid = 0, $pendingAmount = 0;
 
     public function mount($order_id)
     {
         $this->order_id = $order_id;
         $this->order = OrderMaster::findOrFail($order_id);
+
+        $this->refreshPayments();
+    }
+
+    public function refreshPayments()
+    {
+        $this->payments = Payment::where('order_id', $this->order_id)->get();
+        $this->totalPaid = $this->payments->sum('amount');
+        $this->pendingAmount = max(0, $this->order->total - $this->totalPaid);
     }
 
     public function savePayment()
     {
+        // Calculate the maximum allowed amount for this new payment
+        $maxAllowedAmount = max(0, $this->order->total - $this->totalPaid);
+        
         $this->validate([
             'payment_method' => 'required',
-            'amount' => 'required|numeric|min:0',
+            'amount' => [
+                'required',
+                'numeric',
+                'min:0.01',
+                "max:$maxAllowedAmount"
+            ],
             'payment_date' => 'required|date',
             'status' => 'required|in:pending,partially paid,fully paid with bank charges,fully paid without bank charges',
             'payment_details' => 'nullable|string',
             'transaction_id' => 'nullable|string',
             'bank_charge' => 'nullable|numeric|min:0'
+        ], [
+            'amount.max' => "Payment amount cannot exceed the remaining balance of " . number_format($maxAllowedAmount, 2)
         ]);
-
-        if(empty($this->bank_charge))
-            $bank_charge = 0;
-        else
-            $bank_charge = $this->bank_charge;
-
+    
+        $bank_charge = $this->bank_charge ?? 0;
+    
         Payment::create([
             'order_id' => $this->order_id,
             'payment_method' => $this->payment_method,
@@ -50,9 +66,11 @@ class ManagePayment extends Component
             'payment_details' => $this->payment_details,
             'bank_charge' => $bank_charge
         ]);
-
+    
         notyf()->success('Payment recorded successfully!');
         $this->reset(['payment_method', 'amount', 'payment_date', 'status', 'payment_details', 'transaction_id', 'bank_charge']);
+    
+        $this->refreshPayments();
     }
 
     public function editPayment($paymentId)
@@ -70,20 +88,28 @@ class ManagePayment extends Component
     public function updatePayment()
     {
         try {
+            // Calculate max allowed amount for editing (excluding the current payment being edited)
+            $otherPaymentsTotal = $this->payments->where('id', '!=', $this->editedPaymentId)->sum('amount');
+            $maxAllowedAmount = max(0, $this->order->total - $otherPaymentsTotal);
+            
             $this->validate([
-                'editedAmount' => 'required|numeric|min:0',
+                'editedAmount' => [
+                    'required',
+                    'numeric',
+                    'min:0.01',
+                    "max:$maxAllowedAmount"
+                ],
                 'editedPaymentDate' => 'required|date',
                 'editedPaymentMethod' => 'required',
                 'editedStatus' => 'required|in:pending,partially paid,fully paid with bank charges,fully paid without bank charges',
                 'editedBankCharge' => 'nullable|numeric|min:0',
                 'editedPaymentDetails' => 'nullable|string',
+            ], [
+                'editedAmount.max' => "Payment amount cannot exceed the remaining balance of " . number_format($maxAllowedAmount, 2)
             ]);
-
-            if(empty($this->editedBankCharge))
-                $bank_charge = 0;
-            else
-                $bank_charge = $this->editedBankCharge;
-
+    
+            $bank_charge = $this->editedBankCharge ?? 0;
+    
             $payment = Payment::findOrFail($this->editedPaymentId);
             $payment->update([
                 'amount' => $this->editedAmount,
@@ -93,7 +119,7 @@ class ManagePayment extends Component
                 'bank_charge' => $bank_charge,
                 'payment_details' => $this->editedPaymentDetails,
             ]);
-
+    
             $this->reset([
                 'editedPaymentId',
                 'editedAmount',
@@ -103,10 +129,11 @@ class ManagePayment extends Component
                 'editedBankCharge',
                 'editedPaymentDetails',
             ]);
-
+    
             $this->dispatch('closeModal');
             notyf()->success('Payment updated successfully!');
-
+            $this->refreshPayments();
+    
             return redirect(request()->header('Referer'));
         } catch (\Exception $e) {
             notyf()->error('Failed to update payment.');
@@ -120,8 +147,10 @@ class ManagePayment extends Component
             ->value('symbol');
 
         return view('livewire.admin.payment.manage-payment', [
-            'payments' => Payment::where('order_id', $this->order_id)->latest()->get(),
+            'payments' => $this->payments,
             'currencySymbol' => $currencySymbol,
+            'pendingAmount' => $this->pendingAmount,
+            'totalPaid' => $this->totalPaid,
         ]);
     }
 }

@@ -146,7 +146,7 @@ class PayPalWebhookController extends Controller
 
                     $shippingAddress = $order->shipping_address;
 
-                    $orderNumber = $order->order_number;
+                    $orderNumber = $order->order_id;
 
                     $orderId = $order->order_id;
 

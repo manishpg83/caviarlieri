@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Order Confirmation #{{ $order->order_id }}</title>
+    <title>Payment Confirmation for Order No: {{ $order->order_id }}</title>
 </head>
 
 <body
@@ -67,7 +67,7 @@
         </div>
 
         <div>
-            <p><strong>Order No:</strong> #{{ $order->order_id }}</p>
+            <p><strong>Order No:</strong> {{ $order->order_id }}</p>
             <p><strong>Order Date:</strong> {{ date('d M Y', strtotime($order->order_date)) }}</p>
         </div>
 
@@ -148,9 +148,8 @@
 
         <div class="footer"
             style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; color: #666;">
-            <p>Thank you for your business!</p>
             <p>If you have any queries, please feel free to contact us at <a href="mailto:marketing@swisscaviarlieri.com"
-                style="color: #007bff; text-decoration: none;">marketing@swisscaviarlieri.com</a></p> </p>
+                style="color: #007bff; text-decoration: none;">marketing@swisscaviarlieri.com</a>.</p> </p>
         </div>
 
     </div>

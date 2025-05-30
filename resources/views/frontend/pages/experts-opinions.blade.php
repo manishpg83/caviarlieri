@@ -41,8 +41,7 @@
                         style="transform: translate3d(-5140px, 0px, 0px); transition: 0.5s; width: 14135px;">
                         <div class="owl-item cloned" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/imcas-academy.jpg') }}')">
+                            <div class="expert-bg imcas-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -74,8 +73,7 @@
                         </div>
                         <div class="owl-item cloned" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/ivana-scheiz2.jpg') }}')">
+                            <div class="expert-bg ivana-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -108,8 +106,7 @@
                         </div>
                         <div class="owl-item cloned" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/dr-Michael-papacharalampous.jpg') }}')">
+                            <div class="expert-bg michael-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -143,8 +140,7 @@
                         </div>
                         <div class="owl-item" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/emmanouil-karalis-tokyo-olympics-1.jpg') }}')">
+                            <div class="expert-bg karalis-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -175,8 +171,7 @@
                         </div>
                         <div class="owl-item active" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/grand-resort-bad-ragaz-spa.jpg') }}')">
+                            <div class="expert-bg bad-ragaz-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -208,8 +203,7 @@
                         </div>
                         <div class="owl-item" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/imcas-academy.jpg') }}')">
+                            <div class="expert-bg imcas-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -241,8 +235,7 @@
                         </div>
                         <div class="owl-item" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/ivana-scheiz2.jpg') }}')">
+                            <div class="expert-bg ivana-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -275,8 +268,7 @@
                         </div>
                         <div class="owl-item" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/dr-Michael-papacharalampous.jpg') }}')">
+                            <div class="expert-bg michael-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -310,8 +302,7 @@
                         </div>
                         <div class="owl-item cloned" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/emmanouil-karalis-tokyo-olympics-1.jpg') }}')">
+                            <div class="expert-bg karalis-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -342,8 +333,7 @@
                         </div>
                         <div class="owl-item cloned" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/grand-resort-bad-ragaz-spa.jpg') }}')">
+                            <div class="expert-bg bad-ragaz-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -375,8 +365,7 @@
                         </div>
                         <div class="owl-item cloned" style="width: 1285px;">
                             <div class="item">
-                                <div class="expert-bg"
-                                    style="background-image: url('{{ asset('/frontend/images/experts-opinions/imcas-academy.jpg') }}')">
+                            <div class="expert-bg imcas-bg">
                                     <div
                                         class="slider-inner h-100 col-lg-4 col-sm-8 col-md-6 align-items-center pl-md-5 px-5 text-white">
                                         <div class="text-left">
@@ -1306,9 +1295,7 @@
                                                 data-bs-target="#ex-review1" aria-selected="true"
                                                 onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video1.mp4') }}');"
                                                 role="tab">
-                                                <div class="thumb-container"
-                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/Brigitte-Bollinger1.jpg') }}')">
-                                                </div>
+                                                <div class="thumb-container brigitte-bg"></div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">Dr.Med. Brigitte Bollinger,
                                                         Switzerland<br><small>Specialist FMH for Dermatology and
@@ -1321,9 +1308,7 @@
                                                 data-bs-target="#ex-review2" aria-selected="false"
                                                 onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video2.mp4') }}');"
                                                 tabindex="-1" role="tab">
-                                                <div class="thumb-container"
-                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/Ghislaine1.jpg') }}')">
-                                                </div>
+                                                <div class="thumb-container ghislaine-bg"></div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">Dr. Ghislaine Beilin,
                                                         France<br><small>Dermatologist at IMAS Academy</small></p>
@@ -1335,9 +1320,7 @@
                                                 data-bs-target="#ex-review3" aria-selected="false"
                                                 onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video3.mp4') }}');"
                                                 tabindex="-1" role="tab">
-                                                <div class="thumb-container"
-                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/ivana1.jpg') }}')">
-                                                </div>
+                                                <div class="thumb-container ivana1-bg"></div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">MS. Ivana Sgheiz,
                                                         Switzerland<br><small>Director of HC International S.A.</small></p>
@@ -1349,9 +1332,7 @@
                                                 data-bs-target="#ex-review4" aria-selected="false"
                                                 onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video4.mp4') }}');"
                                                 tabindex="-1" role="tab">
-                                                <div class="thumb-container"
-                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/maxmillan.jpg') }}')">
-                                                </div>
+                                                <div class="thumb-container maxmillan-bg"></div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">Maximilian Warth,
                                                         Switzerland<br><small>Managing Director at CHC Swiss AG</small></p>
@@ -1369,9 +1350,7 @@
                                                 data-bs-target="#ex-review5" aria-selected="false"
                                                 onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video5.mp4') }}');"
                                                 tabindex="-1" role="tab">
-                                                <div class="thumb-container"
-                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/michael1.jpg') }}')">
-                                                </div>
+                                                <div class="thumb-container michael1-bg"></div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">Dr. Michael Papacharalambous,
                                                         Greece<br><small>Director of Internal Medicine</small></p>
@@ -1384,9 +1363,7 @@
                                                 data-bs-target="#ex-review6" aria-selected="false"
                                                 onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video6.mp4') }}');"
                                                 tabindex="-1" role="tab">
-                                                <div class="thumb-container"
-                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/caviarlieri_lunch-scaled.jpg') }}')">
-                                                </div>
+                                                <div class="thumb-container caviarlieri-lunch-bg"></div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">Caviarlieri Launch, Switzerland</p>
                                                 </div>
@@ -1398,9 +1375,7 @@
                                                 data-bs-target="#ex-review7" aria-selected="false"
                                                 onclick="javascript:setvideosrc('{{ asset('frontend/images/experts-opinions/video7.mp4') }}');"
                                                 tabindex="-1" role="tab">
-                                                <div class="thumb-container"
-                                                    style="background-image: url('{{ asset('frontend/images/experts-opinions/screen-shot1.jpg') }}')">
-                                                </div>
+                                                <div class="thumb-container screen-shot1-bg"></div>
                                                 <div class="mt-2 text-white">
                                                     <p class="thumb-caption mb-1">Caviarlieri Product Conference, Bad
                                                         Ragaz, Switzerland</p>

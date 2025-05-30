@@ -32,14 +32,14 @@
                     </div>
                     <div class="d-flex align-items-center gap-2">
                         <select wire:model.live="status" class="form-select" style="width: auto;">
-                            <option value="">All Statuses</option>
+                            <option value="all">All Statuses</option>
                             <option value="active">Active</option>
                             <option value="inactive">Inactive</option>
                         </select>
-                        <input type="text" wire:model.live="search" placeholder="Search Batch Numbers..."
+                        <input type="text" wire:model.live="search" placeholder="Search Customer Type..."
                             class="form-control me-2" style="width: auto;" />
                     </div>
-                </div>                             
+                </div>
 
                 @if (session()->has('message'))
                     <div class="alert alert-success">{{ session('message') }}</div>

@@ -18,10 +18,18 @@ function perpagerecords()
 }
 function getShippingUnitPrice()
 {
-    $localUrls = ['http://127.0.0.1:8000', 'http://13.49.251.219'];
+	$invoiceVariableName = env('INVOICE_VARIABLE_NAME', 'default');
 
-    return in_array(config('app.url'), $localUrls) ? 5.00 : 5.00;
+	if ($invoiceVariableName === 'celergen') {
+		return 5.00;
+	} elseif ($invoiceVariableName === 'caviarlieri') {
+		return 10.00;
+	} else {
+		return 10.00;
+	}
 }
+
+
 
 /*
 function checkPermission($permissions)
@@ -449,16 +457,16 @@ function get_city($latlong)
 {
 
 	/*echo env('GOOGLE_MAP_API_KEY');
-	   echo "https://maps.google.com/maps/api/geocode/json?key=".env('GOOGLE_MAP_API_KEY')."&latlng=".$latlong."&sensor=false";
-	   exit;*/
+			 echo "https://maps.google.com/maps/api/geocode/json?key=".env('GOOGLE_MAP_API_KEY')."&latlng=".$latlong."&sensor=false";
+			 exit;*/
 	/* $json = file_get_contents("https://maps.google.com/maps/api/geocode/json?key=AIzaSyAAVvLhkgxYsKYuXVFeQph4ZCx81iX2wLI&latlng=".$latlong."&sensor=false");
-	   $json = json_decode($json);
-	   $data = array();
-		 $data['city'] = $json->{'results'}[0]->{'address_components'}[2]->{'long_name'};
-		 $latlongArr = explode(',', $latlong);
-		 $data['lat'] = $latlongArr[0];
-		 $data['long'] = $latlongArr[1];
-	   return $data; */
+			 $json = json_decode($json);
+			 $data = array();
+			   $data['city'] = $json->{'results'}[0]->{'address_components'}[2]->{'long_name'};
+			   $latlongArr = explode(',', $latlong);
+			   $data['lat'] = $latlongArr[0];
+			   $data['long'] = $latlongArr[1];
+			 return $data; */
 	//http://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=true&key=YOUR_KEY
 }
 function p($data, $i = 1)

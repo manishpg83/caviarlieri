@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Invoice;
+use App\Models\OrderInvoice;
 
 class InvoiceController extends Controller
 {
@@ -14,7 +14,7 @@ class InvoiceController extends Controller
 
     public function show($id)
     {
-        $invoice = Invoice::findOrFail($id);
+        $invoice = OrderInvoice::findOrFail($id);
 
         return view('admin.invoice.show', compact('invoice'));
     }

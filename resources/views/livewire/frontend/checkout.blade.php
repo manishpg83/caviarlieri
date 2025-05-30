@@ -7,7 +7,7 @@
     </div>
 
     <form method="post" id="checkout-form">
-        <div class="container" style="font-family: 'OpenSans';">
+        <div class="container">
             @unless (Auth::check())
                 <div id="box-auth" class="clearfix">
                     <div class="pull-left w100m">
@@ -30,9 +30,18 @@
                 <div class="col-xs-12 col-md-8">
                     <!-- Billing Address -->
                     <div class="row form-item-ck">
-                        <div class="col-xs-12" style="margin-top: 20px;margin-bottom: 20px;">
+                        @unless (Auth::check())
+                            <div class="col-xs-12 mt-4" style="padding-left:10px;">
+                                <div class="alert"
+                                    style="background-color: #86754f; color: #ffffff; border-left: 4px solid #ffffff; padding: 5px;">
+                                     Continue as Guest.
+                                        Please enter the information below
+                                </div>
+                            </div>
+                        @endunless
+                        <div class="col-xs-12 m-tb20">
                             <div class="icons-number pull-left">1</div>
-                            <div style="padding-left:10px;float: left;">Billing Address</div>
+                            <div style="padding-left:10px;float: left;font-weight: bold;">Billing Address</div>
                         </div>
                         <br><br>
 
@@ -44,7 +53,7 @@
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
-                        <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
+                        <div class="col-xs-12 col-md-6 p-b20">
                             <input type="text" maxlength="100" name="billing_lname" id="billing_lname"
                                 class="form-control" placeholder="Last Name" data-validation="required"
                                 value="{{ $billingAddress->billing_lname ?? '' }}" wire:model="billing_lname">
@@ -52,7 +61,7 @@
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
-                        <div class="col-xs-12" style="padding-bottom: 20px;">
+                        <div class="col-xs-12 p-b20">
                             <input type="text" maxlength="100" name="billing_company_name" id="billing_company_name"
                                 class="form-control" placeholder="Company Name" data-validation="required"
                                 value="{{ $billingAddress->billing_company_name ?? '' }}"
@@ -69,7 +78,7 @@
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
-                        <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
+                        <div class="col-xs-12 col-md-6 p-b20">
                             <input type="text" maxlength="100" name="billing_address_2" id="billing_address_2"
                                 class="form-control" placeholder="Address 2" data-validation="required"
                                 value="{{ $billingAddress->billing_address_2 ?? '' }}" wire:model="billing_address_2">
@@ -85,7 +94,7 @@
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
-                        <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
+                        <div class="col-xs-12 col-md-6 p-b20">
                             <input maxlength="20" type="text" name="billing_postal_code" id="billing_postal_code"
                                 class="form-control" placeholder="Postcode" data-validation="number"
                                 value="{{ $billingAddress->billing_postal_code ?? '' }}"
@@ -110,7 +119,7 @@
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
-                        <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
+                        <div class="col-xs-12 col-md-6 p-b20">
                             <input maxlength="100" type="text" name="billing_state" id="billing_state"
                                 class="form-control" placeholder="States" data-validation="required"
                                 wire:model="billing_state" value="{{ $billingAddress->billing_state ?? '' }}">
@@ -126,7 +135,7 @@
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
-                        <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
+                        <div class="col-xs-12 col-md-6 p-b20">
                             <input type="email" maxlength="100" name="billing_email" id="billing_email"
                                 class="form-control" placeholder="Email" data-validation="required"
                                 wire:model="billing_email" value="{{ $billingAddress->billing_email ?? '' }}">
@@ -134,7 +143,7 @@
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
-                        <div class="col-xs-12 col-md-12" style="padding-bottom: 5px;">
+                        <div class="col-xs-12 col-md-12 p-b5">
                             Please ensure that the courier service (DHL/UPS) can reach you at your contact
                             number to avoid delivery failure.
                             <hr>
@@ -142,28 +151,38 @@
 
                         <!-- Shipping Address -->
                         <br><br>
-                        <div class="col-xs-12" style="margin-bottom: 20px;">
+                        <div class="col-xs-12 m-b20">
                             <div class="icons-number pull-left">2</div>
-                            <div style="padding-left:10px;float: left;">Shipping Address</div>
+                            <div style="padding-left:10px;float: left;font-weight: bold;">Shipping Address</div>
                             <div class="pull-right remember-rev" style="margin-right: 0px;">
                                 <input type="checkbox" name="add_same" id="add_same" value="on"
                                     wire:model="useBillingAddress" onclick="SwitchAddress(this);" class="filled">
-                                <label for="add_same" class="pull-right">Ship to same address?</label>
+                                <label for="add_same" class="pull-right"> Same as Billing Address</label>
                             </div>
                         </div>
 
                         <div id="ship_address">
-                            <div class="row form-item-ck">                                
-                                @if(Auth::check())
-                                <div class="col-xs-12 select-address-wrapper">
-                                    <select wire:model="selectedShippingAddress" wire:change="handleAddressChange">
-                                        @foreach ($shippingAddresses as $address)
-                                            <option value="{{ $address['address'] }}">{{ $address['address'] }}
-                                            </option>
-                                        @endforeach
-                                    </select>
-                                    <span class="select-dropdown-icon glyphicon glyphicon-chevron-down">&nbsp;</span>
-                                </div>
+                            <div class="row form-item-ck">
+                                @if (Auth::check())
+                                    <div class="col-xs-12 select-address-wrapper">
+                                        <label for="shipping-address" class="shipping-label text-primary mb-2"
+                                            style="font-weight: bold;">
+                                            Please select shipping address
+                                        </label>
+                                        <div class="custom-select-wrapper">
+                                            <select id="shipping-address" wire:model="selectedShippingAddress"
+                                                wire:change="handleAddressChange"
+                                                class="form-control shipping-select">
+                                                <option value="">-- Select Address --</option>
+                                                @foreach ($shippingAddresses as $address)
+                                                    <option value="{{ $address['address'] }}">
+                                                        {{ $address['address'] }}</option>
+                                                @endforeach
+                                            </select>
+                                            <span
+                                                class="select-dropdown-icon glyphicon glyphicon-chevron-down text-primary"></span>
+                                        </div>
+                                    </div>
                                 @endif
                                 <div class="col-xs-12 col-md-6">
                                     <input type="text" maxlength="100" name="firstname" id="firstname"
@@ -173,7 +192,7 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
+                                <div class="col-xs-12 col-md-6 p-b20">
                                     <input type="text" maxlength="100" name="lastname" id="lastname"
                                         class="form-control" placeholder="Last Name" data-validation="required"
                                         wire:model="shipping_lastname">
@@ -181,7 +200,7 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-xs-12" style="padding-bottom: 20px;">
+                                <div class="col-xs-12 p-b20">
                                     <input type="text" maxlength="100" name="shipping_company_name"
                                         id="shipping_company_name" class="form-control"
                                         placeholder="Shipping Company Name" data-validation="required"
@@ -198,7 +217,7 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
+                                <div class="col-xs-12 col-md-6 p-b20">
                                     <input type="text" maxlength="100" name="address2" id="address2"
                                         class="form-control" placeholder="Address 2" wire:model="shipping_address2">
                                     @error('shipping_address2')
@@ -213,7 +232,7 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
+                                <div class="col-xs-12 col-md-6 p-b20">
                                     <input type="text" maxlength="20" name="zip" id="zip"
                                         class="form-control" placeholder="Postcode" data-validation="required"
                                         wire:model="shipping_zip">
@@ -237,7 +256,7 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
+                                <div class="col-xs-12 col-md-6 p-b20">
                                     <input type="text" maxlength="100" name="state" id="state"
                                         class="form-control" placeholder="State" data-validation="required"
                                         wire:model="shipping_state">
@@ -245,7 +264,7 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
+                                <div class="col-xs-12 col-md-6 p-b20">
                                     <input type="text" maxlength="20" name="phone" id="phone"
                                         class="form-control" placeholder="Phone" data-validation="number"
                                         wire:model="shipping_phone">
@@ -253,15 +272,15 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-xs-12 col-md-6" style="padding-bottom: 20px;">
-                                    <input type="email" maxlength="20" name="shipping_email" id="shipping_email"
+                                <div class="col-xs-12 col-md-6 p-b20">
+                                    <input type="email" name="shipping_email" id="shipping_email"
                                         class="form-control" placeholder="Shipping Email" data-validation="email"
                                         wire:model="shipping_email">
                                     @error('shipping_email')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-xs-12 col-md-12" style="padding-bottom: 20px;">
+                                <div class="col-xs-12 col-md-12 p-b20">
                                     <textarea class="form-control" name="shipnotes" id="shipnotes" rows="4" placeholder="Notes"
                                         wire:model="shipping_notes"></textarea>
                                 </div>

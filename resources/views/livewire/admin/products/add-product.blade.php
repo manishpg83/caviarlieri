@@ -30,7 +30,7 @@
                                     @error('product_code')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
-                                </div>                               
+                                </div>
 
                                 <div class="col-md-6">
                                     <label class="form-label" for="brand">Brand</label>
@@ -108,15 +108,15 @@
                                     @error('currency')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
-                                </div>  
+                                </div>
 
-                                <div class="col-md-6">
-                                    <label class="form-label" for="expire_date">Expiry Date</label>
+                               {{-- <div class="col-md-6">
+                                    <label class="form-label" for="expire_date">Expiry Date (Scroll down to change year)</label>
                                     <input type="month" min="{{ date('Y-m') }}" class="form-control" id="expire_date" wire:model="expire_date">
                                     @error('expire_date')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
-                                </div>                                                                                           
+                                </div> --}}
 
                                 <div class="col-md-6">
                                     <label class="form-label" for="unit_price">Unit price</label>
@@ -148,20 +148,20 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <label class="form-label" for="product_img">Product Image</label>                                    
+                                    <label class="form-label" for="product_img">Product Image</label>
                                     <div class="mb-2">
                                         @if ($product_img && $product_img instanceof \Livewire\TemporaryUploadedFile)
                                             <img src="{{ $product_img->temporaryUrl() }}" alt="Preview" class="img-thumbnail" style="max-height: 150px;">
                                         @elseif ($isEditMode && $product_img_url)
                                             <img src="{{ asset($product_img_url) }}" alt="Existing Image" class="img-thumbnail" style="max-height: 150px;">
                                         @endif
-                                    </div>                                
-                                    <input type="file" class="form-control" id="product_img" wire:model="product_img">                                    
+                                    </div>
+                                    <input type="file" class="form-control" id="product_img" wire:model="product_img">
                                     @error('product_img')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                
+
                                 <div class="col-12 mt-4">
                                     <button type="submit" class="btn btn-primary">
                                         {{ $isEditMode ? 'Update Product' : 'Add Product' }}
