@@ -37,6 +37,7 @@ class PayPalWebhookController extends Controller
             switch ($eventType) {
                 case 'PAYMENT.CAPTURE.COMPLETED':
                     $payment->status = 'completed';
+                    $payment->payment_date = now();
                     $this->updateOrder($payment->order_id, 'Paid');
                     break;
 
@@ -116,6 +117,7 @@ class PayPalWebhookController extends Controller
                     $payment->update([
                         'status' => 'completed',
                         'payment_response' => json_encode($response),
+                        'payment_date' => now(),
                     ]);
 
                     $order = DB::table('order_master')

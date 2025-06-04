@@ -435,6 +435,7 @@ class Checkout extends Component
                         'quantity' => $item['quantity'],
                         'unit_price' => $product->unit_price,
                         'total' => $item['total'],
+                        'remaining_quantity' => $item['quantity'],
                         'created_at' => now(),
                         'updated_at' => now()
                     ]);
