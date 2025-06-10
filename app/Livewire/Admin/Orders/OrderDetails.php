@@ -12,6 +12,7 @@ use App\Models\OrderDetails as NewOrderDetails;
 use App\Models\OrderInvoice;
 use App\Models\OrderInvoiceDetail;
 use App\Models\OrderMaster;
+use App\Models\Inventory;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
@@ -106,6 +107,26 @@ class OrderDetails extends Component
             $this->order->remarks = $this->remarks;
             $this->order->modified_by = Auth::id();
             $this->order->save();
+
+            if($this->orderStatus == 'Cancelled'){
+                $deliveryOrders = DeliveryOrder::where('order_id', $this->order_id)->get();
+                
+                foreach($deliveryOrders as $deliveryOrder) {
+                    $deliveryDetails = DeliveryOrderDetail::where('delivery_order_id', $deliveryOrder->id)->get();
+                   
+                    foreach($deliveryDetails as $detail) {
+                        $inventory = Inventory::find($detail->inventory_id);
+                        
+                        if($inventory) {
+                            $totalQuantity = $detail->quantity + $detail->sample_quantity;
+                            $inventory->increment('remaining', $totalQuantity);
+                            $inventory->decrement('consumed', $totalQuantity);
+                            $inventory->modified_by = Auth::id();
+                            $inventory->save();
+                        }
+                    }
+                }
+            }
 
             notyf()->success('Order details updated successfully.');
             
